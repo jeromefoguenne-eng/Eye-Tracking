@@ -315,153 +315,6 @@ BIBLIO_ALL = [
     ("Wohltjen, S., & Wheatley, T. (2021). Eye contact marks the rise and fall of shared attention in conversation. PNAS, 118(37), e2106499118.", "https://doi.org/10.1073/pnas.2106499118")
 ]
 
-def build_markdown(md_path):
-    lines = []
-    lines.append("# État de l'Art Académique Approfondi : Oculométrie Mobile (Pupil Labs) & Interactions de Service en Gestion Hôtelière (Upselling)")
-    lines.append("")
-    lines.append("**Auteur :** Jérôme Foguenne (Projet de recherche Lab-DRA — HECh / HEL)  ")
-    lines.append("**Date :** Octobre 2026 (Version Approfondie v2.0)  ")
-    lines.append("**Dépôt GitHub :** https://github.com/jeromefoguenne-eng/Eye-Tracking  ")
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-    lines.append("## Table des Matières")
-    lines.append("1. [Introduction & Problématique de Recherche](#1-introduction--problématique-de-recherche)")
-    lines.append("2. [Volet 1 : Dispositifs d'Eye Tracking et Évolution vers le Mobile (Focus Pupil Labs)](#2-volet-1--dispositifs-deye-tracking-et-évolution-vers-le-mobile-focus-pupil-labs)")
-    lines.append("   - 2.1 Des dispositifs fixes au laboratoire vers l'oculométrie mobile écologique")
-    lines.append("   - 2.2 L'écosystème Pupil Labs : Pupil Core, Pupil Invisible et Neon")
-    lines.append("   - 2.3 Métriques oculométriques validées pour l'analyse comportementale")
-    lines.append("   - 2.4 Le Dual Mobile Eye Tracking (DMET) et les interactions en face-à-face")
-    lines.append("3. [Volet 2 : L'Eye Tracking dans les Interactions de Service Hôtelières](#3-volet-2--leye-tracking-dans-les-interactions-de-service-hôtelières)")
-    lines.append("   - 3.1 Le contact visuel comme « Moment de Vérité » et la théorie du rapport non verbal")
-    lines.append("   - 3.2 L'effet d'écran et la cécité d'inattention au comptoir d'accueil")
-    lines.append("   - 3.3 Attention conjointe (Joint Attention) et supports tangibles")
-    lines.append("4. [Volet 3 : Littérature Académique sur l'Upselling et la Vente Adaptative](#4-volet-3--littérature-académique-sur-lupselling-et-la-vente-adaptative)")
-    lines.append("   - 4.1 Définitions et distinctions : Upselling vs Suggestive Selling / Cross-selling")
-    lines.append("   - 4.2 La théorie de la vente adaptative (Adaptive Selling) appliquée au front desk")
-    lines.append("   - 4.3 Les leviers du Revenue Management et la dynamique du Check-in")
-    lines.append("5. [Volet 4 : Synthèse et Modèle Intégratif pour le Projet Lab-DRA](#5-volet-4--synthèse-et-modèle-intégratif-pour-le-projet-lab-dra)")
-    lines.append("   - 5.1 Révélation des « savoirs cachés » : La Vision Professionnelle (Goodwin) et la CTA")
-    lines.append("   - 5.2 L'Auto-confrontation guidée par le regard (Gaze-Cued RTA)")
-    lines.append("   - 5.3 Les Exemples Modélisants du Regard (EMME) comme levier technopédagogique")
-    lines.append("6. [Fiches de Lecture Analytiques : Les 20 Ressources Fondamentales](#6-fiches-de-lecture-analytiques--les-20-ressources-fondamentales)")
-    lines.append("7. [Bibliographie Complète (Normes APA)](#7-bibliographie-complète-normes-apa)")
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-    lines.append("## 1. Introduction & Problématique de Recherche")
-    lines.append("")
-    lines.append("Dans le secteur de l'hôtellerie et du tourisme, le comptoir d'accueil (*front desk*) constitue le cœur névralgique de la relation client. C'est à ce point de contact précis que se négocient simultanément deux enjeux critiques :")
-    lines.append("* **L'expérience client et l'excellence du service :** accueil chaleureux, écoute active, personnalisation, désamorçage de l'insatisfaction ou traitement immédiat de plaintes.")
-    lines.append("* **La performance économique et commerciale :** génération directe de revenus complémentaires via la montée en gamme (*upselling* de chambre, vue, suite) et la vente suggestive (*cross-selling* de restauration, services spa, départs tardifs).")
-    lines.append("")
-    lines.append("L'évaluation traditionnelle de ces interactions a historiquement reposé sur des questionnaires déclaratifs post-séjour ou des grilles d'observation vidéo classiques à la troisième personne. Ces méthodologies souffrent d'un biais majeur : elles ne permettent pas de capter le flux d'attention visuelle en temps réel ni de comprendre comment le réceptionniste orchestre son regard entre le client, l'écran de son logiciel de gestion (PMS) et ses supports d'aide à la vente.")
-    lines.append("")
-    lines.append("L'avènement de l'**oculométrie mobile portable (*wearable eye tracking*)**, incarnée par le système de dernière génération **Pupil Labs Neon**, permet désormais d'objectiver en temps réel et en situation écologique naturelle l'architecture attentionnelle des professionnels et des apprenants.")
-    lines.append("")
-    lines.append("> [!IMPORTANT]")
-    lines.append("> **Postulat majeur du projet :** Mobiliser l'eye tracking comme un outil d'objectivation pour révéler les « savoirs cachés » (compétences tacites non verbalisées) des experts de l'accueil, afin de concevoir des dispositifs d'apprentissage par l'exemple (*Eye Movement Modeling Examples - EMME*) pour les étudiants.")
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-    lines.append("## 2. Volet 1 : Dispositifs d'Eye Tracking et Évolution vers le Mobile (Focus Pupil Labs)")
-    lines.append("")
-    lines.append("### 2.1 Des dispositifs fixes au laboratoire vers l'oculométrie mobile écologique")
-    lines.append("L'oculométrie a longtemps été cantonnée à des stations fixes de laboratoire (systèmes tour/mentonnière type EyeLink 1000 ou barres sous écran Tobii). Bien que d'une extrême précision spatiale (< 0,5°), ces dispositifs imposaient une immobilité artificielle incompatible avec l'analyse d'une interaction humaine dynamique en face-à-face.")
-    lines.append("")
-    lines.append("L'émergence des lunettes d'eye tracking légères permet de basculer dans le paradigme de l'**ergonomie située** et de la **validité écologique**. Les participants peuvent bouger la tête, manipuler des objets (terminaux de paiement, fiches de réservation, tablettes, clés) et interagir naturellement avec leur interlocuteur.")
-    lines.append("")
-    lines.append("### 2.2 L'écosystème Pupil Labs : Pupil Core, Pupil Invisible et Neon")
-    lines.append("")
-    lines.append("| Modèle | Année / Statut | Architecture Technique | Méthode de Calibration | Spécificités & Apports |")
-    lines.append("| :--- | :--- | :--- | :--- | :--- |")
-    lines.append("| **Pupil Core** | 2014-Présent (Open-Source) | 2 caméras IR oculaires + 1 caméra de scène HD | Manuelle (9 points ou modèle cornéen 3D) | Plateforme pionnière modulaire et personnalisable pour la recherche académique (Kassner et al., 2014). |")
-    lines.append("| **Pupil Invisible** | 2019-2023 (Déprécié) | Capteurs miniatures intégrés en monture discrète | **Calibration-Free** (Réseau neuronal profond) | Suppression de la friction de calibration ; premier dispositif portable véritablement « in-the-wild ». |")
-    lines.append("| **Pupil Labs Neon** | **2023-Présent (Flagship)** | Module interchangeable (*Neon Sensor Module v1*), 200 Hz binoculaire | **NeonNet Pipeline** (IA embarquée + géométrie oculaire) | Insensibilité au glissement (*slippage-robust*), pupillométrie métrique (mm), précision de 1,3° à 1,45° (Niehorster et al., 2026). |")
-    lines.append("")
-    lines.append("### 2.3 Métriques oculométriques validées pour l'analyse comportementale")
-    lines.append("* **Fixations oculaires** (150 à 400 ms) : Révèlent le traitement cognitif actif d'une information. Métriques : nombre de fixations, durée totale de fixation (*Total Dwell Time*) sur les Zones d'Intérêt (AOI : visage du client, écran du PMS, badge, brochure).")
-    lines.append("* **Saccades** (20 à 50 ms) : Déplacements rapides orientant la fovéa. La vitesse et l'amplitude des saccades traduisent l'efficacité de la stratégie de recherche visuelle.")
-    lines.append("* **Scanpath (Parcours visuel)** : Trajectoire spatio-temporelle ordonnée du regard. Un scanpath direct et structuré est caractéristique de l'expertise, tandis qu'un parcours erratique dénote une surcharge ou une hésitation.")
-    lines.append("* **Taux de clignement (Blink Rate / BPM)** : La suppression temporaire du clignement indique une attention visuelle soutenue, tandis qu'une fréquence élevée traduit la fatigue cognitive ou le stress.")
-    lines.append("")
-    lines.append("### 2.4 Le Dual Mobile Eye Tracking (DMET) et les interactions en face-à-face")
-    lines.append("Le Dual Mobile Eye Tracking (DMET) consiste à équiper simultanément les deux acteurs d'une dyade (le réceptionniste et le client) de lunettes oculométriques synchronisées (Rogers et al., 2018 ; Macdonald & Tatler, 2018) :")
-    lines.append("* **Mutual Gaze (Regard mutuel) :** Détection automatisée des moments où les regards des deux participants se croisent. Wohltjen et Wheatley (2021 dans PNAS) ont démontré que le contact visuel marque les pics d'attention partagée et déclenche les régulations de tour de parole.")
-    lines.append("* **Joint Visual Attention (Attention conjointe) :** Synchronisation spatio-temporelle des deux regards sur un objet tiers (ex. une tablette présentant les suites, un plan d'hôtel ou une brochure tarifaire).")
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-    lines.append("## 3. Volet 2 : L'Eye Tracking dans les Interactions de Service Hôtelières")
-    lines.append("")
-    lines.append("### 3.1 Le contact visuel comme « Moment de Vérité » et la théorie du rapport non verbal")
-    lines.append("Dans la théorie du management des services (Carlzon, 1987 ; Parasuraman, Zeithaml & Berry, 1988), les premières secondes du face-à-face constituent le « moment de vérité » qui conditionne toute la suite de l'expérience client.")
-    lines.append("Le modèle du rapport interpersonnel développé par Tickle-Degnen et Rosenthal (1990) montre que le succès relationnel dépend de trois composantes : l'attention mutuelle, la positivité et la coordination. Le contact visuel en est la manifestation non verbale prédominante.")
-    lines.append("Hennig-Thurau et al. (2006 dans le Journal of Marketing) ont par ailleurs prouvé que les clients distinguent intuitivement un sourire forcé (« jeu de surface ») d'une intention sincère (« jeu en profondeur »), et que la stabilité du regard est le marqueur de cette authenticité.")
-    lines.append("")
-    lines.append("### 3.2 L'effet d'écran et la cécité d'inattention au comptoir d'accueil")
-    lines.append("Un écueil récurrent chez les réceptionnistes débutants est le **« piège de l'écran »** : absorbés à plus de 70% par la manipulation de leur logiciel hôtelier (PMS), ils rompent le contact visuel au moment précis où le client formule une attente implicite.")
-    lines.append("Ce phénomène provoque une **cécité d'inattention (*inattentional blindness*)** : le réceptionniste ne voit pas les signaux d'achat (*buying signals*) émis par le client (curiosité, hésitation, mention d'un anniversaire, regard vers la brochure).")
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-    lines.append("## 4. Volet 3 : Littérature Académique sur l'Upselling et la Vente Adaptative")
-    lines.append("")
-    lines.append("### 4.1 Définitions et distinctions : Upselling vs Suggestive Selling / Cross-selling")
-    lines.append("")
-    lines.append("| Concept | Définition Académique | Exemple Hôtelier Typique |")
-    lines.append("| :--- | :--- | :--- |")
-    lines.append("| **Upselling (Montée en gamme)** | Inciter le client à opter pour une catégorie de produit ou prestation supérieure à celle initialement réservée. | Proposition d'une chambre Deluxe avec vue panoramique ou d'une suite moyennant un supplément différentiel (ex. +35€/nuit). |")
-    lines.append("| **Cross-selling / Suggestive Selling (Vente croisée / suggestive)** | Recommander des services périphériques complémentaires pour enrichir le séjour. | Réservation d'une table au restaurant gastronomique, forfait accès spa, départ tardif (*late check-out*), petit-déjeuner gourmand. |")
-    lines.append("")
-    lines.append("### 4.2 La théorie de la vente adaptative (Adaptive Selling) appliquée au front desk")
-    lines.append("Fondée par Spiro et Weitz (1990), la théorie de la vente adaptative démontre que la performance en face-à-face repose sur l'ajustement du message en temps réel selon les caractéristiques de l'interlocuteur. Dans l'hôtellerie, les experts n'appliquent pas de script préformaté : ils adaptent leur proposition d'upselling à l'état émotionnel (fatigue, enthousiasme) et au profil du client (affaires vs loisirs).")
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-    lines.append("## 5. Volet 4 : Synthèse et Modèle Intégratif pour le Projet Lab-DRA")
-    lines.append("")
-    lines.append("### 5.1 Révélation des « savoirs cachés » : La Vision Professionnelle (Goodwin) et la CTA")
-    lines.append("L'apport fondamental de Charles Goodwin (1994) sur la **« Vision Professionnelle »** couplé à l'**Analyse Cognitive des Tâches (Cognitive Task Analysis - CTA)** de Crandall, Klein & Hoffman (2006) permet de théoriser les savoirs cachés en deux temps :")
-    lines.append("1. **Le Noticing (Repérage) :** La capacité de l'expert à diriger instantanément son regard fovéal vers les indices signifiants (un regard client qui hésite, un soupir de fatigue, une mention d'anniversaire).")
-    lines.append("2. **Le Reasoning (Raisonnement) :** L'inférence cognitive immédiate permettant de déclencher une offre commerciale sur-mesure.")
-    lines.append("")
-    lines.append("### 5.2 L'Auto-confrontation guidée par le regard (Gaze-Cued RTA)")
-    lines.append("Validée par Elling, Lentz & de Jong (2012) et ancrée dans la didactique professionnelle (Theureau, 2006 ; Clot, 1999), l'auto-confrontation avec trace oculaire permet au professionnel, en revoyant la vidéo de son propre regard, d'expliciter ses intentions d'action qui étaient restées automatisées et inconscientes lors de l'échange.")
-    lines.append("")
-    lines.append("### 5.3 Les Exemples Modélisants du Regard (EMME) comme levier technopédagogique")
-    lines.append("En s'appuyant sur les travaux de Jarodzka et al. (2012) et de Seppänen & Gegenfurtner (2020), la superposition du regard de l'expert constitue un vecteur d'apprentissage supérieur : les étudiants novices apprennent « à voir comme un expert », réduisant l'effet d'écran et adoptant un tempo de regard équilibré entre le client et l'outil de gestion.")
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-    lines.append("## 6. Fiches de Lecture Analytiques : Les 20 Ressources Fondamentales")
-    lines.append("")
-    
-    current_cat = None
-    for res in RESOURCES:
-        if res["cat"] != current_cat:
-            current_cat = res["cat"]
-            lines.append(f"### {current_cat}")
-            lines.append("")
-        lines.append(f"#### Fiche {res['num']} : {res['authors']}")
-        lines.append(f"* **Titre :** *{res['title']}*")
-        lines.append(f"* **Revue / Source :** {res['journal']}")
-        lines.append(f"* **Lien / DOI :** [{res['doi_text']}]({res['doi_url']})")
-        lines.append(f"* **Résumé analytique (~100 mots) :** {res['summary']}")
-        lines.append("")
-
-    lines.append("---")
-    lines.append("")
-    lines.append("## 7. Bibliographie Complète (Normes APA)")
-    lines.append("")
-    for entry_text, url in BIBLIO_ALL:
-        lines.append(f"* {entry_text} [Consulter la ressource]({url})")
-    lines.append("")
-
-    with open(md_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
-    print(f"Markdown généré avec succès : {md_path}")
-
 def build_docx(docx_path):
     doc = docx.Document()
     
@@ -531,6 +384,54 @@ def build_docx(docx_path):
     r4 = pm.add_run("Dépôt GitHub officiel : ")
     r4.bold = True
     add_hyperlink(pm, "https://github.com/jeromefoguenne-eng/Eye-Tracking", "https://github.com/jeromefoguenne-eng/Eye-Tracking", color="0056B3")
+
+    doc.add_paragraph().paragraph_format.space_after = Pt(6)
+
+    # SOMMAIRE VISUEL DU DOCUMENT
+    tbl_toc = doc.add_table(rows=1, cols=1)
+    cell_toc = tbl_toc.cell(0, 0)
+    set_cell_background(cell_toc, "EDF2F7")
+    set_cell_margins(cell_toc, top=120, bottom=120, left=160, right=160)
+    ptoc = cell_toc.paragraphs[0]
+    rtoc_t = ptoc.add_run("📋 SOMMAIRE DU DOCUMENT\n")
+    rtoc_t.bold = True
+    rtoc_t.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
+    rtoc_t.font.size = Pt(11)
+
+    toc_items = [
+        "1. Introduction & Problématique de Recherche",
+        "2. Volet 1 : Dispositifs d'Eye Tracking et Évolution vers le Mobile (Focus Pupil Labs)",
+        "   2.1 L'écosystème Pupil Labs : Pupil Core, Pupil Invisible et Neon",
+        "   2.2 Validation scientifique et métriques validées de Pupil Labs Neon",
+        "   2.3 Le Dual Mobile Eye Tracking (DMET) et les interactions en face-à-face",
+        "3. Volet 2 : L'Eye Tracking dans les Interactions de Service Hôtelières",
+        "   3.1 Le contact visuel comme « Moment de Vérité » et la théorie du rapport non verbal",
+        "   3.2 L'effet d'écran et la cécité d'inattention au comptoir d'accueil",
+        "   3.3 Attention conjointe (Joint Attention) et supports tangibles (tablettes, brochures, PMS)",
+        "4. Volet 3 : Littérature Académique sur l'Upselling et la Vente Adaptative",
+        "   4.1 Définitions et distinctions : Upselling vs Cross-selling / Suggestive Selling",
+        "   4.2 La théorie de la vente adaptative (Adaptive Selling) appliquée au front desk",
+        "   4.3 Les leviers du Revenue Management et la dynamique du Check-in",
+        "   4.4 Compétences interactionnelles clés : Détection des Buying Signals et Rate Framing",
+        "5. Volet 4 : Synthèse et Modèle Intégratif pour le Projet Lab-DRA",
+        "   5.1 Révélation des « savoirs cachés » : Vision Professionnelle (Goodwin) et CTA",
+        "   5.2 L'Auto-confrontation enrichie par la trace du regard (Gaze-Cued RTA)",
+        "   5.3 Les Exemples Modélisants du Regard (EMME) comme vecteur technopédagogique",
+        "   5.4 Synthèse des Neurosciences et Oculométrie en Tourisme & Hôtellerie",
+        "6. Tableau Récapitulatif & Fiches Analytiques des 20 Ressources Fondamentales",
+        "7. Bibliographie Complète (Normes APA avec Liens Cliquables)"
+    ]
+    for ti in toc_items:
+        pt = cell_toc.add_paragraph()
+        pt.paragraph_format.space_before = Pt(1)
+        pt.paragraph_format.space_after = Pt(1)
+        rt = pt.add_run(ti)
+        rt.font.size = Pt(9.5)
+        if ti.startswith("1.") or ti.startswith("2.") or ti.startswith("3.") or ti.startswith("4.") or ti.startswith("5.") or ti.startswith("6.") or ti.startswith("7."):
+            rt.bold = True
+            rt.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
+        else:
+            rt.font.color.rgb = RGBColor(0x4A, 0x55, 0x68)
 
     doc.add_paragraph().paragraph_format.space_after = Pt(8)
 
@@ -648,6 +549,9 @@ def build_docx(docx_path):
     h3 = doc.add_heading("3. Volet 2 : L'Eye Tracking dans les Interactions de Service Hôtelières", level=1)
     h3.style.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
 
+    h3_1 = doc.add_heading("3.1 Le contact visuel comme « Moment de Vérité » et la théorie du rapport non verbal", level=2)
+    h3_1.style.font.color.rgb = RGBColor(0x2B, 0x6C, 0xB0)
+
     doc.add_paragraph(
         "Dans la théorie du management des services (Carlzon, 1987 ; Parasuraman, Zeithaml & Berry, 1988), les premières secondes du face-à-face constituent le « moment de vérité » qui conditionne toute la suite de l'expérience client."
     )
@@ -655,10 +559,20 @@ def build_docx(docx_path):
         "Le modèle du rapport interpersonnel de Tickle-Degnen et Rosenthal (1990) postule que la connexion humaine découle de l'attention mutuelle, de la positivité et de la coordination. Le contact visuel en est la manifestation première. Hennig-Thurau et al. (2006 dans le Journal of Marketing) ont démontré que les clients distinguent instinctivement un sourire forcé (« jeu de surface ») d'une intention sincère (« jeu en profondeur »), le regard direct étant le garant de la crédibilité du réceptionniste."
     )
 
+    h3_2 = doc.add_heading("3.2 L'effet d'écran et la cécité d'inattention au comptoir d'accueil", level=2)
+    h3_2.style.font.color.rgb = RGBColor(0x2B, 0x6C, 0xB0)
+
     create_callout_box(doc, [
         "Un écueil récurrent chez les réceptionnistes débutants est le « piège de l'écran » : absorbés à plus de 70% par la manipulation de leur logiciel hôtelier (PMS), ils rompent le contact visuel au moment précis où le client formule une attente implicite.",
         "Ce phénomène provoque une cécité d'inattention (inattentional blindness) : le réceptionniste ne voit pas les signaux d'achat (buying signals) émis par le client (curiosité, hésitation, mention d'un anniversaire)."
     ], title="LE PIÈGE DE L'ÉCRAN & LA CÉCITÉ D'INATTENTION")
+
+    h3_3 = doc.add_heading("3.3 Attention conjointe (Joint Attention) et supports tangibles", level=2)
+    h3_3.style.font.color.rgb = RGBColor(0x2B, 0x6C, 0xB0)
+
+    doc.add_paragraph(
+        "L'introduction de supports visuels tiers (tablette présentant les photos immersives de suites, brochures élégantes, plans d'étage) agit comme un relais attentionnel. Le regard de l'expert guide celui du client par amorçage visuel (gaze cueing). L'eye tracking permet de quantifier le temps de latence (gaze lag) entre l'incitation verbale et la focalisation du client."
+    )
 
     # SECTION 4
     h4 = doc.add_heading("4. Volet 3 : Littérature Académique sur l'Upselling et la Vente Adaptative", level=1)
@@ -709,17 +623,38 @@ def build_docx(docx_path):
         "Fondée par Spiro et Weitz (1990 dans le Journal of Marketing Research), la théorie de la vente adaptative stipule que la performance en face-à-face découle de l'agilité relationnelle : la capacité du vendeur à modifier ses arguments et sa posture en cours d'interaction à partir des réactions observées chez le client."
     )
     doc.add_paragraph(
-        "Dans l'hôtellerie, les experts de l'upselling (Denizci Guillet, 2020 ; Setyorini & Putra, 2023) appliquent cette vente adaptative en modulant leur proposition selon la réceptivité perçue du voyageur (fatigue vs curiosité), en utilisant une formulation orientée bénéfices et un cadrage tarifaire différentiel (rate framing) qui minimise la douleur du paiement."
+        "Dans l'hôtellerie, les experts de l'upselling appliquent cette vente adaptative en modulant leur proposition selon la réceptivité perçue du voyageur (fatigue vs curiosité), en utilisant une formulation orientée bénéfices et un cadrage tarifaire différentiel (rate framing) qui minimise la douleur du paiement."
     )
+
+    h4_3 = doc.add_heading("4.3 Les leviers du Revenue Management et la dynamique du Check-in", level=2)
+    h4_3.style.font.color.rgb = RGBColor(0x2B, 0x6C, 0xB0)
+
+    doc.add_paragraph(
+        "Dans son article de référence publié dans l'International Journal of Hospitality Management (2020), Denizci Guillet met en évidence que même à l'ère de la digitalisation, le comptoir d'accueil en présentiel reste le canal d'upselling le plus rentable car le coût marginal d'une chambre supérieure vacante est quasiment nul. Anderson & Xie (2010 dans Cornell Hospitality Quarterly) soulignent que ce levier optimise directement le RevPAR et le TRevPAR."
+    )
+
+    h4_4 = doc.add_heading("4.4 Compétences interactionnelles clés : Détection des Buying Signals et Rate Framing", level=2)
+    h4_4.style.font.color.rgb = RGBColor(0x2B, 0x6C, 0xB0)
+
+    doc.add_paragraph(
+        "Les études empiriques (Setyorini & Putra, 2023 ; Brownell, 2010) isolent trois compétences clés :"
+    )
+    p_b1 = doc.add_paragraph(style='List Bullet')
+    p_b1.add_run("Détection des Buying Signals : ").bold = True
+    p_b1.add_run("Identifier par le regard les signaux non verbaux d'hésitation ou d'ouverture (regard vers la brochure, question sur le calme).")
+
+    p_b2 = doc.add_paragraph(style='List Bullet')
+    p_b2.add_run("Communication orientée bénéfices (Benefit-Driven) : ").bold = True
+    p_b2.add_run("Formuler l'expérience vécue plutôt que les critères techniques de la chambre.")
+
+    p_b3 = doc.add_paragraph(style='List Bullet')
+    p_b3.add_run("Cadrage tarifaire différentiel (Rate Framing) : ").bold = True
+    p_b3.add_run("Présenter le supplément journalier marginal (+25€) plutôt que le tarif total de la suite pour amoindrir le sentiment de dépense.")
 
     # SECTION 5
     h5 = doc.add_heading("5. Volet 4 : Synthèse et Modèle Intégratif pour le Projet Lab-DRA", level=1)
     h5.style.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
 
-    doc.add_paragraph(
-        "L'originalité majeure du projet réside dans le croisement de l'oculométrie mobile Pupil Labs Neon, de la didactique professionnelle et de l'analyse de l'activité pour répondre à l'hypothèse suivante :"
-    )
-    
     p_hyp = doc.add_paragraph()
     p_hyp.paragraph_format.left_indent = Inches(0.4)
     p_hyp.paragraph_format.right_indent = Inches(0.4)
@@ -728,29 +663,104 @@ def build_docx(docx_path):
     r_hyp.italic = True
     r_hyp.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
 
+    h5_1 = doc.add_heading("5.1 Révélation des « savoirs cachés » : Vision Professionnelle et Cognitive Task Analysis", level=2)
+    h5_1.style.font.color.rgb = RGBColor(0x2B, 0x6C, 0xB0)
+
     doc.add_paragraph(
-        "Ce modèle repose sur trois piliers conceptuels et méthodologiques :"
+        "L'apport conjoint de la Vision Professionnelle (Goodwin, 1994) et de la Cognitive Task Analysis (Crandall, Klein & Hoffman, 2006) permet de conceptualiser l'expertise tacite au desk :"
     )
-    p_pil1 = doc.add_paragraph(style='List Bullet')
-    p_pil1.add_run("La Vision Professionnelle (Goodwin, 1994) et la CTA (Crandall et al., 2006) : ").bold = True
-    p_pil1.add_run("Décomposer l'expertise visuelle en Noticing (repérage sélectif des signaux d'achat chez le client) et Reasoning (décision instantanée d'upselling).")
+    p_sp1 = doc.add_paragraph(style='List Bullet')
+    p_sp1.add_run("Noticing (Repérage) : ").bold = True
+    p_sp1.add_run("L'expert repère en une fraction de seconde l'état de fatigue ou le profil d'un client et synchronise son regard avec ses moments de réceptivité.")
 
-    p_pil2 = doc.add_paragraph(style='List Bullet')
-    p_pil2.add_run("L'Auto-confrontation enrichie par le regard (Gaze-Cued RTA - Elling et al., 2012 ; Theureau, 2006) : ").bold = True
-    p_pil2.add_run("L'expert ou le novice visionne la vidéo de sa propre prestation avec son point de regard incrusté. Cette trace oculaire agit comme un puissant déclencheur mnésique qui permet à l'expert de verbaliser des micro-décisions jusqu'alors inconscientes.")
+    p_sp2 = doc.add_paragraph(style='List Bullet')
+    p_sp2.add_run("Reasoning (Raisonnement implicite) : ").bold = True
+    p_sp2.add_run("L'expert enclenche des règles heuristiques sans effort conscient (« client pressé = check-in rapide ; client curieux = proposition de surclassement »).")
 
-    p_pil3 = doc.add_paragraph(style='List Bullet')
-    p_pil3.add_run("Les Exemples Modélisants du Regard (EMME - Jarodzka et al., 2012 ; Seppänen & Gegenfurtner, 2020) : ").bold = True
-    p_pil3.add_run("Les étudiants observent la vidéo subjective du regard de l'expert confronté aux mêmes scénarios, intériorisant ainsi les routines visuelles performantes (équilibre entre le client et l'écran).")
+    h5_2 = doc.add_heading("5.2 L'Auto-confrontation enrichie par la trace du regard (Gaze-Cued RTA)", level=2)
+    h5_2.style.font.color.rgb = RGBColor(0x2B, 0x6C, 0xB0)
 
-    # SECTION 6 : LES 20 RESSOURCES FONDAMENTALES
-    h6 = doc.add_heading("6. Fiches Analytiques des 20 Ressources Fondamentales", level=1)
+    doc.add_paragraph(
+        "S'appuyant sur les protocoles validés par Elling, Lentz & de Jong (2012) et sur l'ergonomie francophone (Theureau, 2006 ; Clot, 1999), l'auto-confrontation avec trace oculaire permet au professionnel, en observant la vidéo de son propre regard, de verbaliser la rationalité sous-jacente de chaque fixation, révélant ses compétences tacites."
+    )
+
+    h5_3 = doc.add_heading("5.3 Les Exemples Modélisants du Regard (EMME) comme vecteur technopédagogique", level=2)
+    h5_3.style.font.color.rgb = RGBColor(0x2B, 0x6C, 0xB0)
+
+    doc.add_paragraph(
+        "Comme l'ont démontré Jarodzka et al. (2012) et Seppänen & Gegenfurtner (2020), la vidéo subjective superposant le regard de l'expert offre un support d'apprentissage par l'exemple (EMME) exceptionnel. Les apprenants imitent les schémas d'exploration efficaces et désapprennent l'absorption visuelle exclusive sur le logiciel PMS."
+    )
+
+    h5_4 = doc.add_heading("5.4 Synthèse des Neurosciences et Oculométrie en Tourisme & Hôtellerie", level=2)
+    h5_4.style.font.color.rgb = RGBColor(0x2B, 0x6C, 0xB0)
+
+    doc.add_paragraph(
+        "Dans leur revue systématique parue dans Annals of Tourism Research, Li, Scott & Walters (2023) concluent que l'avenir des recherches en gestion hôtelière réside dans l'usage d'outils biométriques mobiles en face-à-face, dépassant les limites historiques des sondages déclaratifs."
+    )
+
+    # SECTION 6 : TABLEAU RECAPITULATIF & FICHES DES 20 RESSOURCES
+    h6 = doc.add_heading("6. Tableau Récapitulatif & Fiches Analytiques des 20 Ressources", level=1)
     h6.style.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
     
     doc.add_paragraph(
-        "Chaque ressource ci-dessous est analysée sous l'angle spécifique de votre objectif de recherche : révéler les compétences cachées et les savoirs tacites par l'eye tracking. Les liens web et DOI sont directement cliquables."
+        "Le tableau synoptique ci-dessous synthétise les 20 ressources académiques fondamentales retenues pour ce projet, suivi des fiches analytiques détaillées de ~100 mots avec liens cliquables directs."
     )
 
+    # TABLEAU RECAPITULATIF GLOBAL DES 20 RESSOURCES
+    tbl_synop = doc.add_table(rows=21, cols=4)
+    tbl_synop.alignment = WD_TABLE_ALIGNMENT.CENTER
+    synop_headers = ["N°", "Auteurs (Année)", "Thématique & Apport Clé", "Lien Direct"]
+    synop_widths = [Inches(0.5), Inches(2.2), Inches(3.4), Inches(0.9)]
+
+    for i, h_text in enumerate(synop_headers):
+        cell = tbl_synop.cell(0, i)
+        cell.width = synop_widths[i]
+        set_cell_background(cell, "1A365D")
+        set_cell_margins(cell, top=80, bottom=80, left=80, right=80)
+        p = cell.paragraphs[0]
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        r = p.add_run(h_text)
+        r.bold = True
+        r.font.size = Pt(8.5)
+        r.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+
+    for idx, res in enumerate(RESOURCES, start=1):
+        cell_num = tbl_synop.cell(idx, 0)
+        cell_num.width = synop_widths[0]
+        cell_num.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+        cell_num.paragraphs[0].add_run(str(res["num"])).bold = True
+        cell_num.paragraphs[0].runs[0].font.size = Pt(8.5)
+
+        cell_auth = tbl_synop.cell(idx, 1)
+        cell_auth.width = synop_widths[1]
+        p_a = cell_auth.paragraphs[0]
+        r_a = p_a.add_run(res["authors"])
+        r_a.font.size = Pt(8.5)
+        r_a.bold = True
+
+        cell_thm = tbl_synop.cell(idx, 2)
+        cell_thm.width = synop_widths[2]
+        p_t = cell_thm.paragraphs[0]
+        r_t1 = p_t.add_run(f"« {res['title'][:55]}... »\n")
+        r_t1.font.size = Pt(8)
+        r_t1.italic = True
+        r_t2 = p_t.add_run(res["cat"].split(" : ")[-1])
+        r_t2.font.size = Pt(8)
+        r_t2.font.color.rgb = RGBColor(0x2B, 0x6C, 0xB0)
+
+        cell_lnk = tbl_synop.cell(idx, 3)
+        cell_lnk.width = synop_widths[3]
+        cell_lnk.paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+        add_hyperlink(cell_lnk.paragraphs[0], res["doi_url"], "Accès 🔗", color="0056B3", bold=True)
+
+        bg_col = "FFFFFF" if idx % 2 != 0 else "F7FAFC"
+        for c_i in range(4):
+            set_cell_background(tbl_synop.cell(idx, c_i), bg_col)
+            set_cell_margins(tbl_synop.cell(idx, c_i), top=60, bottom=60, left=60, right=60)
+
+    doc.add_paragraph().paragraph_format.space_after = Pt(10)
+
+    # LES 20 FICHES DE LECTURE INDIVIDUELLES
     current_cat = None
     for res in RESOURCES:
         if res["cat"] != current_cat:
@@ -821,4 +831,4 @@ if __name__ == "__main__":
     md_file = os.path.join(repo_root, "docs", "etat_de_l_art.md")
     
     build_docx(docx_file)
-    build_markdown(md_file)
+    print("Mise à jour Word terminée.")
