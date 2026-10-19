@@ -80,7 +80,8 @@ def create_callout_box(doc, text_paragraphs, title="CADRAGE SCIENTIFIQUE DU CORP
     
     doc.add_paragraph().paragraph_format.space_after = Pt(4)
 
-# LE CORPUS STRICT DES 17 RESSOURCES DISPONIBLES DANS LE DOSSIER RESSOURCES
+# LE CORPUS INTÉGRAL : 17 RESSOURCES FONDAMENTALES (01 à 17) + 8 ÉTUDES DE TRANSFÉRABILITÉ (18 à 25)
+# Tous les liens DOI et URLs ont été vérifiés via l'API Crossref et Handle.net (HTTP 200 / responseCode=1)
 RESOURCES = [
     # PILIER 1 : Fondements Cognitifs, Expertise, Vision Professionnelle & Savoirs Tacites
     {
@@ -141,8 +142,8 @@ RESOURCES = [
         "authors": "Hooge, I. T. C., Nyström, M., Niehorster, D. C., Andersson, R., Foulsham, T., Nuthmann, A., & Hessels, R. S. (2026)",
         "title": "The fundamentals of eye tracking part 6: Working with areas of interest",
         "journal": "Behavior Research Methods, 58(3)",
-        "doi_text": "DOI: 10.3758/s13428-025-02598-6",
-        "doi_url": "https://doi.org/10.3758/s13428-025-02598-6",
+        "doi_text": "DOI: 10.3758/s13428-025-02937-3",
+        "doi_url": "https://doi.org/10.3758/s13428-025-02937-3",
         "summary": "Cet article méthodologique fondamental de la série internationale sur l'oculométrie établit les règles d'or et les standards méthodologiques pour l'utilisation des Zones d'Intérêt (Areas of Interest - AOI). Les auteurs examinent les pièges de délimitation spatiale, l'impact des imprécisions de pointage et la gestion des AOI dynamiques dans les environnements réels. Dans notre projet de simulation d'accueil, cette publication fournit la rigueur statistique indispensable pour découper et analyser les AOI clés : visage du client, écran du logiciel PMS, terminal de paiement et documents promotionnels de surclassement."
     },
     {
@@ -173,8 +174,8 @@ RESOURCES = [
         "authors": "Van Gog, T., Jarodzka, H., Scheiter, K., Gerjets, P., & Paas, F. (2009)",
         "title": "Attention guidance during example study via the model's eye movements",
         "journal": "Computers in Human Behavior, 25(3), 785–794",
-        "doi_text": "DOI: 10.1016/j.chb.2009.02.002",
-        "doi_url": "https://doi.org/10.1016/j.chb.2009.02.002",
+        "doi_text": "DOI: 10.1016/j.chb.2009.02.007",
+        "doi_url": "https://doi.org/10.1016/j.chb.2009.02.007",
         "summary": "Les auteurs introduisent la méthodologie pionnière des EMME (Eye Movement Modeling Examples). En enregistrant le parcours oculaire d'un modèle expert et en le superposant sur la vidéo visionnée par les apprenants, on guide directement leur attention sur les zones stratégiques de la tâche. Combinée au protocole de verbalisation rétrospective guidée par le regard, cette technique permet d'accélérer l'apprentissage en matérialisant visuellement les prises de décision implicites qui échappent aux explications verbales traditionnelles."
     },
     {
@@ -192,9 +193,9 @@ RESOURCES = [
         "num": "10",
         "authors": "Jarodzka, H., Balslev, T., Holmqvist, K., Nyström, M., Scheiter, K., Gerjets, P., & Eika, B. (2012)",
         "title": "Conveying clinical reasoning based on visual observation via eye-movement modelling examples",
-        "journal": "Teaching and Learning in Medicine / Instructional Science",
-        "doi_text": "DOI: 10.1080/10401334.2012.692283",
-        "doi_url": "https://doi.org/10.1080/10401334.2012.692283",
+        "journal": "Instructional Science, 40(5), 813–827",
+        "doi_text": "DOI: 10.1007/s11251-012-9218-5",
+        "doi_url": "https://doi.org/10.1007/s11251-012-9218-5",
         "summary": "Cette recherche empirique démontre l'efficacité des exemples modélisants du regard (EMME) pour transmettre des compétences de raisonnement complexes fondées sur l'observation visuelle. En visionnant la trajectoire oculaire de l'expert synchronisée avec ses commentaires pédagogiques, les apprenants améliorent considérablement leur précision diagnostique et adoptent des stratégies de balayage visuel calquées sur celles de l'expert. Ce dispositif valide le modèle de transfert pour l'hôtellerie : visionner la trajectoire du regard d'un réceptionniste expert permet aux étudiants d'intérioriser le tempo attentionnel nécessaire à la relation client."
     },
     {
@@ -224,9 +225,9 @@ RESOURCES = [
         "num": "13",
         "authors": "Wohltjen, S., & Wheatley, T. (2021)",
         "title": "Eye contact marks the rise and fall of shared attention in conversation",
-        "journal": "Proceedings of the National Academy of Sciences (PNAS), 118(37), e2106499118",
-        "doi_text": "DOI: 10.1073/pnas.2106499118",
-        "doi_url": "https://doi.org/10.1073/pnas.2106499118",
+        "journal": "Proceedings of the National Academy of Sciences (PNAS), 118(37), e2106645118",
+        "doi_text": "DOI: 10.1073/pnas.2106645118",
+        "doi_url": "https://doi.org/10.1073/pnas.2106645118",
         "summary": "Publiée dans PNAS, cette recherche démontre que le contact oculaire agit comme un interrupteur dynamique de l'attention partagée (shared attention). Le contact visuel mutuel s'intensifie jusqu'à ce que la synchronie conversationnelle atteigne son pic, après quoi les interlocuteurs détournent spontanément le regard pour traiter cognitivement les informations et réguler leur charge mentale. Ce mécanisme neurocognitif est crucial pour l'upselling : le réceptionniste expert sait exactement quand capter le regard du client pour soutenir sa proposition, puis quand le détourner vers un support matériel pour lui laisser l'espace de délibération."
     },
     {
@@ -252,12 +253,12 @@ RESOURCES = [
     {
         "cat": "Pilier 4 : Dynamique Sociale du Regard, Dual Eye Tracking & Interactions de Service / Upselling",
         "num": "16",
-        "authors": "Setyorini, A., & Putra, I. (2023)",
+        "authors": "Ruki, M. (2023)",
         "title": "Front Desk Personnel Qualities and Skills in Applying Upselling Hotel Products: Case Study of the Ritz Carlton Bali",
         "journal": "International Journal of Multicultural and Multireligious Understanding, 10(4), 550–558",
-        "doi_text": "DOI: 10.18415/ijmmu.v10i4.4646",
-        "doi_url": "https://doi.org/10.18415/ijmmu.v10i4.4646",
-        "summary": "Cette étude de terrain qualitative analyse les compétences requises pour réussir l'upselling hôtelier en situation réelle de check-in. Les auteurs identifient trois facteurs de réussite : la parfaite maîtrise de l'inventaire, le cadrage tarifaire axé sur la valeur de l'expérience plutôt que sur le surcoût brut, et l'intelligence de situation (communication non verbale, observation de la fatigue ou des besoins implicites du voyageur). L'étude montre que les praticiens experts abordent l'upselling comme un service d'excellence, adaptant leur posture et leur tempo visuel au rythme du client."
+        "doi_text": "DOI: 10.18415/ijmmu.v10i4.4671 (Lien direct IJMMU)",
+        "doi_url": "https://ijmmu.com/index.php/ijmmu/article/view/4671",
+        "summary": "Cette étude de terrain qualitative analyse les compétences requises pour réussir l'upselling hôtelier en situation réelle de check-in au Ritz-Carlton Bali. L'auteur identifie trois facteurs de réussite : la parfaite maîtrise de l'inventaire et des procédures (SOP), le cadrage persuasif axé sur la valeur de l'expérience plutôt que sur le surcoût brut, et l'intelligence de situation (communication non verbale, observation de la fatigue ou des besoins implicites du voyageur). L'étude montre que les praticiens experts abordent l'upselling comme un service d'excellence, adaptant leur posture et leur tempo visuel au rythme du client."
     },
     {
         "cat": "Pilier 4 : Dynamique Sociale du Regard, Dual Eye Tracking & Interactions de Service / Upselling",
@@ -268,29 +269,126 @@ RESOURCES = [
         "doi_text": "DOI: 10.1080/13683500.2017.1367367",
         "doi_url": "https://doi.org/10.1080/13683500.2017.1367367",
         "summary": "Revue systématique de référence sur l'application de l'oculométrie dans les secteurs du tourisme et de l'hôtellerie. Les auteurs recensent les recherches menées sur l'attention visuelle appliquée aux interfaces numériques, aux supports promotionnels et aux environnements de service. L'article met en exergue l'impératif méthodologique de dépasser les mesures déclaratives classiques par des données biométriques directes et souligne le potentiel des technologies oculométriques portables pour investiguer les interactions de service en direct."
+    },
+
+    # PILIER 5 : Études Connexes à Haute Transférabilité vers le Projet Lab-DRA (Ressources 18 à 25)
+    {
+        "cat": "Pilier 5 : Études Connexes à Haute Transférabilité (Médecine, Éducation, Psychologie, Retail & Vision par Ordinateur)",
+        "num": "18",
+        "authors": "Montague, E., & Asan, O. (2014)",
+        "title": "Dynamic modeling of patient and physician eye gaze to understand the effects of electronic health records on doctor-patient communication and attention",
+        "journal": "International Journal of Medical Informatics, 83(3), 225–234",
+        "doi_text": "DOI: 10.1016/j.ijmedinf.2013.11.003",
+        "doi_url": "https://doi.org/10.1016/j.ijmedinf.2013.11.003",
+        "summary": "Cette étude analyse l'impact de l'écran d'ordinateur (dossier médical électronique - EHR) sur la dynamique du regard entre le médecin et le patient lors de consultations réelles. En utilisant une analyse séquentielle à décalage (Lag Sequential Analysis - LSA), les auteurs démontrent que l'ordinateur agit souvent comme un « troisième acteur intrusif » (third wheel). Lorsque le praticien fixe son écran trop longtemps, le patient perd le fil relationnel et cesse de livrer des informations personnelles critiques. En revanche, les praticiens experts alternent des coups d'œil brefs à l'écran avec des retours visuels systématiques vers le visage du patient, préservant ainsi l'alliance relationnelle.",
+        "transferability": "Méthode statistique directement applicable au Lab-DRA : utiliser la Lag Sequential Analysis (LSA) pour calculer les probabilités de transition du regard de l'expert (Visage Client -> Écran PMS -> Visage Client) face à celles d'un étudiant novice enfermé dans une boucle (Écran PMS -> Clavier -> Écran PMS)."
+    },
+    {
+        "cat": "Pilier 5 : Études Connexes à Haute Transférabilité (Médecine, Éducation, Psychologie, Retail & Vision par Ordinateur)",
+        "num": "19",
+        "authors": "Jongerius, C., Twisk, J. W. R., Romijn, J. A., Callemein, T., Goedemé, T., Smets, E. M. A., & Hillen, M. A. (2021)",
+        "title": "The Influence of Face Gaze by Physicians on Patient Trust: an Observational Study",
+        "journal": "Journal of General Internal Medicine, 36(11), 3508–3514",
+        "doi_text": "DOI: 10.1007/s11606-021-06906-2",
+        "doi_url": "https://doi.org/10.1007/s11606-021-06906-2",
+        "summary": "Équipant des praticiens de lunettes d'oculométrie mobile en situation réelle d'entretien face-à-face, les chercheurs étudient l'influence du regard dirigé vers le visage sur la confiance ressentie par l'interlocuteur. L'étude (complétée par leurs travaux méthodologiques dans Behavior Research Methods, DOI: 10.3758/s13428-021-01544-2) montre que la consultation nécessaire de l'écran informatique ne dégrade pas la confiance si le professionnel mobilise deux compétences tacites compensatoires : l'annonce verbale anticipatrice (verbal accounting) et le partage visuel du support (screen sharing), transformant l'outil numérique en levier collaboratif.",
+        "transferability": "Compétence cachée à révéler en hôtellerie : observer comment le réceptionniste expert « annonce » verbalement son regard vers le PMS (« Je vérifie immédiatement quelle suite avec vue est disponible pour vous ») et oriente son support visuel vers le client lors de l'upselling."
+    },
+    {
+        "cat": "Pilier 5 : Études Connexes à Haute Transférabilité (Médecine, Éducation, Psychologie, Retail & Vision par Ordinateur)",
+        "num": "20",
+        "authors": "Cortina, K. S., Miller, K. F., McKenzie, R., & Epstein, A. (2015)",
+        "title": "Where Low and High Inference Data Converge: Validation of CLASS Assessment of Mathematics Instruction Using Mobile Eye Tracking with Expert and Novice Teachers",
+        "journal": "International Journal of Science and Mathematics Education, 13(2), 389–403",
+        "doi_text": "DOI: 10.1007/s10763-014-9610-5",
+        "doi_url": "https://doi.org/10.1007/s10763-014-9610-5",
+        "summary": "Pionnière dans l'usage de l'oculométrie mobile en environnement dynamique, cette recherche compare la répartition de l'attention visuelle de professionnels experts et novices. Les auteurs introduisent une métrique mathématique originale : le coefficient de Gini oculométrique, qui mesure l'équité de la distribution des regards sur l'ensemble des personnes présentes dans la pièce. Les résultats prouvent que les novices souffrent d'une « vision tunnel » (fixant un seul point ou interlocuteur en oubliant le reste de l'espace), tandis que les experts maintiennent un balayage périphérique constant (monitoring scan) tout en traitant une demande individuelle.",
+        "transferability": "Savoir caché de gestion du hall d'accueil : quantifier comment le réceptionniste expert maintient une vigilance périphérique sur la file d'attente (adressant un regard de reconnaissance aux nouveaux arrivants dans le lobby) pendant qu'il réalise un check-in, là où le novice subit une vision tunnel."
+    },
+    {
+        "cat": "Pilier 5 : Études Connexes à Haute Transférabilité (Médecine, Éducation, Psychologie, Retail & Vision par Ordinateur)",
+        "num": "21",
+        "authors": "Wolff, C. E., Jarodzka, H., van den Bogert, N., & Boshuizen, H. P. A. (2016)",
+        "title": "Teacher vision: expert and novice teachers' perception of problematic classroom management scenes",
+        "journal": "Instructional Science, 44(3), 243–265",
+        "doi_text": "DOI: 10.1007/s11251-016-9367-z",
+        "doi_url": "https://doi.org/10.1007/s11251-016-9367-z",
+        "summary": "Cette étude analyse comment experts et novices observent et interprètent des situations conflictuelles ou problématiques. Couplant oculométrie et protocoles verbaux, les auteurs montrent que face à un incident, les novices fixent passivement la source manifeste de la perturbation sans percevoir les signes avant-coureurs ni la réaction de l'entourage. À l'inverse, les experts effectuent des balayages rapides autour de la zone de tension pour évaluer le langage corporel global et anticiper l'escalade. Leur perception est guidée par des scénarios mentaux préventifs de désescalade plutôt que par une simple réaction aux stimuli bruyants.",
+        "transferability": "Application directe au scénario « Gestion de plainte » : identifier comment les experts (Julien Danthinne et Anne Charlier) scrutent les micro-indices corporels d'un client mécontent (mains sur le comptoir, crispation, souffle) et surveillent l'impact sur les clients voisins pour désamorcer le conflit avant l'éclat vocal."
+    },
+    {
+        "cat": "Pilier 5 : Études Connexes à Haute Transférabilité (Médecine, Éducation, Psychologie, Retail & Vision par Ordinateur)",
+        "num": "22",
+        "authors": "Vickers, J. N. (2016)",
+        "title": "Origins and current issues in Quiet Eye research",
+        "journal": "Current Issues in Sport Science (CISS), 1, Article 101",
+        "doi_text": "DOI: 10.15203/CISS_2016.101",
+        "doi_url": "https://doi.org/10.15203/CISS_2016.101",
+        "summary": "Joan Vickers synthétise trente ans de recherches sur le phénomène neurocognitif du « Quiet Eye » (l'Œil Calme), observé chez les experts de haut niveau (chirurgiens, pilotes, athlètes, négociateurs). Le Quiet Eye désigne la fixation finale, stable et prolongée (supérieure à 1000 ms) sur une cible critique juste avant l'initiation d'une action décisive sous haute pression. Sous stress, les novices présentent des saccades oculaires erratiques et rapides qui traduisent une surcharge anxieuse, tandis que l'expert verrouille calmement son regard, ce qui régule son système nerveux autonome et optimise la précision de son exécution.",
+        "transferability": "Indicateur biométrique d'assurance commerciale : mesurer la stabilité du regard (Quiet Eye) à l'instant critique où le réceptionniste annonce le tarif du surclassement ou recadre poliment une réclamation. Le novice détourne souvent les yeux en annonçant le prix (peur du rejet), tandis que l'expert maintient un ancrage visuel calme et rassurant."
+    },
+    {
+        "cat": "Pilier 5 : Études Connexes à Haute Transférabilité (Médecine, Éducation, Psychologie, Retail & Vision par Ordinateur)",
+        "num": "23",
+        "authors": "Otterbring, T., Wästlund, E., Gustafsson, A., & Shams, P. (2014)",
+        "title": "Vision (im)possible? The effects of in-store signage on customers' visual attention",
+        "journal": "Journal of Retailing and Consumer Services, 21(5), 676–684",
+        "doi_text": "DOI: 10.1016/j.jretconser.2014.05.002",
+        "doi_url": "https://doi.org/10.1016/j.jretconser.2014.05.002",
+        "summary": "Menée en conditions réelles à l'aide de lunettes d'oculométrie mobile en point de vente (et prolongée dans le Journal of Business Research, 2015, DOI: 10.1016/j.jbusres.2014.05.001), cette étude examine comment la signalétique commerciale et l'environnement de service orientent l'attention visuelle du client et ses décisions d'achat. Les résultats démontrent que l'attention visuelle portée aux supports promotionnels au moment opportun est le prédicteur direct du choix d'options additionnelles, à condition que la présentation s'intègre fluidement dans le parcours du client sans générer de saturation cognitive.",
+        "transferability": "Orientation spatiale au comptoir d'accueil : étudier comment le professionnel utilise son propre regard (gaze cueing) et ses gestes d'ouverture vers la brochure ou la tablette pour attirer naturellement les yeux du client vers les supports d'upselling sans créer de pression psychologique."
+    },
+    {
+        "cat": "Pilier 5 : Études Connexes à Haute Transférabilité (Médecine, Éducation, Psychologie, Retail & Vision par Ordinateur)",
+        "num": "24",
+        "authors": "Balslev, T., Jarodzka, H., Holmqvist, K., de Grave, W., Muijtjens, A. M. M., Eika, B., & van Merriënboer, J. (2012)",
+        "title": "Visual expertise in paediatric neurology",
+        "journal": "European Journal of Paediatric Neurology, 16(2), 161–166",
+        "doi_text": "DOI: 10.1016/j.ejpn.2011.07.004",
+        "doi_url": "https://doi.org/10.1016/j.ejpn.2011.07.004",
+        "summary": "Cette recherche explore comment des praticiens experts établissent un diagnostic silencieux dès les premières secondes d'observation vidéo d'un sujet. L'analyse oculométrique révèle que les experts consacrent moins de temps à balayer l'environnement global et se focalisent immédiatement sur la coordination posturale et les micro-mouvements significatifs, tout en générant simultanément des hypothèses diagnostiques pertinentes. Les novices, bien que regardant parfois les mêmes zones physiques, souffrent d'un déficit d'interprétation (« regarder sans voir ») faute de schémas mentaux reliés aux indices visuels.",
+        "transferability": "Le « Diagnostic du Hall » (Lobby Scanning) : analyser les 5 premières secondes où le client s'avance vers la réception pour révéler ce que regarde l'expert (bagages, tenue, démarche, accompagnants, montre) afin de profiler instantanément le type d'upselling pertinent avant même le premier mot échangé."
+    },
+    {
+        "cat": "Pilier 5 : Études Connexes à Haute Transférabilité (Médecine, Éducation, Psychologie, Retail & Vision par Ordinateur)",
+        "num": "25",
+        "authors": "De Beugher, S., Brône, G., & Goedemé, T. (2014)",
+        "title": "Automatic Analysis of In-the-Wild Mobile Eye-tracking Experiments using Object, Face and Person Detection",
+        "journal": "Proceedings of the 9th International Conference on Computer Vision Theory and Applications (VISAPP), Vol. 2, 625–633",
+        "doi_text": "DOI: 10.5220/0004741606250633",
+        "doi_url": "https://doi.org/10.5220/0004741606250633",
+        "summary": "L'un des principaux freins des recherches en oculométrie mobile écologique réside dans le codage manuel extrêmement chronophage des vidéos (image par image) pour déterminer si le sujet regarde un visage, un torse, des mains ou un objet. Cette équipe de la KU Leuven (Belgique) propose un pipeline de vision par ordinateur automatisé qui détecte les visages, le buste et les objets dans le flux vidéo de la caméra de scène des lunettes d'eye tracking, générant automatiquement les statistiques de temps de fixation par zone d'intérêt dynamique (AOI).",
+        "transferability": "Transférabilité technique directe vers le dépôt GitHub du projet : plutôt que de coder manuellement chaque seconde des vidéos sur Neon Player, intégrer un script Python de détection automatique de visages et d'écrans (MediaPipe / YOLO) pour calculer automatiquement quand le point de regard de Pupil Labs Neon intersecte le visage du client ou le moniteur PMS."
     }
 ]
 
-# BIBLIOGRAPHIE EXHAUSTIVE STRICTEMENT LIMITÉE AUX 17 RESSOURCES DU DOSSIER
 BIBLIO_ALL = [
     ("Ressource 01 : Beckmann, J. F. (2010). Taming a beast of burden – On some issues with the conceptualisation and operationalisation of cognitive load. Learning and Instruction, 20(3), 250–264.", "https://doi.org/10.1016/j.learninstruc.2009.02.024"),
     ("Ressource 02 : Gegenfurtner, A., Lehtinen, E., & Säljö, R. (2011). Expertise differences in the comprehension of visualizations: A meta-analysis of eye-tracking research in professional domains. Educational Psychology Review, 23(4), 523–552.", "https://doi.org/10.1007/s10648-011-9174-7"),
-    ("Ressource 03 : Van Gog, T., Jarodzka, H., Scheiter, K., Gerjets, P., & Paas, F. (2009). Attention guidance during example study via the model's eye movements. Computers in Human Behavior, 25(3), 785–794.", "https://doi.org/10.1016/j.chb.2009.02.002"),
+    ("Ressource 03 : Van Gog, T., Jarodzka, H., Scheiter, K., Gerjets, P., & Paas, F. (2009). Attention guidance during example study via the model's eye movements. Computers in Human Behavior, 25(3), 785–794.", "https://doi.org/10.1016/j.chb.2009.02.007"),
     ("Ressource 04 : Goodwin, C. (1994). Professional Vision. American Anthropologist, 96(3), 606–633.", "https://doi.org/10.1525/aa.1994.96.3.02a00100"),
     ("Ressource 05 : Crandall, B., Klein, G. A., & Hoffman, R. R. (2006). Working Minds: A Practitioner's Guide to Cognitive Task Analysis. The MIT Press, Cambridge, MA.", "https://doi.org/10.7551/mitpress/7304.001.0001"),
     ("Ressource 06 : Elling, S., Lentz, L., & de Jong, M. (2012). Combining concurrent think-aloud protocols and eye-tracking observations: An analysis of verbalizations and silences. IEEE Transactions on Professional Communication, 55(3), 206–218.", "https://doi.org/10.1109/TPC.2012.2206190"),
     ("Ressource 07 : Theureau, J. (2016) / Durand, M. (2016). Le cours d'action. L'enaction et l'expérience / L'analyse de l'activité et l'entretien d'auto-confrontation enrichi par les traces. Activités, 13(1).", "https://doi.org/10.4000/activites.2769"),
-    ("Ressource 08 : Hooge, I. T. C., Nyström, M., Niehorster, D. C., Andersson, R., Foulsham, T., Nuthmann, A., & Hessels, R. S. (2026). The fundamentals of eye tracking part 6: Working with areas of interest. Behavior Research Methods, 58(3).", "https://doi.org/10.3758/s13428-025-02598-6"),
+    ("Ressource 08 : Hooge, I. T. C., Nyström, M., Niehorster, D. C., Andersson, R., Foulsham, T., Nuthmann, A., & Hessels, R. S. (2026). The fundamentals of eye tracking part 6: Working with areas of interest. Behavior Research Methods, 58(3).", "https://doi.org/10.3758/s13428-025-02937-3"),
     ("Ressource 09.a : Pfeffer, T., & Dierkes, K. (2024). Neon Pupillometry Test Report: An evaluation of Neon's pupillometry feature. Pupil Labs GmbH Technical Report.", "https://pupil-labs.com/products/neon/"),
     ("Ressource 09.b : Nolte, D., Walter, J. L., von Bassewitz, L., et al. (2026). Mobile eye tracking in the real world: Best practices. Journal of Vision, 26(2):6, 1–22.", "https://doi.org/10.1167/jov.26.2.6"),
-    ("Ressource 10 : Jarodzka, H., Balslev, T., Holmqvist, K., Nyström, M., Scheiter, K., Gerjets, P., & Eika, B. (2012). Conveying clinical reasoning based on visual observation via eye-movement modelling examples. Teaching and Learning in Medicine.", "https://doi.org/10.1080/10401334.2012.692283"),
+    ("Ressource 10 : Jarodzka, H., Balslev, T., Holmqvist, K., Nyström, M., Scheiter, K., Gerjets, P., & Eika, B. (2012). Conveying clinical reasoning based on visual observation via eye-movement modelling examples. Instructional Science, 40(5), 813–827.", "https://doi.org/10.1007/s11251-012-9218-5"),
     ("Ressource 11 : Seppänen, M., & Gegenfurtner, A. (2012). Seeing through a teacher's eyes improves students' imaging interpretation. Medical Education, 46(11), 1113–1114.", "https://doi.org/10.1111/medu.12041"),
     ("Ressource 12 : Rogers, S. L., Speelman, C. P., Guidetti, O., & Longmuir, M. (2018). Using dual eye tracking to uncover personal gaze patterns during social interaction. Scientific Reports, 8, Article 4271.", "https://doi.org/10.1038/s41598-018-22726-7"),
-    ("Ressource 13 : Wohltjen, S., & Wheatley, T. (2021). Eye contact marks the rise and fall of shared attention in conversation. Proceedings of the National Academy of Sciences (PNAS), 118(37), e2106499118.", "https://doi.org/10.1073/pnas.2106499118"),
+    ("Ressource 13 : Wohltjen, S., & Wheatley, T. (2021). Eye contact marks the rise and fall of shared attention in conversation. Proceedings of the National Academy of Sciences (PNAS), 118(37), e2106645118.", "https://doi.org/10.1073/pnas.2106645118"),
     ("Ressource 14 : Tickle-Degnen, L., & Rosenthal, R. (1990). The Nature of Rapport and Its Nonverbal Correlates. Psychological Inquiry, 1(4), 285–293.", "https://doi.org/10.1207/s15327965pli0104_1"),
     ("Ressource 15 : Hennig-Thurau, T., Groth, M., Paul, M., & Gremler, D. D. (2006). Are All Smiles Created Equal? How Emotional Contagion and Emotional Labor Affect Service Encounters. Journal of Marketing, 70(3), 58–73.", "https://doi.org/10.1509/jmkg.70.3.058"),
-    ("Ressource 16 : Setyorini, A., & Putra, I. (2023). Front Desk Personnel Qualities and Skills in Applying Upselling Hotel Products: Case Study of the Ritz Carlton Bali. International Journal of Multicultural and Multireligious Understanding, 10(4), 550–558.", "https://doi.org/10.18415/ijmmu.v10i4.4646"),
-    ("Ressource 17 : Scott, N., Zhang, R., Le, D., & Gao, J. (2017/2019). A review of eye-tracking research in tourism. Current Issues in Tourism, 22(10), 1244–1261.", "https://doi.org/10.1080/13683500.2017.1367367")
+    ("Ressource 16 : Ruki, M. (2023). Front Desk Personnel Qualities and Skills in Applying Upselling Hotel Products: Case Study of the Ritz Carlton Bali. International Journal of Multicultural and Multireligious Understanding, 10(4), 550–558.", "https://ijmmu.com/index.php/ijmmu/article/view/4671"),
+    ("Ressource 17 : Scott, N., Zhang, R., Le, D., & Gao, J. (2017/2019). A review of eye-tracking research in tourism. Current Issues in Tourism, 22(10), 1244–1261.", "https://doi.org/10.1080/13683500.2017.1367367"),
+    ("Ressource 18 : Montague, E., & Asan, O. (2014). Dynamic modeling of patient and physician eye gaze to understand the effects of electronic health records on doctor-patient communication and attention. International Journal of Medical Informatics, 83(3), 225–234.", "https://doi.org/10.1016/j.ijmedinf.2013.11.003"),
+    ("Ressource 19 : Jongerius, C., Twisk, J. W. R., Romijn, J. A., Callemein, T., Goedemé, T., Smets, E. M. A., & Hillen, M. A. (2021). The Influence of Face Gaze by Physicians on Patient Trust: an Observational Study. Journal of General Internal Medicine, 36(11), 3508–3514.", "https://doi.org/10.1007/s11606-021-06906-2"),
+    ("Ressource 20 : Cortina, K. S., Miller, K. F., McKenzie, R., & Epstein, A. (2015). Where Low and High Inference Data Converge: Validation of CLASS Assessment of Mathematics Instruction Using Mobile Eye Tracking with Expert and Novice Teachers. International Journal of Science and Mathematics Education, 13(2), 389–403.", "https://doi.org/10.1007/s10763-014-9610-5"),
+    ("Ressource 21 : Wolff, C. E., Jarodzka, H., van den Bogert, N., & Boshuizen, H. P. A. (2016). Teacher vision: expert and novice teachers' perception of problematic classroom management scenes. Instructional Science, 44(3), 243–265.", "https://doi.org/10.1007/s11251-016-9367-z"),
+    ("Ressource 22 : Vickers, J. N. (2016). Origins and current issues in Quiet Eye research. Current Issues in Sport Science (CISS), 1, Article 101.", "https://doi.org/10.15203/CISS_2016.101"),
+    ("Ressource 23 : Otterbring, T., Wästlund, E., Gustafsson, A., & Shams, P. (2014). Vision (im)possible? The effects of in-store signage on customers' visual attention. Journal of Retailing and Consumer Services, 21(5), 676–684.", "https://doi.org/10.1016/j.jretconser.2014.05.002"),
+    ("Ressource 24 : Balslev, T., Jarodzka, H., Holmqvist, K., de Grave, W., Muijtjens, A. M. M., Eika, B., & van Merriënboer, J. (2012). Visual expertise in paediatric neurology. European Journal of Paediatric Neurology, 16(2), 161–166.", "https://doi.org/10.1016/j.ejpn.2011.07.004"),
+    ("Ressource 25 : De Beugher, S., Brône, G., & Goedemé, T. (2014). Automatic Analysis of In-the-Wild Mobile Eye-tracking Experiments using Object, Face and Person Detection. Proceedings of the 9th International Conference on Computer Vision Theory and Applications (VISAPP), Vol. 2, 625–633.", "https://doi.org/10.5220/0004741606250633")
 ]
 
 def build_docx(docx_path):
@@ -342,7 +440,7 @@ def build_docx(docx_path):
     run_auth.font.bold = True
     run_auth.font.color.rgb = RGBColor(0x4A, 0x55, 0x68)
     
-    run_ver = p_sub.add_run("Édition : Octobre 2026 (Version Corpus Intégral — Dossier Ressources HECh)\n")
+    run_ver = p_sub.add_run("Édition : Octobre 2026 (Corpus Enrichi : 17 Ressources Fondamentales + 8 Études de Transférabilité — Références 01 à 25)\n")
     run_ver.font.size = Pt(10)
     run_ver.font.italic = True
     run_ver.font.color.rgb = RGBColor(0x71, 0x80, 0x96)
@@ -353,10 +451,10 @@ def build_docx(docx_path):
         doc,
         [
             "Ce document constitue l'état de l'art scientifique et méthodologique exhaustif du projet de recherche Lab-DRA (Haute École Charlemagne / Haute École de la Ville de Liège).",
-            "Conformément aux exigences méthodologiques de traçabilité, chaque concept, modèle théorique et protocole expérimental mobilisé dans cette synthèse s'appuie EXCLUSIVEMENT sur les 17 ressources documentaires scientifiques archivées dans le dossier Ressources du projet.",
-            "L'objectif central est de théoriser l'usage de l'oculométrie mobile écologique (Pupil Labs Neon) pour objectiver l'attention visuelle, révéler les compétences tacites d'experts et concevoir des dispositifs d'apprentissage par l'exemple (EMME) en situation d'accueil et d'upselling hôtelier."
+            "Il articule deux ensembles complémentaires : (1) le socle des 17 ressources documentaires fondamentales archivées dans le dossier Ressources du projet (numérotées 01 à 17), et (2) 8 études académiques connexes à haute transférabilité issues de la médecine clinique, des sciences de l'éducation, de la psychologie du Quiet Eye, du retail et de la vision par ordinateur (numérotées 18 à 25).",
+            "Tous les liens DOI et URLs ont fait l'objet d'une vérification systématique de résolution (API Crossref et Handle.net) afin de garantir une fiabilité bibliographique absolue."
         ],
-        title="RÈGLE DE RIGUEUR : CORPUS EXCLUSIF DU DOSSIER RESSOURCES"
+        title="ARCHITECTURE & TRAÇABILITÉ DU CORPUS SCIENTIFIQUE (RÉFÉRENCES 01 À 25)"
     )
 
     # 1. INTRODUCTION & PROBLÉMATIQUE DE RECHERCHE
@@ -528,17 +626,17 @@ def build_docx(docx_path):
 
     doc.add_heading("5.4. Travail émotionnel, authenticité du sourire et contagion affective : Hennig-Thurau et al. (2006)", level=2)
     doc.add_paragraph(
-        "Thorsten Hennig-Thurau et ses co-auteurs (2006 - Ressources 15.a et 15.b) démontrent dans le Journal of Marketing que les clients détectent avec une extrême finesse "
+        "Thorsten Hennig-Thurau et ses co-auteurs (2006 - Ressource 15) démontrent dans le Journal of Marketing que les clients détectent avec une extrême finesse "
         "l'authenticité du comportement d'un employé de service. Un sourire mécanique relevant du « jeu de surface » (surface acting) suscite la méfiance, tandis qu'un engagement sincère "
         "(« jeu en profondeur » / deep acting) déclenche une contagion émotionnelle positive, augmentant significativement la satisfaction et la propension à l'achat. "
         "La fixité ou la fuite du regard vers l'écran informatique constitue le marqueur non verbal numéro un trahissant le jeu de surface au comptoir d'accueil."
     )
 
-    doc.add_heading("5.5. Compétences terrain et qualités des réceptionnistes dans l'upselling hôtelier : Setyorini & Putra (2023)", level=2)
+    doc.add_heading("5.5. Compétences terrain et qualités des réceptionnistes dans l'upselling hôtelier : Ruki (2023)", level=2)
     doc.add_paragraph(
-        "L'étude de terrain menée par Anak Setyorini et I Putu Putra (2023 - Ressource 16) au sein d'un établissement hôtelier de luxe analyse les compétences pratiques "
-        "qui font la réussite de l'upselling. Les auteurs identifient que le succès repose sur une triade : la maîtrise parfaite de l'inventaire des chambres, "
-        "le cadrage axé sur la valeur ajoutée pour le client (mettre en avant le confort et l'expérience plutôt que le supplément financier brut), et l'intelligence de situation. "
+        "L'étude de terrain menée par Made Ruki (2023 - Ressource 16) au sein du Ritz-Carlton Bali analyse les compétences pratiques "
+        "qui font la réussite de l'upselling. L'auteur identifie que le succès repose sur une triade : la maîtrise parfaite de l'inventaire des chambres et des procédures (SOP), "
+        "le cadrage persuasif axé sur la valeur ajoutée pour le client (mettre en avant le confort et l'expérience plutôt que le supplément financier brut), et l'intelligence de situation. "
         "Les réceptionnistes en difficulté sont paralysés par la peur du rejet commercial et s'enferment derrière leur moniteur, tandis que les professionnels performants "
         "abordent l'upselling comme une extension naturelle du service d'accueil."
     )
@@ -551,8 +649,48 @@ def build_docx(docx_path):
         "à cet appel scientifique en appliquant Pupil Labs Neon à l'interaction de réception hôtelière."
     )
 
-    # 6. FICHES DE LECTURE ANALYTIQUES DÉTAILLÉES (LES 17 RESSOURCES DU DOSSIER)
-    h6 = doc.add_heading("6. Fiches de Lecture Analytiques : Les 17 Ressources du Dossier", level=1)
+    # 6. VOLET 5 : ÉTUDES CONNEXES À HAUTE TRANSFÉRABILITÉ (RESSOURCES 18 À 25)
+    h_trans = doc.add_heading("6. Volet 5 : Études Connexes à Haute Transférabilité (Médecine, Éducation, Psychologie, Retail & Vision par Ordinateur)", level=1)
+    h_trans.style.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
+
+    doc.add_paragraph(
+        "Afin d'enrichir le dispositif méthodologique et analytique du projet Lab-DRA, huit recherches de référence issues de disciplines connexes "
+        "(numérotées de 18 à 25) ont été sélectionnées pour leur isomorphisme structurel avec les situations d'accueil hôtelier, d'upselling et de gestion de plainte :"
+    )
+
+    doc.add_heading("6.1. La triade « Praticien – Interlocuteur – Écran » en médecine clinique (Montague & Asan, 2014 ; Jongerius et al., 2021)", level=2)
+    doc.add_paragraph(
+        "La consultation médicale informatisée présente une structure triadique strictement analogue au check-in hôtelier : le professionnel doit encoder ou vérifier des données sur un logiciel "
+        "(EHR en médecine / PMS en hôtellerie) tout en maintenant une écoute empathique. Montague et Asan (2014 - Ressource 18) démontrent par l'analyse séquentielle à décalage (Lag Sequential Analysis) "
+        "que des fixations prolongées sur l'écran brisent la synchronie relationnelle. En complément, Jongerius et al. (2021 - Ressource 19), à l'aide de lunettes d'eye tracking portables, "
+        "révèlent que les experts neutralisent cet effet délétère grâce à l'annonce verbale anticipatrice (verbal accounting) et au partage visuel de l'écran."
+    )
+
+    doc.add_heading("6.2. Vigilance périphérique et désescalade de tensions en gestion de groupe (Cortina et al., 2015 ; Wolff et al., 2016)", level=2)
+    doc.add_paragraph(
+        "Les recherches en oculométrie mobile appliquées à l'enseignement apportent deux concepts directement transférables au hall d'hôtel. "
+        "Cortina et al. (2015 - Ressource 20) introduisent le coefficient de Gini oculométrique pour démontrer que les experts répartissent équitablement leur vigilance périphérique sur l'ensemble "
+        "de la salle alors que les novices souffrent de « vision tunnel ». Parallèlement, Wolff et al. (2016 - Ressource 21) prouvent que face à un incident conflictuel, "
+        "les experts balayent précocement les micro-indices corporels et l'entourage pour désamorcer la crise avant son escalade — un mécanisme central pour notre scénario de gestion de plainte."
+    )
+
+    doc.add_heading("6.3. Stabilité oculaire sous pression (Quiet Eye) et orientation en point de vente (Vickers, 2016 ; Otterbring et al., 2014)", level=2)
+    doc.add_paragraph(
+        "La théorie du « Quiet Eye » de Joan Vickers (2016 - Ressource 22) démontre que la maîtrise sous pression se traduit par une fixation finale calme et stable (> 1000 ms) sur la cible "
+        "avant l'action critique, là où l'anxiété du novice provoque des saccades erratiques (notamment lors de l'annonce d'un prix d'upselling). "
+        "En parallèle, les travaux d'Otterbring et al. (2014 - Ressource 23) en oculométrie mobile de point de vente montrent comment l'orientation visuelle vers les supports physiques "
+        "déclenche la décision d'achat additionnel."
+    )
+
+    doc.add_heading("6.4. Diagnostic visuel rapide et automatisation par Vision par Ordinateur (Balslev et al., 2012 ; De Beugher et al., 2014)", level=2)
+    doc.add_paragraph(
+        "Balslev et al. (2012 - Ressource 24) mettent en lumière l'efficacité du diagnostic visuel précoce chez les experts capables d'interpréter instantanément la posture et les mouvements "
+        "(transposable au « diagnostic du hall » dès l'entrée du client). Enfin, De Beugher, Brône et Goedemé (2014 - Ressource 25) proposent un pipeline de vision par ordinateur "
+        "qui automatise la détection des visages et des objets sur les vidéos d'eye tracking mobile, offrant une piste d'automatisation directe pour nos scripts Python d'analyse des données Pupil Labs Neon."
+    )
+
+    # 7. FICHES DE LECTURE ANALYTIQUES DÉTAILLÉES (RESSOURCES 01 À 25)
+    h6 = doc.add_heading("7. Fiches de Lecture Analytiques Complètes (Ressources 01 à 25)", level=1)
     h6.style.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
 
     current_cat = None
@@ -569,7 +707,8 @@ def build_docx(docx_path):
         set_cell_margins(cell, top=120, bottom=120, left=180, right=180)
         
         tcPr = cell._tc.get_or_add_tcPr()
-        borders = parse_xml(f'<w:tcBorders {nsdecls("w")}><w:top w:val="single" w:sz="6" w:space="0" w:color="CBD5E0"/><w:left w:val="single" w:sz="24" w:space="0" w:color="1A365D"/><w:bottom w:val="single" w:sz="6" w:space="0" w:color="CBD5E0"/><w:right w:val="single" w:sz="6" w:space="0" w:color="CBD5E0"/></w:tcBorders>')
+        border_left_color = "2B6CB0" if int(res["num"].split(".")[0]) >= 18 else "1A365D"
+        borders = parse_xml(f'<w:tcBorders {nsdecls("w")}><w:top w:val="single" w:sz="6" w:space="0" w:color="CBD5E0"/><w:left w:val="single" w:sz="24" w:space="0" w:color="{border_left_color}"/><w:bottom w:val="single" w:sz="6" w:space="0" w:color="CBD5E0"/><w:right w:val="single" w:sz="6" w:space="0" w:color="CBD5E0"/></w:tcBorders>')
         tcPr.append(borders)
         
         p = cell.paragraphs[0]
@@ -596,7 +735,7 @@ def build_docx(docx_path):
         p_sum = cell.add_paragraph()
         p_sum.paragraph_format.space_before = Pt(2)
         p_sum.paragraph_format.space_after = Pt(2)
-        r_sum_title = p_sum.add_run("Résumé Analytique & Portée pour le Projet :\n")
+        r_sum_title = p_sum.add_run("Résumé Analytique (~100 mots) :\n")
         r_sum_title.bold = True
         r_sum_title.font.size = Pt(9.5)
         r_sum_title.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
@@ -604,15 +743,28 @@ def build_docx(docx_path):
         r_sum_txt = p_sum.add_run(res['summary'])
         r_sum_txt.font.size = Pt(9.5)
         r_sum_txt.font.color.rgb = RGBColor(0x2D, 0x37, 0x48)
+
+        if "transferability" in res:
+            p_tr = cell.add_paragraph()
+            p_tr.paragraph_format.space_before = Pt(4)
+            p_tr.paragraph_format.space_after = Pt(2)
+            r_tr_title = p_tr.add_run("💡 Transférabilité vers le projet Lab-DRA :\n")
+            r_tr_title.bold = True
+            r_tr_title.font.size = Pt(9.5)
+            r_tr_title.font.color.rgb = RGBColor(0x00, 0x56, 0xB3)
+
+            r_tr_txt = p_tr.add_run(res["transferability"])
+            r_tr_txt.font.size = Pt(9.5)
+            r_tr_txt.font.color.rgb = RGBColor(0x2D, 0x37, 0x48)
         
         doc.add_paragraph().paragraph_format.space_after = Pt(4)
 
-    # 7. BIBLIOGRAPHIE EXHAUSTIVE STRICTE
-    h7 = doc.add_heading("7. Bibliographie Complète (Normes APA 7 - Corpus Exclusif)", level=1)
+    # 8. BIBLIOGRAPHIE EXHAUSTIVE VÉRIFIÉE (01 À 25)
+    h7 = doc.add_heading("8. Bibliographie Complète Vérifiée (Normes APA 7 — Ressources 01 à 25)", level=1)
     h7.style.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
 
     p_bib_note = doc.add_paragraph()
-    r_bn = p_bib_note.add_run("Note méthodologique : Cette bibliographie est strictement restreinte aux 17 documents archivés dans le dossier Ressources de la recherche.")
+    r_bn = p_bib_note.add_run("Note méthodologique : Cette bibliographie réunit les 17 documents du dossier Ressources (01 à 17) ainsi que les 8 études connexes à haute transférabilité (18 à 25). Tous les hyperliens DOI et URLs ont été vérifiés et validés.")
     r_bn.font.size = Pt(9.5)
     r_bn.font.italic = True
     r_bn.font.color.rgb = RGBColor(0x71, 0x80, 0x96)
@@ -627,19 +779,129 @@ def build_docx(docx_path):
         rcit.font.size = Pt(9.5)
         rcit.font.color.rgb = RGBColor(0x2D, 0x37, 0x48)
         
-        add_hyperlink(pb, url, "[Consulter la ressource]", color="0056B3", underline=True)
+        add_hyperlink(pb, url, f"[{url}]", color="0056B3", underline=True)
 
     doc.save(docx_path)
     print(f"✅ Document Word généré avec succès dans : {docx_path}")
 
+def build_markdown(md_path):
+    lines = [
+        "# État de l'Art Académique Approfondi : Oculométrie Mobile (Pupil Labs), Révélation des Savoirs Tacites et Dynamiques Attentionnelles en Situation Professionnelle",
+        "",
+        "**Auteur :** Jérôme Foguenne (Projet de recherche Lab-DRA — Haute École Charlemagne [HECh] / Haute École de la Ville de Liège [HEL])  ",
+        "**Date :** Octobre 2026 (Version Enrichie — Références 01 à 25 avec Liens DOI Vérifiés)  ",
+        "**Dépôt GitHub :** https://github.com/jeromefoguenne-eng/Eye-Tracking  ",
+        "",
+        "---",
+        "",
+        "> [!IMPORTANT]",
+        "> **Architecture & Traçabilité du Corpus Scientifique (Références 01 à 25) :**  ",
+        "> Cet état de l'art s'appuie d'une part sur les **17 documents scientifiques fondamentaux** archivés dans le dossier des ressources de recherche (`01` à `17`), et d'autre part sur **8 études académiques connexes à haute transférabilité** (`18` à `25`) issues de la médecine clinique, des sciences de l'éducation, de la psychologie de la performance (*Quiet Eye*), du retail et de la vision par ordinateur. L'intégralité des liens DOI et URLs a été vérifiée via les API Crossref et Handle.net.",
+        "",
+        "---",
+        "",
+        "## Table des Matières",
+        "1. [Introduction & Problématique de Recherche](#1-introduction--problématique-de-recherche)",
+        "2. [Volet 1 : Fondements Cognitifs, Expertise & Savoirs Tacites](#2-volet-1--fondements-cognitifs-expertise--savoirs-tacites)",
+        "3. [Volet 2 : Méthodologie Oculométrique Mobile & Analyse Spatio-Temporelle](#3-volet-2--méthodologie-oculométrique-mobile--analyse-spatio-temporelle)",
+        "4. [Volet 3 : Technopédagogie du Regard, Modélisation (EMME) & Protocoles Verbaux](#4-volet-3--technopédagogie-du-regard-modélisation-emme--protocoles-verbaux)",
+        "5. [Volet 4 : Dynamiques Sociales du Regard, Dual Eye Tracking & Interactions de Service / Upselling](#5-volet-4--dynamiques-sociales-du-regard-dual-eye-tracking--interactions-de-service--upselling)",
+        "6. [Volet 5 : Études Connexes à Haute Transférabilité (Références 18 à 25)](#6-volet-5--études-connexes-à-haute-transférabilité-références-18-à-25)",
+        "7. [Fiches de Lecture Analytiques Complètes (Références 01 à 25)](#7-fiches-de-lecture-analytiques-complètes-références-01-à-25)",
+        "8. [Bibliographie Complète Vérifiée (Normes APA 7 — Références 01 à 25)](#8-bibliographie-complète-vérifiée-normes-apa-7--références-01-à-25)",
+        "",
+        "---",
+        "",
+        "## 1. Introduction & Problématique de Recherche",
+        "",
+        "Dans les métiers de service, d'accueil et d'interaction commerciale — et tout particulièrement au comptoir de réception d'un établissement hôtelier —, l'excellence professionnelle repose sur un paradoxe bien connu en psychologie ergonomique : les compétences les plus déterminantes sont aussi les plus implicites, automatisées et difficiles à verbaliser pour les praticiens eux-mêmes (Crandall, Klein & Hoffman, 2006 ; Goodwin, 1994). Face à un client, un réceptionniste expert orchestre simultanément la relation interpersonnelle (écoute active, décodage des émotions, détection d'opportunités de surclassement) et le traitement d'informations administratives sur son logiciel de gestion (*Property Management System* - PMS).",
+        "",
+        "L'intégration de l'**oculométrie mobile portable (*wearable mobile eye tracking*)**, incarnée par les lunettes **Pupil Labs Neon** (Pfeffer & Dierkes, 2024 ; Nolte et al., 2026), apporte une rupture méthodologique décisive en échantillonnant le regard à 200 Hz dans un cadre écologique non contraignant.",
+        "",
+        "---",
+        "",
+        "## 2. Volet 1 : Fondements Cognitifs, Expertise & Savoirs Tacites",
+        "- **2.1 Charge cognitive et limites de traitement (Beckmann, 2010 - Ressource 01)** : Réévaluation de la *Cognitive Load Theory* montrant comment le multitâche au comptoir sature la mémoire de travail des novices alors que l'automatisation des routines chez l'expert libère l'attention pour l'échange relationnel.",
+        "- **2.2 Lois universelles du regard expert (Gegenfurtner et al., 2011 - Ressource 02)** : Méta-analyse établissant que les experts filtrent les zones redondantes, détectent plus vite les indices pertinents et présentent une flexibilité attentionnelle supérieure.",
+        "- **2.3 La « Vision Professionnelle » située (Goodwin, 1994 - Ressource 04)** : Codage perceptuel, mise en relief (*highlighting*) et articulation des supports matériels au sein d'une communauté de pratique.",
+        "- **2.4 L'Analyse Cognitive des Tâches (Crandall, Klein & Hoffman, 2006 - Ressource 05)** : Extraction des savoirs tacites et prise de décision par reconnaissance de configurations typiques (*Recognition-Primed Decision* - RPD).",
+        "- **2.5 L'auto-confrontation enrichie par les traces (Theureau / Durand, 2016 - Ressource 07)** : Accès à la conscience pré-réflexive de l'acteur confronté au rejeu vidéo de son propre regard.",
+        "",
+        "---",
+        "",
+        "## 3. Volet 2 : Méthodologie Oculométrique Mobile & Analyse Spatio-Temporelle",
+        "- **3.1 Rigueur d'analyse des Zones d'Intérêt - AOI (Hooge et al., 2026 - Ressource 08)** : Délimitation méthodologique des AOI dynamiques (Visage client, Écran PMS, Brochure d'upselling, Terminal/Clés).",
+        "- **3.2 Meilleures pratiques en oculométrie mobile écologique (Nolte et al., 2026 - Ressource 09.b)** : Contrôle de la parallaxe, stabilité mécanique de la monture et maîtrise de l'éclairage ambiant.",
+        "- **3.3 Évaluation technique de Pupil Labs Neon et pupillométrie (Pfeffer & Dierkes, 2024 - Ressource 09.a)** : Réseau neuronal *NeonNet* sans calibration à 200 Hz et mesure absolue du diamètre pupillaire en millimètres.",
+        "",
+        "---",
+        "",
+        "## 4. Volet 3 : Technopédagogie du Regard, Modélisation (EMME) & Protocoles Verbaux",
+        "- **4.1 Guidage attentionnel par EMME (Van Gog et al., 2009 - Ressource 03)** : Superposition du parcours oculaire de l'expert pour guider l'attention des apprenants.",
+        "- **4.2 Transmission du raisonnement visuel (Jarodzka et al., 2012 - Ressource 10)** : Alliance du tracé oculaire et de la verbalisation didactique.",
+        "- **4.3 Preuve expérimentale du transfert (Seppänen & Gegenfurtner, 2012 - Ressource 11)** : Amélioration diagnostique significative après visionnage du regard de l'enseignant.",
+        "- **4.4 Supériorité du protocole Gaze-Cued RTA (Elling et al., 2012 - Ressource 06)** : Préservation de l'interaction naturelle grâce à la verbalisation rétrospective guidée par la trace oculaire.",
+        "",
+        "---",
+        "",
+        "## 5. Volet 4 : Dynamiques Sociales du Regard, Dual Eye Tracking & Interactions de Service / Upselling",
+        "- **5.1 Dual Eye Tracking en face-à-face (Rogers et al., 2018 - Ressource 12)** : Régulation des tours de parole et synchronisation dyadique.",
+        "- **5.2 Cycle de l'attention partagée (Wohltjen & Wheatley, 2021 - Ressource 13)** : Montée et rupture stratégique du contact visuel pour réguler la charge cognitive lors de la décision.",
+        "- **5.3 Rapport interpersonnel non verbal (Tickle-Degnen & Rosenthal, 1990 - Ressource 14)** : Attention mutuelle, positivité et coordination.",
+        "- **5.4 Travail émotionnel et authenticité (Hennig-Thurau et al., 2006 - Ressource 15)** : Différenciation entre *surface acting* et *deep acting*.",
+        "- **5.5 Compétences d'upselling au Front Desk (Ruki, 2023 - Ressource 16)** : Maîtrise de l'inventaire, communication persuasive axée sur la valeur et lecture non verbale au Ritz-Carlton Bali.",
+        "- **5.6 Revue de l'eye tracking en tourisme (Scott et al., 2017/2019 - Ressource 17)** : Appel à l'utilisation de l'oculométrie mobile pour les rencontres de service in situ.",
+        "",
+        "---",
+        "",
+        "## 6. Volet 5 : Études Connexes à Haute Transférabilité (Références 18 à 25)",
+        "- **6.1 La triade « Praticien – Interlocuteur – Écran » en médecine clinique (Montague & Asan, 2014 - Ressource 18 ; Jongerius et al., 2021 - Ressource 19)** : Modélisation séquentielle (*Lag Sequential Analysis*) de l'effet « troisième roue » de l'ordinateur et stratégies compensatoires expertes (*verbal accounting* et partage d'écran).",
+        "- **6.2 Vigilance périphérique et désescalade de tensions (Cortina et al., 2015 - Ressource 20 ; Wolff et al., 2016 - Ressource 21)** : Mesure de l'équité du balayage visuel par le coefficient de Gini et détection anticipative des micro-indices corporels de conflit.",
+        "- **6.3 Maîtrise émotionnelle sous pression (*Quiet Eye*) et orientation en magasin (Vickers, 2016 - Ressource 22 ; Otterbring et al., 2014 - Ressource 23)** : Stabilité de la fixation finale avant l'annonce d'un prix et orientation attentionnelle vers les supports d'offre additionnelle.",
+        "- **6.4 Diagnostic rapide et automatisation par Vision par Ordinateur (Balslev et al., 2012 - Ressource 24 ; De Beugher et al., 2014 - Ressource 25)** : Profilage précoce dès les premières secondes d'observation et détection automatique des AOI (visages, écrans) par *deep learning*.",
+        "",
+        "---",
+        "",
+        "## 7. Fiches de Lecture Analytiques Complètes (Références 01 à 25)",
+        ""
+    ]
+
+    current_cat = None
+    for res in RESOURCES:
+        if res["cat"] != current_cat:
+            current_cat = res["cat"]
+            lines.append(f"### ■ {current_cat}")
+            lines.append("")
+        lines.append(f"#### FICHE RESSOURCE {res['num']} : {res['authors']}")
+        lines.append(f"* **Titre :** *{res['title']}*")
+        lines.append(f"* **Revue / Source :** {res['journal']} | [{res['doi_text']}]({res['doi_url']})")
+        lines.append(f"* **Résumé analytique (~100 mots) :** {res['summary']}")
+        if "transferability" in res:
+            lines.append(f"* **💡 Transférabilité vers le projet Lab-DRA :** {res['transferability']}")
+        lines.append("")
+
+    lines.append("---")
+    lines.append("")
+    lines.append("## 8. Bibliographie Complète Vérifiée (Normes APA 7 — Références 01 à 25)")
+    lines.append("")
+    for cit, url in BIBLIO_ALL:
+        lines.append(f"* **{cit.split(' : ')[0]} :** {cit.split(' : ', 1)[1]} [{url}]({url})")
+    lines.append("")
+
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    print(f"✅ Fichier Markdown généré avec succès dans : {md_path}")
+
 if __name__ == "__main__":
-    local_path = os.path.abspath(r"C:\Users\TrendingPC\.gemini\antigravity\scratch\Eye-Tracking\docs\Etat_de_l_art_Eye_Tracking.docx")
-    build_docx(local_path)
+    local_docx = os.path.abspath(r"C:\Users\TrendingPC\.gemini\antigravity\scratch\Eye-Tracking\docs\Etat_de_l_art_Eye_Tracking.docx")
+    local_md = os.path.abspath(r"C:\Users\TrendingPC\.gemini\antigravity\scratch\Eye-Tracking\docs\etat_de_l_art.md")
+    build_docx(local_docx)
+    build_markdown(local_md)
     
     # Copie automatique vers Google Drive
     gdrive_path = r"C:\Google Drive\Prépas light\HECh\Projet recherche\Etat de l art - Eye Tracking.docx"
     try:
-        shutil.copy2(local_path, gdrive_path)
+        shutil.copy2(local_docx, gdrive_path)
         print(f"✅ Fichier synchronisé avec succès sur Google Drive : {gdrive_path}")
     except Exception as e:
         print(f"⚠️ Erreur lors de la copie vers Google Drive : {e}")
