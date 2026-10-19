@@ -1,35 +1,35 @@
 # État de l'Art Académique Approfondi : Oculométrie Mobile (Pupil Labs), Révélation des Savoirs Tacites et Dynamiques Attentionnelles en Situation Professionnelle
 
 **Auteur :** Jérôme Foguenne (Projet de recherche Lab-DRA — Haute École Charlemagne [HECh] / Haute École de la Ville de Liège [HEL])  
-**Date :** Octobre 2026 (Version Intégrale Enrichie — Références 01 à 32 avec Liens DOI Vérifiés)  
+**Date :** Octobre 2026 (Version Corpus Rationalisé — Références 01 à 25 avec Liens DOI Vérifiés)  
 **Dépôt GitHub :** https://github.com/jeromefoguenne-eng/Eye-Tracking  
 
 ---
 
 > [!IMPORTANT]
-> **Architecture & Traçabilité du Corpus Scientifique (Références 01 à 32) :**  
-> Cet état de l'art articule trois volets complémentaires : (1) les **17 documents scientifiques fondamentaux** archivés dans le dossier des ressources de recherche (`01` à `17`), (2) les **études oculométriques connexes à haute transférabilité** (`18` à `24.b`) issues de la médecine clinique, des sciences de l'éducation, de la psychologie de la performance (*Quiet Eye*), du retail et de la vision par ordinateur, et (3) **8 études de référence sur l'upselling hôtelier, l'ambidextrie service-vente et la gestion de plainte (*service recovery*)** (`25` à `32`). L'intégralité des liens DOI et URLs a été vérifiée via les API Crossref et Handle.net.
+> **Architecture du Corpus Scientifique Sélectionné (Références 01 à 25) :**  
+> Cet état de l'art s'appuie sur : (1) les documents scientifiques fondamentaux du dossier Ressources (`01` à `17`), (2) les études oculométriques connexes à haute transférabilité (`18` à `24.b`) issues de la médecine clinique, de l'éducation, de la psychologie et de la vision par ordinateur, et (3) la recherche pivot sur l'upselling hôtelier au comptoir (`25` - Denizci Guillet, 2020). Les textes techniques 09 et les études 26 à 32 ont été retirés. L'intégralité des liens DOI et URLs est vérifiée via Crossref et Handle.net.
 
 ---
 
 ## Table des Matières
 1. [Introduction & Problématique de Recherche](#1-introduction--problématique-de-recherche)
 2. [Volet 1 : Fondements Cognitifs, Expertise & Savoirs Tacites](#2-volet-1--fondements-cognitifs-expertise--savoirs-tacites)
-3. [Volet 2 : Méthodologie Oculométrique Mobile & Analyse Spatio-Temporelle](#3-volet-2--méthodologie-oculométrique-mobile--analyse-spatio-temporelle)
+3. [Volet 2 : Méthodologie Oculométrique & Découpage Spatial des Zones d'Intérêt (AOI)](#3-volet-2--méthodologie-oculométrique--découpage-spatial-des-zones-dintérêt-aoi)
 4. [Volet 3 : Technopédagogie du Regard, Modélisation (EMME) & Protocoles Verbaux](#4-volet-3--technopédagogie-du-regard-modélisation-emme--protocoles-verbaux)
 5. [Volet 4 : Dynamiques Sociales du Regard, Dual Eye Tracking & Interactions de Service / Upselling](#5-volet-4--dynamiques-sociales-du-regard-dual-eye-tracking--interactions-de-service--upselling)
 6. [Volet 5 : Études Connexes à Haute Transférabilité (Références 18 à 24.b)](#6-volet-5--études-connexes-à-haute-transférabilité-références-18-à-24b)
-7. [Volet 6 : Approfondissement sur l'Upselling Hôtelier, l'Ambidextrie Service-Vente & la Gestion de Plainte (Références 25 à 32)](#7-volet-6--approfondissement-sur-lupselling-hôtelier-lambidextrie-service-vente--la-gestion-de-plainte-références-25-à-32)
-8. [Fiches de Lecture Analytiques Complètes (Références 01 à 32)](#8-fiches-de-lecture-analytiques-complètes-références-01-à-32)
-9. [Bibliographie Complète Vérifiée (Normes APA 7 — Références 01 à 32)](#9-bibliographie-complète-vérifiée-normes-apa-7--références-01-à-32)
+7. [Volet 6 : Recherche Fondamentale sur l'Upselling Hôtelier (Référence 25)](#7-volet-6--recherche-fondamentale-sur-lupselling-hôtelier-référence-25)
+8. [Fiches de Lecture Analytiques Complètes (Références 01 à 25)](#8-fiches-de-lecture-analytiques-complètes-références-01-à-25)
+9. [Bibliographie Complète Vérifiée (Normes APA 7 — Références 01 à 25)](#9-bibliographie-complète-vérifiée-normes-apa-7--références-01-à-25)
 
 ---
 
 ## 1. Introduction & Problématique de Recherche
 
-Dans les métiers de service, d'accueil et d'interaction commerciale — et tout particulièrement au comptoir de réception d'un établissement hôtelier —, l'excellence professionnelle repose sur un paradoxe bien connu en psychologie ergonomique : les compétences les plus déterminantes sont aussi les plus implicites, automatisées et difficiles à verbaliser pour les praticiens eux-mêmes (Crandall, Klein & Hoffman, 2006 ; Goodwin, 1994). Face à un client, un réceptionniste expert orchestre simultanément la relation interpersonnelle (écoute active, décodage des émotions, détection d'opportunités de surclassement, désamorçage des plaintes) et le traitement d'informations administratives sur son logiciel de gestion (*Property Management System* - PMS).
+Dans les métiers de service, d'accueil et d'interaction commerciale — et tout particulièrement au comptoir de réception d'un établissement hôtelier —, l'excellence professionnelle repose sur un paradoxe bien connu en psychologie ergonomique : les compétences les plus déterminantes sont aussi les plus implicites, automatisées et difficiles à verbaliser pour les praticiens eux-mêmes (Crandall, Klein & Hoffman, 2006 ; Goodwin, 1994). Face à un client, un réceptionniste expert orchestre simultanément la relation interpersonnelle (écoute active, décodage des émotions, détection d'opportunités de surclassement) et le traitement d'informations administratives sur son logiciel de gestion (*Property Management System* - PMS).
 
-L'intégration de l'**oculométrie mobile portable (*wearable mobile eye tracking*)**, incarnée par les lunettes **Pupil Labs Neon** (Pfeffer & Dierkes, 2024 ; Nolte et al., 2026), apporte une rupture méthodologique décisive en échantillonnant le regard à 200 Hz dans un cadre écologique non contraignant.
+L'intégration de l'**oculométrie mobile portable (*wearable mobile eye tracking*)**, incarnée par les lunettes **Pupil Labs Neon**, apporte une rupture méthodologique décisive en échantillonnant le regard à 200 Hz dans un cadre écologique non contraignant.
 
 ---
 
@@ -42,10 +42,8 @@ L'intégration de l'**oculométrie mobile portable (*wearable mobile eye trackin
 
 ---
 
-## 3. Volet 2 : Méthodologie Oculométrique Mobile & Analyse Spatio-Temporelle
+## 3. Volet 2 : Méthodologie Oculométrique & Découpage Spatial des Zones d'Intérêt (AOI)
 - **3.1 Rigueur d'analyse des Zones d'Intérêt - AOI (Hooge et al., 2026 - Ressource 08)** : Délimitation méthodologique des AOI dynamiques (Visage client, Écran PMS, Brochure d'upselling, Terminal/Clés).
-- **3.2 Meilleures pratiques en oculométrie mobile écologique (Nolte et al., 2026 - Ressource 09.b)** : Contrôle de la parallaxe, stabilité mécanique de la monture et maîtrise de l'éclairage ambiant.
-- **3.3 Évaluation technique de Pupil Labs Neon et pupillométrie (Pfeffer & Dierkes, 2024 - Ressource 09.a)** : Réseau neuronal *NeonNet* sans calibration à 200 Hz et mesure absolue du diamètre pupillaire en millimètres.
 
 ---
 
@@ -75,13 +73,12 @@ L'intégration de l'**oculométrie mobile portable (*wearable mobile eye trackin
 
 ---
 
-## 7. Volet 6 : Approfondissement sur l'Upselling Hôtelier, l'Ambidextrie Service-Vente & la Gestion de Plainte (Références 25 à 32)
-- **7.1 Upselling en face-à-face, ambidextrie service-vente et adaptabilité (Denizci Guillet, 2020 - Ressource 25 ; Jasmand et al., 2012 - Ressource 26 ; Gwinner et al., 2005 - Ressource 27 ; Sundaram & Webster, 2000 - Ressource 28)** : Supériorité du comptoir physique pour détecter les signaux non verbaux d'achat, entrelacement fluide des tâches administratives et commerciales (*ambidexterity*), catégorisation adaptative du profil client et persuasion par le maintien du contact visuel.
-- **7.2 Gestion de plainte (*Service Recovery*), justice interactionnelle et régulation émotionnelle (Tax et al., 1998 - Ressource 29 ; Sparks & McColl-Kennedy, 2001 - Ressource 30 ; Grandey et al., 2004 - Ressource 31 ; Karatepe, 2006 - Ressource 32)** : Primauté de la justice interactionnelle et de la sollicitude visuelle authentique lors de l'écoute du grief, réévaluation cognitive face à l'agressivité verbale (mesurable par pupillométrie Neon) et renforcement de l'auto-efficacité (*self-efficacy*) des étudiants par les exemples modélisants du regard (EMME).
+## 7. Volet 6 : Recherche Fondamentale sur l'Upselling Hôtelier (Référence 25)
+- **7.1 Upselling au comptoir de réception vs upselling en ligne (Denizci Guillet, 2020 - Ressource 25)** : Analyse des atouts spécifiques du face-à-face au front desk pour capter les indices émotionnels et comportementaux du client afin d'adapter l'offre de surclassement.
 
 ---
 
-## 8. Fiches de Lecture Analytiques Complètes (Références 01 à 32)
+## 8. Fiches de Lecture Analytiques Complètes (Références 01 à 25)
 
 ### ■ Pilier 1 : Fondements Cognitifs, Expertise, Vision Professionnelle & Savoirs Tacites
 
@@ -110,22 +107,12 @@ L'intégration de l'**oculométrie mobile portable (*wearable mobile eye trackin
 * **Revue / Source :** Activités, 13(1), Recension et prolongements théoriques | [DOI: 10.4000/activites.2769](https://doi.org/10.4000/activites.2769)
 * **Résumé analytique (~100 mots) :** Issu de l'ergonomie cognitive et de l'approche du cours d'action, ce cadre théorise l'entretien d'auto-confrontation. Un professionnel est confronté aux traces extrinsèques audiovisuelles de sa propre pratique pour documenter la dynamique de son expérience vécue et faire émerger les savoirs incorporés pré-réflexifs. Couplée à l'oculométrie mobile de dernière génération, la trace du regard agit comme un déclencheur mnésique exceptionnel : l'acteur est invité à expliciter le sens de ses réorientations visuelles au cours de l'interaction de service, révélant la rationalité sous-jacente de ses arbitrages relationnels.
 
-### ■ Pilier 2 : Méthodologie Oculométrique, Métriques & Dispositifs Mobiles
+### ■ Pilier 2 : Méthodologie Oculométrique, Métriques & Découpage Spatial
 
 #### FICHE RESSOURCE 08 : Hooge, I. T. C., Nyström, M., Niehorster, D. C., Andersson, R., Foulsham, T., Nuthmann, A., & Hessels, R. S. (2026)
 * **Titre :** *The fundamentals of eye tracking part 6: Working with areas of interest*
 * **Revue / Source :** Behavior Research Methods, 58(3) | [DOI: 10.3758/s13428-025-02937-3](https://doi.org/10.3758/s13428-025-02937-3)
 * **Résumé analytique (~100 mots) :** Cet article méthodologique fondamental de la série internationale sur l'oculométrie établit les règles d'or et les standards méthodologiques pour l'utilisation des Zones d'Intérêt (Areas of Interest - AOI). Les auteurs examinent les pièges de délimitation spatiale, l'impact des imprécisions de pointage et la gestion des AOI dynamiques dans les environnements réels. Dans notre projet de simulation d'accueil, cette publication fournit la rigueur statistique indispensable pour découper et analyser les AOI clés : visage du client, écran du logiciel PMS, terminal de paiement et documents promotionnels de surclassement.
-
-#### FICHE RESSOURCE 09.a : Pfeffer, T., & Dierkes, K. (2024)
-* **Titre :** *Neon Pupillometry Test Report: An evaluation of Neon's pupillometry feature*
-* **Revue / Source :** Pupil Labs GmbH Technical Report | [Rapport Technique Officiel Pupil Labs](https://pupil-labs.com/products/neon/)
-* **Résumé analytique (~100 mots) :** Rapport technique d'évaluation du système d'oculométrie mobile Pupil Labs Neon. Les auteurs documentent les performances de l'architecture NeonNet (réseau de neurones profond embarqué fonctionnant sans calibration utilisateur manuelle à 200 Hz). Ils démontrent la fiabilité de la pupillométrie physique (mesure absolue du diamètre pupillaire en millimètres, corrigée des distorsions d'angle). Cet outil permet de sonder en temps réel non seulement l'orientation spatiale du regard, mais également les variations physiologiques de la charge mentale et de l'éveil émotionnel lors des phases sensibles de négociation.
-
-#### FICHE RESSOURCE 09.b : Nolte, D., Walter, J. L., von Bassewitz, L., et al. (2026)
-* **Titre :** *Mobile eye tracking in the real world: Best practices*
-* **Revue / Source :** Journal of Vision, 26(2):6, 1–22 | [DOI: 10.1167/jov.26.2.6](https://doi.org/10.1167/jov.26.2.6)
-* **Résumé analytique (~100 mots) :** Ce guide international de référence détaille les meilleures pratiques pour conduire des recherches en oculométrie mobile dans des contextes réels non contraints (« in the wild »). Les auteurs abordent la gestion des variations de luminosité, les mouvements de tête, les glissements mécaniques de la monture et l'alignement des flux de données avec les vidéos de scène. Ce texte constitue le socle procédural garantissant la validité écologique et la reproductibilité des enregistrements réalisés au comptoir d'accueil hôtelier du Lab-DRA.
 
 ### ■ Pilier 3 : Didactique de l'Expertise Visuelle, EMME & Protocoles Verbaux
 
@@ -231,7 +218,7 @@ L'intégration de l'**oculométrie mobile portable (*wearable mobile eye trackin
 * **Résumé analytique (~100 mots) :** L'un des principaux freins des recherches en oculométrie mobile écologique réside dans le codage manuel extrêmement chronophage des vidéos (image par image) pour déterminer si le sujet regarde un visage, un torse, des mains ou un objet. Cette équipe de la KU Leuven (Belgique) propose un pipeline de vision par ordinateur automatisé qui détecte les visages, le buste et les objets dans le flux vidéo de la caméra de scène des lunettes d'eye tracking, générant automatiquement les statistiques de temps de fixation par zone d'intérêt dynamique (AOI).
 * **💡 Articulation & Transférabilité vers le projet Lab-DRA :** Transférabilité technique directe vers le dépôt GitHub du projet : plutôt que de coder manuellement chaque seconde des vidéos sur Neon Player, intégrer un script Python de détection automatique de visages et d'écrans (MediaPipe / YOLO) pour calculer automatiquement quand le point de regard de Pupil Labs Neon intersecte le visage du client ou le moniteur PMS.
 
-### ■ Pilier 6 : Upselling Hôtelier, Ambidextrie Service-Vente & Gestion de Plainte (Service Recovery)
+### ■ Pilier 6 : Recherche Fondamentale sur l'Upselling Hôtelier (Offline vs Online)
 
 #### FICHE RESSOURCE 25 : Denizci Guillet, B. (2020)
 * **Titre :** *Online upselling: Moving beyond offline upselling in the hotel industry*
@@ -239,51 +226,9 @@ L'intégration de l'**oculométrie mobile portable (*wearable mobile eye trackin
 * **Résumé analytique (~100 mots) :** Cette étude de référence compare les mécanismes psychologiques et opérationnels de l'upselling hôtelier traditionnel au comptoir de réception (offline front-desk upselling) face aux propositions numériques pré-séjour. L'auteure démontre que le comptoir physique conserve un avantage décisif : la capacité du réceptionniste à observer en direct l'état émotionnel, la composition du groupe et la fatigue du voyageur à l'instant précis du check-in. Le succès de l'upselling en face-à-face repose sur le timing de l'intervention, la personnalisation de l'argumentaire expérientiel et le cadrage tarifaire (présenter l'écart marginal par nuitée plutôt que le montant total brut).
 * **💡 Articulation & Transférabilité vers le projet Lab-DRA :** Permet d'analyser comment le regard de l'expert valide d'abord les « signaux d'achat » physiques du client au comptoir avant de sélectionner sur son écran PMS l'offre de surclassement la plus pertinente.
 
-#### FICHE RESSOURCE 26 : Jasmand, C., Blazevic, V., & de Ruyter, K. (2012)
-* **Titre :** *Generating Sales While Providing Service: A Study of Customer Service Representatives' Ambidextrous Behavior*
-* **Revue / Source :** Journal of Marketing, 76(1), 20–37 | [DOI: 10.1509/jm.10.0448](https://doi.org/10.1509/jm.10.0448)
-* **Résumé analytique (~100 mots) :** Publié dans le Journal of Marketing, cet article théorise le concept clé d'« ambidextrie service-vente » (service-sales ambidexterity) chez les employés de première ligne. Lors d'un accueil, l'opérateur doit accomplir simultanément deux missions cognitivement contradictoires : résoudre efficacement la demande administrative de service (fiabilité, rapidité) et générer une vente additionnelle (cross-/upselling). Les auteurs démontrent que les novices échouent parce qu'ils basculent brutalement d'un mode « administratif froid » à un « pitch commercial forcé ». À l'inverse, les professionnels experts fusionnent les deux objectifs en utilisant les indices recueillis pendant l'accueil pour glisser naturellement vers une recommandation commerciale personnalisée.
-* **💡 Articulation & Transférabilité vers le projet Lab-DRA :** L'oculométrie mobile permet de visualiser cette ambidextrie : le novice sépare temporellement la saisie écran (100 % regard sur PMS) et la tentative de vente, tandis que l'expert entrelace en continu ses fixations entre le dossier client, le visage de l'interlocuteur et le support d'offre.
-
-#### FICHE RESSOURCE 27 : Gwinner, K. P., Bitner, M. J., Brown, S. W., & Kumar, A. (2005)
-* **Titre :** *Service Customization Through Employee Adaptiveness*
-* **Revue / Source :** Journal of Service Research, 8(2), 131–148 | [DOI: 10.1177/1094670505279699](https://doi.org/10.1177/1094670505279699)
-* **Résumé analytique (~100 mots) :** Cette recherche modélise le comportement adaptatif des employés de contact (employee adaptiveness). Les auteurs distinguent deux dimensions de personnalisation en temps réel : l'adaptation du comportement interpersonnel (ton, posture, rythme visuel, vocabulaire) et l'adaptation de l'offre de service elle-même (recommandation sur mesure, upselling ciblé). Cette capacité repose sur une compétence cognitive tacite : la catégorisation rapide du profil du client (customer categorization) à partir d'indices verbaux et non verbaux subtils, suivie d'une modification immédiate du script d'accueil standard.
-* **💡 Articulation & Transférabilité vers le projet Lab-DRA :** Lors de l'entretien d'auto-confrontation guidé par le regard (Gaze-Cued RTA), ce cadre permet de demander à l'expert : « À cet instant précis où votre regard se fixe sur tel détail du client, dans quelle catégorie de besoins l'avez-vous classé pour adapter votre proposition de chambre ? »
-
-#### FICHE RESSOURCE 28 : Sundaram, D. S., & Webster, C. (2000)
-* **Titre :** *The role of nonverbal communication in service encounters*
-* **Revue / Source :** Journal of Services Marketing, 14(5), 378–391 | [DOI: 10.1108/08876040010341008](https://doi.org/10.1108/08876040010341008)
-* **Résumé analytique (~100 mots) :** Cet article fondateur examine comment les composantes non verbales de l'employé de service — en particulier la kinésique (contact visuel, hochements de tête, sourire), la proxémique (distance au comptoir) et le paralangage — déterminent les perceptions de crédibilité, de compétence et de force de persuasion chez le client. Les auteurs démontrent qu'un contact oculaire soutenu et régulier au moment d'une recommandation commerciale accroît significativement la confiance perçue et désamorce le scepticisme du consommateur face au prix, tandis que l'évitement du regard est interprété comme un manque de sincérité ou d'assurance.
-* **💡 Articulation & Transférabilité vers le projet Lab-DRA :** Fournit la justification théorique directe pour comparer le ratio de fixation sur le visage du client pendant la phase de proposition tarifaire entre les experts (Julien Danthinne / Anne Charlier) et les étudiants.
-
-#### FICHE RESSOURCE 29 : Tax, S. S., Brown, S. W., & Chandrashekaran, M. (1998)
-* **Titre :** *Customer Evaluations of Service Complaint Experiences: Implications for Relationship Marketing*
-* **Revue / Source :** Journal of Marketing, 62(2), 60–76 | [DOI: 10.1177/002224299806200205](https://doi.org/10.1177/002224299806200205)
-* **Résumé analytique (~100 mots) :** Article séminal de la littérature sur la gestion des réclamations, cette étude mobilise la Théorie de la Justice (Justice Theory) en trois dimensions : la justice distributive (la compensation matérielle offerte), la justice procédurale (la rapidité et la souplesse de résolution) et la justice interactionnelle (l'empathie, l'écoute active, la politesse et l'attention visuelle manifestées pendant la plainte). Les auteurs prouvent qu'une compensation financière ou matérielle échoue à restaurer la confiance si la justice interactionnelle est défaillante (par exemple, si le réceptionniste traite la plainte mécaniquement sur son ordinateur sans regarder le client).
-* **💡 Articulation & Transférabilité vers le projet Lab-DRA :** Dans le scénario « Gestion de plainte », permet d'opérationnaliser la justice interactionnelle par des métriques oculométriques objectives : durant l'exposé initial du grief par le client, l'expert consacre près de 100 % de son temps de regard au visage de l'interlocuteur (zéro saisie clavier) pour valider son ressenti avant de chercher une solution technique sur le PMS.
-
-#### FICHE RESSOURCE 30 : Sparks, B. A., & McColl-Kennedy, J. R. (2001)
-* **Titre :** *Justice strategy options for increased customer satisfaction in a services recovery setting*
-* **Revue / Source :** Journal of Business Research, 54(3), 209–218 | [DOI: 10.1016/S0148-2963(00)00120-X](https://doi.org/10.1016/s0148-2963(00)00120-x)
-* **Résumé analytique (~100 mots) :** Spécifiquement ancrée dans le secteur de l'hôtellerie, cette recherche expérimentale examine comment la combinaison des stratégies de réparation (excuses sincères, ton de voix, sollicitude interpersonnelle et compensation) influence la satisfaction post-plainte des clients d'hôtel. Les auteures démontrent que la perception de « préoccupation authentique » (genuine concern) exprimée par le réceptionniste est le déterminant majeur de la désescalade émotionnelle. Lorsque l'employé affiche une posture défensive, distante ou absorbée par les règles internes de l'établissement, le mécontentement s'amplifie même en présence d'un dédommagement commercial.
-* **💡 Articulation & Transférabilité vers le projet Lab-DRA :** Permet de croiser l'analyse en actes de langage (travail d'Adeline Struvay) avec la dynamique oculaire : comment l'ancrage du regard soutient l'acte de langage d'excuse et d'empathie au comptoir hôtelier.
-
-#### FICHE RESSOURCE 31 : Grandey, A. A., Dickter, D. N., & Sin, H.-P. (2004)
-* **Titre :** *The customer is not always right: customer aggression and emotion regulation of service employees*
-* **Revue / Source :** Journal of Organizational Behavior, 25(3), 397–418 | [DOI: 10.1002/job.252](https://doi.org/10.1002/job.252)
-* **Résumé analytique (~100 mots) :** Cette étude analyse les réactions psychologiques et comportementales des employés de première ligne confrontés à l'agressivité verbale et aux plaintes hostiles des clients. Les auteurs montrent que les employés novices ou se sentant menacés adoptent des stratégies d'évitement ou de retrait émotionnel (surface acting défensif, fuite du regard, crispation), ce qui aggrave l'hostilité du client. À l'inverse, les praticiens expérimentés utilisent la réévaluation cognitive (cognitive reappraisal) et la résolution active de problème : ils ne prennent pas l'attaque personnellement, maintiennent une présence visuelle calme et orientent immédiatement l'échange vers une solution concrète.
-* **💡 Articulation & Transférabilité vers le projet Lab-DRA :** Grâce à la pupillométrie physique en millimètres des lunettes Pupil Labs Neon (Pfeffer & Dierkes, 2024), nous pouvons mesurer en temps réel le pic de stress autonome (dilatation pupillaire et fréquence de clignement) chez l'étudiant novice face à un client agressif, comparé à la régulation émotionnelle de l'expert.
-
-#### FICHE RESSOURCE 32 : Karatepe, O. M. (2006)
-* **Titre :** *The effects of selected antecedents on the service recovery performance of frontline employees*
-* **Revue / Source :** The Service Industries Journal, 26(1), 39–57 | [DOI: 10.1080/02642060500358795](https://doi.org/10.1080/02642060500358795)
-* **Résumé analytique (~100 mots) :** Menée auprès d'employés de réception hôtelière (frontline hotel employees), cette recherche empirique identifie les facteurs déterminants de la performance en gestion de plainte (Service Recovery Performance). L'auteur démontre que l'autonomie décisionnelle (empowerment), la formation pratique par mise en situation et l'auto-efficacité perçue (self-efficacy) sont les prédicteurs les plus puissants de la capacité d'un réceptionniste à transformer une réclamation critique en expérience positive (Service Recovery Paradox). Un réceptionniste confiant dans ses marges de manœuvre garde l'initiative relationnelle au lieu de subir l'interaction.
-* **💡 Articulation & Transférabilité vers le projet Lab-DRA :** Justifie directement l'approche technopédagogique du Lab-DRA : utiliser les vidéos oculométriques commentées des experts (EMME) pour renforcer le sentiment d'auto-efficacité (self-efficacy) des étudiants avant leurs mises en situation d'upselling et de gestion de plainte.
-
 ---
 
-## 9. Bibliographie Complète Vérifiée (Normes APA 7 — Références 01 à 32)
+## 9. Bibliographie Complète Vérifiée (Normes APA 7 — Références 01 à 25)
 
 * **Ressource 01 :** Beckmann, J. F. (2010). Taming a beast of burden – On some issues with the conceptualisation and operationalisation of cognitive load. Learning and Instruction, 20(3), 250–264. [https://doi.org/10.1016/j.learninstruc.2009.02.024](https://doi.org/10.1016/j.learninstruc.2009.02.024)
 * **Ressource 02 :** Gegenfurtner, A., Lehtinen, E., & Säljö, R. (2011). Expertise differences in the comprehension of visualizations: A meta-analysis of eye-tracking research in professional domains. Educational Psychology Review, 23(4), 523–552. [https://doi.org/10.1007/s10648-011-9174-7](https://doi.org/10.1007/s10648-011-9174-7)
@@ -293,8 +238,6 @@ L'intégration de l'**oculométrie mobile portable (*wearable mobile eye trackin
 * **Ressource 06 :** Elling, S., Lentz, L., & de Jong, M. (2012). Combining concurrent think-aloud protocols and eye-tracking observations: An analysis of verbalizations and silences. IEEE Transactions on Professional Communication, 55(3), 206–218. [https://doi.org/10.1109/TPC.2012.2206190](https://doi.org/10.1109/TPC.2012.2206190)
 * **Ressource 07 :** Theureau, J. (2016) / Durand, M. (2016). Le cours d'action. L'enaction et l'expérience / L'analyse de l'activité et l'entretien d'auto-confrontation enrichi par les traces. Activités, 13(1). [https://doi.org/10.4000/activites.2769](https://doi.org/10.4000/activites.2769)
 * **Ressource 08 :** Hooge, I. T. C., Nyström, M., Niehorster, D. C., Andersson, R., Foulsham, T., Nuthmann, A., & Hessels, R. S. (2026). The fundamentals of eye tracking part 6: Working with areas of interest. Behavior Research Methods, 58(3). [https://doi.org/10.3758/s13428-025-02937-3](https://doi.org/10.3758/s13428-025-02937-3)
-* **Ressource 09.a :** Pfeffer, T., & Dierkes, K. (2024). Neon Pupillometry Test Report: An evaluation of Neon's pupillometry feature. Pupil Labs GmbH Technical Report. [https://pupil-labs.com/products/neon/](https://pupil-labs.com/products/neon/)
-* **Ressource 09.b :** Nolte, D., Walter, J. L., von Bassewitz, L., et al. (2026). Mobile eye tracking in the real world: Best practices. Journal of Vision, 26(2):6, 1–22. [https://doi.org/10.1167/jov.26.2.6](https://doi.org/10.1167/jov.26.2.6)
 * **Ressource 10 :** Jarodzka, H., Balslev, T., Holmqvist, K., Nyström, M., Scheiter, K., Gerjets, P., & Eika, B. (2012). Conveying clinical reasoning based on visual observation via eye-movement modelling examples. Instructional Science, 40(5), 813–827. [https://doi.org/10.1007/s11251-012-9218-5](https://doi.org/10.1007/s11251-012-9218-5)
 * **Ressource 11 :** Seppänen, M., & Gegenfurtner, A. (2012). Seeing through a teacher's eyes improves students' imaging interpretation. Medical Education, 46(11), 1113–1114. [https://doi.org/10.1111/medu.12041](https://doi.org/10.1111/medu.12041)
 * **Ressource 12 :** Rogers, S. L., Speelman, C. P., Guidetti, O., & Longmuir, M. (2018). Using dual eye tracking to uncover personal gaze patterns during social interaction. Scientific Reports, 8, Article 4271. [https://doi.org/10.1038/s41598-018-22726-7](https://doi.org/10.1038/s41598-018-22726-7)
@@ -312,10 +255,3 @@ L'intégration de l'**oculométrie mobile portable (*wearable mobile eye trackin
 * **Ressource 24.a :** Balslev, T., Jarodzka, H., Holmqvist, K., de Grave, W., Muijtjens, A. M. M., Eika, B., & van Merriënboer, J. (2012). Visual expertise in paediatric neurology. European Journal of Paediatric Neurology, 16(2), 161–166. [https://doi.org/10.1016/j.ejpn.2011.07.004](https://doi.org/10.1016/j.ejpn.2011.07.004)
 * **Ressource 24.b :** De Beugher, S., Brône, G., & Goedemé, T. (2014). Automatic Analysis of In-the-Wild Mobile Eye-tracking Experiments using Object, Face and Person Detection. Proceedings of the 9th International Conference on Computer Vision Theory and Applications (VISAPP), Vol. 2, 625–633. [https://doi.org/10.5220/0004741606250633](https://doi.org/10.5220/0004741606250633)
 * **Ressource 25 :** Denizci Guillet, B. (2020). Online upselling: Moving beyond offline upselling in the hotel industry. International Journal of Hospitality Management, 84, Article 102322. [https://doi.org/10.1016/j.ijhm.2019.102322](https://doi.org/10.1016/j.ijhm.2019.102322)
-* **Ressource 26 :** Jasmand, C., Blazevic, V., & de Ruyter, K. (2012). Generating Sales While Providing Service: A Study of Customer Service Representatives' Ambidextrous Behavior. Journal of Marketing, 76(1), 20–37. [https://doi.org/10.1509/jm.10.0448](https://doi.org/10.1509/jm.10.0448)
-* **Ressource 27 :** Gwinner, K. P., Bitner, M. J., Brown, S. W., & Kumar, A. (2005). Service Customization Through Employee Adaptiveness. Journal of Service Research, 8(2), 131–148. [https://doi.org/10.1177/1094670505279699](https://doi.org/10.1177/1094670505279699)
-* **Ressource 28 :** Sundaram, D. S., & Webster, C. (2000). The role of nonverbal communication in service encounters. Journal of Services Marketing, 14(5), 378–391. [https://doi.org/10.1108/08876040010341008](https://doi.org/10.1108/08876040010341008)
-* **Ressource 29 :** Tax, S. S., Brown, S. W., & Chandrashekaran, M. (1998). Customer Evaluations of Service Complaint Experiences: Implications for Relationship Marketing. Journal of Marketing, 62(2), 60–76. [https://doi.org/10.1177/002224299806200205](https://doi.org/10.1177/002224299806200205)
-* **Ressource 30 :** Sparks, B. A., & McColl-Kennedy, J. R. (2001). Justice strategy options for increased customer satisfaction in a services recovery setting. Journal of Business Research, 54(3), 209–218. [https://doi.org/10.1016/s0148-2963(00)00120-x](https://doi.org/10.1016/s0148-2963(00)00120-x)
-* **Ressource 31 :** Grandey, A. A., Dickter, D. N., & Sin, H.-P. (2004). The customer is not always right: customer aggression and emotion regulation of service employees. Journal of Organizational Behavior, 25(3), 397–418. [https://doi.org/10.1002/job.252](https://doi.org/10.1002/job.252)
-* **Ressource 32 :** Karatepe, O. M. (2006). The effects of selected antecedents on the service recovery performance of frontline employees. The Service Industries Journal, 26(1), 39–57. [https://doi.org/10.1080/02642060500358795](https://doi.org/10.1080/02642060500358795)

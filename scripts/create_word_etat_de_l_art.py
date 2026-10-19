@@ -80,11 +80,11 @@ def create_callout_box(doc, text_paragraphs, title="CADRAGE SCIENTIFIQUE DU CORP
     
     doc.add_paragraph().paragraph_format.space_after = Pt(4)
 
-# LE CORPUS INTÉGRAL :
-# - Références 01 à 17 : Socle fondamental (Dossier Ressources)
-# - Références 18 à 24 (24.a / 24.b) : Études oculométriques connexes à haute transférabilité
-# - Références 25 à 32 : Études de référence sur l'Upselling Hôtelier et la Gestion de Plainte (Service Recovery)
-# Tous les liens DOI et URLs ont été vérifiés via l'API Crossref et Handle.net (responseCode=1)
+# CORPUS SÉLECTIONNÉ :
+# - Textes 09.a et 09.b retirés conformément aux instructions de l'utilisateur
+# - Textes 26 à 32 retirés
+# - Texte 25 (Denizci Guillet, 2020) CONSERVÉ
+# - Références 01 à 25 (avec 24.a et 24.b) intégralement vérifiées via les API Crossref et Handle.net
 RESOURCES = [
     # PILIER 1 : Fondements Cognitifs, Expertise, Vision Professionnelle & Savoirs Tacites
     {
@@ -138,9 +138,9 @@ RESOURCES = [
         "summary": "Issu de l'ergonomie cognitive et de l'approche du cours d'action, ce cadre théorise l'entretien d'auto-confrontation. Un professionnel est confronté aux traces extrinsèques audiovisuelles de sa propre pratique pour documenter la dynamique de son expérience vécue et faire émerger les savoirs incorporés pré-réflexifs. Couplée à l'oculométrie mobile de dernière génération, la trace du regard agit comme un déclencheur mnésique exceptionnel : l'acteur est invité à expliciter le sens de ses réorientations visuelles au cours de l'interaction de service, révélant la rationalité sous-jacente de ses arbitrages relationnels."
     },
 
-    # PILIER 2 : Méthodologie Oculométrique, Métriques & Dispositifs Mobiles
+    # PILIER 2 : Méthodologie Oculométrique, Métriques & Découpage Spatial
     {
-        "cat": "Pilier 2 : Méthodologie Oculométrique, Métriques & Dispositifs Mobiles",
+        "cat": "Pilier 2 : Méthodologie Oculométrique, Métriques & Découpage Spatial",
         "num": "08",
         "authors": "Hooge, I. T. C., Nyström, M., Niehorster, D. C., Andersson, R., Foulsham, T., Nuthmann, A., & Hessels, R. S. (2026)",
         "title": "The fundamentals of eye tracking part 6: Working with areas of interest",
@@ -148,26 +148,6 @@ RESOURCES = [
         "doi_text": "DOI: 10.3758/s13428-025-02937-3",
         "doi_url": "https://doi.org/10.3758/s13428-025-02937-3",
         "summary": "Cet article méthodologique fondamental de la série internationale sur l'oculométrie établit les règles d'or et les standards méthodologiques pour l'utilisation des Zones d'Intérêt (Areas of Interest - AOI). Les auteurs examinent les pièges de délimitation spatiale, l'impact des imprécisions de pointage et la gestion des AOI dynamiques dans les environnements réels. Dans notre projet de simulation d'accueil, cette publication fournit la rigueur statistique indispensable pour découper et analyser les AOI clés : visage du client, écran du logiciel PMS, terminal de paiement et documents promotionnels de surclassement."
-    },
-    {
-        "cat": "Pilier 2 : Méthodologie Oculométrique, Métriques & Dispositifs Mobiles",
-        "num": "09.a",
-        "authors": "Pfeffer, T., & Dierkes, K. (2024)",
-        "title": "Neon Pupillometry Test Report: An evaluation of Neon's pupillometry feature",
-        "journal": "Pupil Labs GmbH Technical Report",
-        "doi_text": "Rapport Technique Officiel Pupil Labs",
-        "doi_url": "https://pupil-labs.com/products/neon/",
-        "summary": "Rapport technique d'évaluation du système d'oculométrie mobile Pupil Labs Neon. Les auteurs documentent les performances de l'architecture NeonNet (réseau de neurones profond embarqué fonctionnant sans calibration utilisateur manuelle à 200 Hz). Ils démontrent la fiabilité de la pupillométrie physique (mesure absolue du diamètre pupillaire en millimètres, corrigée des distorsions d'angle). Cet outil permet de sonder en temps réel non seulement l'orientation spatiale du regard, mais également les variations physiologiques de la charge mentale et de l'éveil émotionnel lors des phases sensibles de négociation."
-    },
-    {
-        "cat": "Pilier 2 : Méthodologie Oculométrique, Métriques & Dispositifs Mobiles",
-        "num": "09.b",
-        "authors": "Nolte, D., Walter, J. L., von Bassewitz, L., et al. (2026)",
-        "title": "Mobile eye tracking in the real world: Best practices",
-        "journal": "Journal of Vision, 26(2):6, 1–22",
-        "doi_text": "DOI: 10.1167/jov.26.2.6",
-        "doi_url": "https://doi.org/10.1167/jov.26.2.6",
-        "summary": "Ce guide international de référence détaille les meilleures pratiques pour conduire des recherches en oculométrie mobile dans des contextes réels non contraints (« in the wild »). Les auteurs abordent la gestion des variations de luminosité, les mouvements de tête, les glissements mécaniques de la monture et l'alignement des flux de données avec les vidéos de scène. Ce texte constitue le socle procédural garantissant la validité écologique et la reproductibilité des enregistrements réalisés au comptoir d'accueil hôtelier du Lab-DRA."
     },
 
     # PILIER 3 : Didactique de l'Expertise Visuelle, EMME & Protocoles Verbaux
@@ -364,9 +344,9 @@ RESOURCES = [
         "transferability": "Transférabilité technique directe vers le dépôt GitHub du projet : plutôt que de coder manuellement chaque seconde des vidéos sur Neon Player, intégrer un script Python de détection automatique de visages et d'écrans (MediaPipe / YOLO) pour calculer automatiquement quand le point de regard de Pupil Labs Neon intersecte le visage du client ou le moniteur PMS."
     },
 
-    # PILIER 6 : Études Académiques sur l'Upselling Hôtelier, l'Ambidextrie Service-Vente & la Gestion de Plainte (Service Recovery) — Références 25 à 32
+    # PILIER 6 : Recherche Fondamentale sur l'Upselling Hôtelier (Offline vs Online) — Référence 25
     {
-        "cat": "Pilier 6 : Upselling Hôtelier, Ambidextrie Service-Vente & Gestion de Plainte (Service Recovery)",
+        "cat": "Pilier 6 : Recherche Fondamentale sur l'Upselling Hôtelier (Offline vs Online)",
         "num": "25",
         "authors": "Denizci Guillet, B. (2020)",
         "title": "Online upselling: Moving beyond offline upselling in the hotel industry",
@@ -375,83 +355,6 @@ RESOURCES = [
         "doi_url": "https://doi.org/10.1016/j.ijhm.2019.102322",
         "summary": "Cette étude de référence compare les mécanismes psychologiques et opérationnels de l'upselling hôtelier traditionnel au comptoir de réception (offline front-desk upselling) face aux propositions numériques pré-séjour. L'auteure démontre que le comptoir physique conserve un avantage décisif : la capacité du réceptionniste à observer en direct l'état émotionnel, la composition du groupe et la fatigue du voyageur à l'instant précis du check-in. Le succès de l'upselling en face-à-face repose sur le timing de l'intervention, la personnalisation de l'argumentaire expérientiel et le cadrage tarifaire (présenter l'écart marginal par nuitée plutôt que le montant total brut).",
         "transferability": "Permet d'analyser comment le regard de l'expert valide d'abord les « signaux d'achat » physiques du client au comptoir avant de sélectionner sur son écran PMS l'offre de surclassement la plus pertinente."
-    },
-    {
-        "cat": "Pilier 6 : Upselling Hôtelier, Ambidextrie Service-Vente & Gestion de Plainte (Service Recovery)",
-        "num": "26",
-        "authors": "Jasmand, C., Blazevic, V., & de Ruyter, K. (2012)",
-        "title": "Generating Sales While Providing Service: A Study of Customer Service Representatives' Ambidextrous Behavior",
-        "journal": "Journal of Marketing, 76(1), 20–37",
-        "doi_text": "DOI: 10.1509/jm.10.0448",
-        "doi_url": "https://doi.org/10.1509/jm.10.0448",
-        "summary": "Publié dans le Journal of Marketing, cet article théorise le concept clé d'« ambidextrie service-vente » (service-sales ambidexterity) chez les employés de première ligne. Lors d'un accueil, l'opérateur doit accomplir simultanément deux missions cognitivement contradictoires : résoudre efficacement la demande administrative de service (fiabilité, rapidité) et générer une vente additionnelle (cross-/upselling). Les auteurs démontrent que les novices échouent parce qu'ils basculent brutalement d'un mode « administratif froid » à un « pitch commercial forcé ». À l'inverse, les professionnels experts fusionnent les deux objectifs en utilisant les indices recueillis pendant l'accueil pour glisser naturellement vers une recommandation commerciale personnalisée.",
-        "transferability": "L'oculométrie mobile permet de visualiser cette ambidextrie : le novice sépare temporellement la saisie écran (100 % regard sur PMS) et la tentative de vente, tandis que l'expert entrelace en continu ses fixations entre le dossier client, le visage de l'interlocuteur et le support d'offre."
-    },
-    {
-        "cat": "Pilier 6 : Upselling Hôtelier, Ambidextrie Service-Vente & Gestion de Plainte (Service Recovery)",
-        "num": "27",
-        "authors": "Gwinner, K. P., Bitner, M. J., Brown, S. W., & Kumar, A. (2005)",
-        "title": "Service Customization Through Employee Adaptiveness",
-        "journal": "Journal of Service Research, 8(2), 131–148",
-        "doi_text": "DOI: 10.1177/1094670505279699",
-        "doi_url": "https://doi.org/10.1177/1094670505279699",
-        "summary": "Cette recherche modélise le comportement adaptatif des employés de contact (employee adaptiveness). Les auteurs distinguent deux dimensions de personnalisation en temps réel : l'adaptation du comportement interpersonnel (ton, posture, rythme visuel, vocabulaire) et l'adaptation de l'offre de service elle-même (recommandation sur mesure, upselling ciblé). Cette capacité repose sur une compétence cognitive tacite : la catégorisation rapide du profil du client (customer categorization) à partir d'indices verbaux et non verbaux subtils, suivie d'une modification immédiate du script d'accueil standard.",
-        "transferability": "Lors de l'entretien d'auto-confrontation guidé par le regard (Gaze-Cued RTA), ce cadre permet de demander à l'expert : « À cet instant précis où votre regard se fixe sur tel détail du client, dans quelle catégorie de besoins l'avez-vous classé pour adapter votre proposition de chambre ? »"
-    },
-    {
-        "cat": "Pilier 6 : Upselling Hôtelier, Ambidextrie Service-Vente & Gestion de Plainte (Service Recovery)",
-        "num": "28",
-        "authors": "Sundaram, D. S., & Webster, C. (2000)",
-        "title": "The role of nonverbal communication in service encounters",
-        "journal": "Journal of Services Marketing, 14(5), 378–391",
-        "doi_text": "DOI: 10.1108/08876040010341008",
-        "doi_url": "https://doi.org/10.1108/08876040010341008",
-        "summary": "Cet article fondateur examine comment les composantes non verbales de l'employé de service — en particulier la kinésique (contact visuel, hochements de tête, sourire), la proxémique (distance au comptoir) et le paralangage — déterminent les perceptions de crédibilité, de compétence et de force de persuasion chez le client. Les auteurs démontrent qu'un contact oculaire soutenu et régulier au moment d'une recommandation commerciale accroît significativement la confiance perçue et désamorce le scepticisme du consommateur face au prix, tandis que l'évitement du regard est interprété comme un manque de sincérité ou d'assurance.",
-        "transferability": "Fournit la justification théorique directe pour comparer le ratio de fixation sur le visage du client pendant la phase de proposition tarifaire entre les experts (Julien Danthinne / Anne Charlier) et les étudiants."
-    },
-    {
-        "cat": "Pilier 6 : Upselling Hôtelier, Ambidextrie Service-Vente & Gestion de Plainte (Service Recovery)",
-        "num": "29",
-        "authors": "Tax, S. S., Brown, S. W., & Chandrashekaran, M. (1998)",
-        "title": "Customer Evaluations of Service Complaint Experiences: Implications for Relationship Marketing",
-        "journal": "Journal of Marketing, 62(2), 60–76",
-        "doi_text": "DOI: 10.1177/002224299806200205",
-        "doi_url": "https://doi.org/10.1177/002224299806200205",
-        "summary": "Article séminal de la littérature sur la gestion des réclamations, cette étude mobilise la Théorie de la Justice (Justice Theory) en trois dimensions : la justice distributive (la compensation matérielle offerte), la justice procédurale (la rapidité et la souplesse de résolution) et la justice interactionnelle (l'empathie, l'écoute active, la politesse et l'attention visuelle manifestées pendant la plainte). Les auteurs prouvent qu'une compensation financière ou matérielle échoue à restaurer la confiance si la justice interactionnelle est défaillante (par exemple, si le réceptionniste traite la plainte mécaniquement sur son ordinateur sans regarder le client).",
-        "transferability": "Dans le scénario « Gestion de plainte », permet d'opérationnaliser la justice interactionnelle par des métriques oculométriques objectives : durant l'exposé initial du grief par le client, l'expert consacre près de 100 % de son temps de regard au visage de l'interlocuteur (zéro saisie clavier) pour valider son ressenti avant de chercher une solution technique sur le PMS."
-    },
-    {
-        "cat": "Pilier 6 : Upselling Hôtelier, Ambidextrie Service-Vente & Gestion de Plainte (Service Recovery)",
-        "num": "30",
-        "authors": "Sparks, B. A., & McColl-Kennedy, J. R. (2001)",
-        "title": "Justice strategy options for increased customer satisfaction in a services recovery setting",
-        "journal": "Journal of Business Research, 54(3), 209–218",
-        "doi_text": "DOI: 10.1016/S0148-2963(00)00120-X",
-        "doi_url": "https://doi.org/10.1016/s0148-2963(00)00120-x",
-        "summary": "Spécifiquement ancrée dans le secteur de l'hôtellerie, cette recherche expérimentale examine comment la combinaison des stratégies de réparation (excuses sincères, ton de voix, sollicitude interpersonnelle et compensation) influence la satisfaction post-plainte des clients d'hôtel. Les auteures démontrent que la perception de « préoccupation authentique » (genuine concern) exprimée par le réceptionniste est le déterminant majeur de la désescalade émotionnelle. Lorsque l'employé affiche une posture défensive, distante ou absorbée par les règles internes de l'établissement, le mécontentement s'amplifie même en présence d'un dédommagement commercial.",
-        "transferability": "Permet de croiser l'analyse en actes de langage (travail d'Adeline Struvay) avec la dynamique oculaire : comment l'ancrage du regard soutient l'acte de langage d'excuse et d'empathie au comptoir hôtelier."
-    },
-    {
-        "cat": "Pilier 6 : Upselling Hôtelier, Ambidextrie Service-Vente & Gestion de Plainte (Service Recovery)",
-        "num": "31",
-        "authors": "Grandey, A. A., Dickter, D. N., & Sin, H.-P. (2004)",
-        "title": "The customer is not always right: customer aggression and emotion regulation of service employees",
-        "journal": "Journal of Organizational Behavior, 25(3), 397–418",
-        "doi_text": "DOI: 10.1002/job.252",
-        "doi_url": "https://doi.org/10.1002/job.252",
-        "summary": "Cette étude analyse les réactions psychologiques et comportementales des employés de première ligne confrontés à l'agressivité verbale et aux plaintes hostiles des clients. Les auteurs montrent que les employés novices ou se sentant menacés adoptent des stratégies d'évitement ou de retrait émotionnel (surface acting défensif, fuite du regard, crispation), ce qui aggrave l'hostilité du client. À l'inverse, les praticiens expérimentés utilisent la réévaluation cognitive (cognitive reappraisal) et la résolution active de problème : ils ne prennent pas l'attaque personnellement, maintiennent une présence visuelle calme et orientent immédiatement l'échange vers une solution concrète.",
-        "transferability": "Grâce à la pupillométrie physique en millimètres des lunettes Pupil Labs Neon (Pfeffer & Dierkes, 2024), nous pouvons mesurer en temps réel le pic de stress autonome (dilatation pupillaire et fréquence de clignement) chez l'étudiant novice face à un client agressif, comparé à la régulation émotionnelle de l'expert."
-    },
-    {
-        "cat": "Pilier 6 : Upselling Hôtelier, Ambidextrie Service-Vente & Gestion de Plainte (Service Recovery)",
-        "num": "32",
-        "authors": "Karatepe, O. M. (2006)",
-        "title": "The effects of selected antecedents on the service recovery performance of frontline employees",
-        "journal": "The Service Industries Journal, 26(1), 39–57",
-        "doi_text": "DOI: 10.1080/02642060500358795",
-        "doi_url": "https://doi.org/10.1080/02642060500358795",
-        "summary": "Menée auprès d'employés de réception hôtelière (frontline hotel employees), cette recherche empirique identifie les facteurs déterminants de la performance en gestion de plainte (Service Recovery Performance). L'auteur démontre que l'autonomie décisionnelle (empowerment), la formation pratique par mise en situation et l'auto-efficacité perçue (self-efficacy) sont les prédicteurs les plus puissants de la capacité d'un réceptionniste à transformer une réclamation critique en expérience positive (Service Recovery Paradox). Un réceptionniste confiant dans ses marges de manœuvre garde l'initiative relationnelle au lieu de subir l'interaction.",
-        "transferability": "Justifie directement l'approche technopédagogique du Lab-DRA : utiliser les vidéos oculométriques commentées des experts (EMME) pour renforcer le sentiment d'auto-efficacité (self-efficacy) des étudiants avant leurs mises en situation d'upselling et de gestion de plainte."
     }
 ]
 
@@ -464,8 +367,6 @@ BIBLIO_ALL = [
     ("Ressource 06 : Elling, S., Lentz, L., & de Jong, M. (2012). Combining concurrent think-aloud protocols and eye-tracking observations: An analysis of verbalizations and silences. IEEE Transactions on Professional Communication, 55(3), 206–218.", "https://doi.org/10.1109/TPC.2012.2206190"),
     ("Ressource 07 : Theureau, J. (2016) / Durand, M. (2016). Le cours d'action. L'enaction et l'expérience / L'analyse de l'activité et l'entretien d'auto-confrontation enrichi par les traces. Activités, 13(1).", "https://doi.org/10.4000/activites.2769"),
     ("Ressource 08 : Hooge, I. T. C., Nyström, M., Niehorster, D. C., Andersson, R., Foulsham, T., Nuthmann, A., & Hessels, R. S. (2026). The fundamentals of eye tracking part 6: Working with areas of interest. Behavior Research Methods, 58(3).", "https://doi.org/10.3758/s13428-025-02937-3"),
-    ("Ressource 09.a : Pfeffer, T., & Dierkes, K. (2024). Neon Pupillometry Test Report: An evaluation of Neon's pupillometry feature. Pupil Labs GmbH Technical Report.", "https://pupil-labs.com/products/neon/"),
-    ("Ressource 09.b : Nolte, D., Walter, J. L., von Bassewitz, L., et al. (2026). Mobile eye tracking in the real world: Best practices. Journal of Vision, 26(2):6, 1–22.", "https://doi.org/10.1167/jov.26.2.6"),
     ("Ressource 10 : Jarodzka, H., Balslev, T., Holmqvist, K., Nyström, M., Scheiter, K., Gerjets, P., & Eika, B. (2012). Conveying clinical reasoning based on visual observation via eye-movement modelling examples. Instructional Science, 40(5), 813–827.", "https://doi.org/10.1007/s11251-012-9218-5"),
     ("Ressource 11 : Seppänen, M., & Gegenfurtner, A. (2012). Seeing through a teacher's eyes improves students' imaging interpretation. Medical Education, 46(11), 1113–1114.", "https://doi.org/10.1111/medu.12041"),
     ("Ressource 12 : Rogers, S. L., Speelman, C. P., Guidetti, O., & Longmuir, M. (2018). Using dual eye tracking to uncover personal gaze patterns during social interaction. Scientific Reports, 8, Article 4271.", "https://doi.org/10.1038/s41598-018-22726-7"),
@@ -482,14 +383,7 @@ BIBLIO_ALL = [
     ("Ressource 23 : Otterbring, T., Wästlund, E., Gustafsson, A., & Shams, P. (2014). Vision (im)possible? The effects of in-store signage on customers' visual attention. Journal of Retailing and Consumer Services, 21(5), 676–684.", "https://doi.org/10.1016/j.jretconser.2014.05.002"),
     ("Ressource 24.a : Balslev, T., Jarodzka, H., Holmqvist, K., de Grave, W., Muijtjens, A. M. M., Eika, B., & van Merriënboer, J. (2012). Visual expertise in paediatric neurology. European Journal of Paediatric Neurology, 16(2), 161–166.", "https://doi.org/10.1016/j.ejpn.2011.07.004"),
     ("Ressource 24.b : De Beugher, S., Brône, G., & Goedemé, T. (2014). Automatic Analysis of In-the-Wild Mobile Eye-tracking Experiments using Object, Face and Person Detection. Proceedings of the 9th International Conference on Computer Vision Theory and Applications (VISAPP), Vol. 2, 625–633.", "https://doi.org/10.5220/0004741606250633"),
-    ("Ressource 25 : Denizci Guillet, B. (2020). Online upselling: Moving beyond offline upselling in the hotel industry. International Journal of Hospitality Management, 84, Article 102322.", "https://doi.org/10.1016/j.ijhm.2019.102322"),
-    ("Ressource 26 : Jasmand, C., Blazevic, V., & de Ruyter, K. (2012). Generating Sales While Providing Service: A Study of Customer Service Representatives' Ambidextrous Behavior. Journal of Marketing, 76(1), 20–37.", "https://doi.org/10.1509/jm.10.0448"),
-    ("Ressource 27 : Gwinner, K. P., Bitner, M. J., Brown, S. W., & Kumar, A. (2005). Service Customization Through Employee Adaptiveness. Journal of Service Research, 8(2), 131–148.", "https://doi.org/10.1177/1094670505279699"),
-    ("Ressource 28 : Sundaram, D. S., & Webster, C. (2000). The role of nonverbal communication in service encounters. Journal of Services Marketing, 14(5), 378–391.", "https://doi.org/10.1108/08876040010341008"),
-    ("Ressource 29 : Tax, S. S., Brown, S. W., & Chandrashekaran, M. (1998). Customer Evaluations of Service Complaint Experiences: Implications for Relationship Marketing. Journal of Marketing, 62(2), 60–76.", "https://doi.org/10.1177/002224299806200205"),
-    ("Ressource 30 : Sparks, B. A., & McColl-Kennedy, J. R. (2001). Justice strategy options for increased customer satisfaction in a services recovery setting. Journal of Business Research, 54(3), 209–218.", "https://doi.org/10.1016/s0148-2963(00)00120-x"),
-    ("Ressource 31 : Grandey, A. A., Dickter, D. N., & Sin, H.-P. (2004). The customer is not always right: customer aggression and emotion regulation of service employees. Journal of Organizational Behavior, 25(3), 397–418.", "https://doi.org/10.1002/job.252"),
-    ("Ressource 32 : Karatepe, O. M. (2006). The effects of selected antecedents on the service recovery performance of frontline employees. The Service Industries Journal, 26(1), 39–57.", "https://doi.org/10.1080/02642060500358795")
+    ("Ressource 25 : Denizci Guillet, B. (2020). Online upselling: Moving beyond offline upselling in the hotel industry. International Journal of Hospitality Management, 84, Article 102322.", "https://doi.org/10.1016/j.ijhm.2019.102322")
 ]
 
 def build_docx(docx_path):
@@ -529,7 +423,7 @@ def build_docx(docx_path):
     p_title = doc.add_paragraph()
     p_title.paragraph_format.space_before = Pt(0)
     p_title.paragraph_format.space_after = Pt(4)
-    run_t = p_title.add_run("État de l'Art Académique Approfondi : Oculométrie Mobile (Pupil Labs), Révélation des Savoirs Tacites et Dynamiques Attentionnelles en Situation Professionnelle")
+    run_t = p_title.add_run("État de l'Art Académique : Oculométrie Mobile (Pupil Labs), Révélation des Savoirs Tacites et Dynamiques Attentionnelles en Situation Professionnelle")
     run_t.font.size = Pt(21)
     run_t.font.bold = True
     run_t.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
@@ -541,7 +435,7 @@ def build_docx(docx_path):
     run_auth.font.bold = True
     run_auth.font.color.rgb = RGBColor(0x4A, 0x55, 0x68)
     
-    run_ver = p_sub.add_run("Édition : Octobre 2026 (Corpus Intégral Enrichi — Références 01 à 32 avec Liens DOI Vérifiés)\n")
+    run_ver = p_sub.add_run("Édition : Octobre 2026 (Corpus Rationalisé — Références Fondamentales, Transférables et Upselling Spécifique)\n")
     run_ver.font.size = Pt(10)
     run_ver.font.italic = True
     run_ver.font.color.rgb = RGBColor(0x71, 0x80, 0x96)
@@ -551,11 +445,11 @@ def build_docx(docx_path):
     create_callout_box(
         doc,
         [
-            "Ce document constitue l'état de l'art scientifique et méthodologique exhaustif du projet de recherche Lab-DRA (Haute École Charlemagne / Haute École de la Ville de Liège).",
-            "Il articule trois ensembles complémentaires : (1) le socle des 17 ressources documentaires fondamentales archivées dans le dossier Ressources du projet (numérotées 01 à 17), (2) les études oculométriques connexes à haute transférabilité issues de la médecine clinique, des sciences de l'éducation, de la psychologie du Quiet Eye, du retail et de la vision par ordinateur (numérotées 18 à 24.b), et (3) 8 études académiques de référence dédiées à l'upselling hôtelier, à l'ambidextrie service-vente et à la gestion de plainte / service recovery (numérotées 25 à 32).",
-            "Tous les liens DOI et URLs ont fait l'objet d'une vérification systématique de résolution (API Crossref et Handle.net) afin de garantir une fiabilité bibliographique absolue."
+            "Ce document constitue l'état de l'art scientifique et méthodologique de référence du projet de recherche Lab-DRA (Haute École Charlemagne / Haute École de la Ville de Liège).",
+            "Il articule trois ensembles cohérents : (1) les fondements cognitifs, technopédagogiques et interactionnels du dossier Ressources (numérotés 01 à 17), (2) les études oculométriques connexes à haute transférabilité issues de la médecine clinique, de l'éducation, de la psychologie et de la vision par ordinateur (numérotées 18 à 24.b), et (3) l'étude empirique de référence sur l'upselling hôtelier au comptoir (numérotée 25 - Denizci Guillet, 2020).",
+            "Tous les liens DOI et URLs ont été vérifiés via les API Crossref et Handle.net pour garantir une accessibilité directe et pérenne."
         ],
-        title="ARCHITECTURE & TRAÇABILITÉ DU CORPUS SCIENTIFIQUE (RÉFÉRENCES 01 À 32)"
+        title="ARCHITECTURE DU CORPUS SCIENTIFIQUE SÉLECTIONNÉ"
     )
 
     # 1. INTRODUCTION & PROBLÉMATIQUE DE RECHERCHE
@@ -566,14 +460,14 @@ def build_docx(docx_path):
         "Dans les métiers de service, d'accueil et d'interaction commerciale — et tout particulièrement au comptoir de réception d'un établissement hôtelier —, "
         "l'excellence professionnelle repose sur un paradoxe bien connu en psychologie ergonomique : les compétences les plus déterminantes sont aussi les plus "
         "implicites, automatisées et difficiles à verbaliser pour les praticiens eux-mêmes (Crandall, Klein & Hoffman, 2006 ; Goodwin, 1994). "
-        "Face à un client, un réceptionniste expert orchestre simultanément la relation interpersonnelle (écoute active, décodage des émotions, détection d'opportunités de surclassement, désamorçage des plaintes) "
+        "Face à un client, un réceptionniste expert orchestre simultanément la relation interpersonnelle (écoute active, décodage des émotions, détection d'opportunités de surclassement) "
         "et le traitement d'informations administratives sur son logiciel de gestion (Property Management System - PMS)."
     )
     doc.add_paragraph(
         "L'évaluation conventionnelle de ces compétences a historiquement pâti de limites majeures : les questionnaires auto-déclarés rétrospectifs souffrent d'amnésie "
         "ou de rationalisation a posteriori, tandis que la captation vidéo externe à la troisième personne ne permet pas de savoir ce que l'opérateur a réellement perçu "
         "et traité au niveau fovéal (Scott et al., 2017/2019 ; Elling, Lentz & de Jong, 2012). "
-        "L'intégration de l'oculométrie mobile de dernière génération — incarnée par les lunettes Pupil Labs Neon (Pfeffer & Dierkes, 2024 ; Nolte et al., 2026) — "
+        "L'intégration de l'oculométrie mobile de dernière génération — incarnée par les lunettes Pupil Labs Neon — "
         "ouvre la voie à une objectivation mathématique et spatio-temporelle de l'attention visuelle en situation écologique naturelle."
     )
 
@@ -630,8 +524,8 @@ def build_docx(docx_path):
         "le praticien peut reconstituer avec précision la dynamique de ses préoccupations, de ses attentes et de ses prises d'indices."
     )
 
-    # 3. VOLET 2 : MÉTHODOLOGIE OCULOMÉTRIQUE MOBILE ET ANALYSE SPATIO-TEMPORELLE
-    h3 = doc.add_heading("3. Volet 2 : Méthodologie Oculométrique Mobile & Analyse Spatio-Temporelle", level=1)
+    # 3. VOLET 2 : MÉTHODOLOGIE OCULOMÉTRIQUE ET DÉCOUPAGE SPATIAL DES ZONES D'INTÉRÊT (AOI)
+    h3 = doc.add_heading("3. Volet 2 : Méthodologie Oculométrique & Découpage Spatial des Zones d'Intérêt (AOI)", level=1)
     h3.style.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
 
     doc.add_heading("3.1. Rigueur d'analyse des Zones d'Intérêt (AOI) : Hooge et al. (2026)", level=2)
@@ -641,23 +535,6 @@ def build_docx(docx_path):
         "ou par la non-prise en compte des marges d'erreur de pointage oculaire. L'article fournit les algorithmes recommandés pour quantifier le temps total de séjour (Total Dwell Time), "
         "le nombre d'entrées et les transitions visuelles entre zones cibles. Dans nos protocoles au Lab-DRA, quatre AOI dynamiques sont modélisées : "
         "le visage du client, l'écran du logiciel PMS, le terminal de paiement/carte de chambre, et le dépliant tarifaire d'upselling."
-    )
-
-    doc.add_heading("3.2. Meilleures pratiques de l'oculométrie mobile écologique : Nolte et al. (2026)", level=2)
-    doc.add_paragraph(
-        "Debora Nolte et ses collègues (2026 - Ressource 09.b) dressent le guide des meilleures pratiques pour déployer l'oculométrie portable en milieu réel. "
-        "Les auteurs mettent en garde contre les artefacts classiques : le glissement de la monture (slippage) lors des mouvements de tête, l'erreur de parallaxe "
-        "due à la distance variable des objets regardés, et l'impact des variations lumineuses ambiantes. Le respect de ces directives assure la robustesse des données recueillies "
-        "lors des simulations d'accueil hôtelier au sein du laboratoire."
-    )
-
-    doc.add_heading("3.3. Évaluation technique de Pupil Labs Neon et pupillométrie physique : Pfeffer & Dierkes (2024)", level=2)
-    doc.add_paragraph(
-        "Le rapport technique de Thomas Pfeffer et Kai Dierkes (2024 - Ressource 09.a) évalue l'innovation de rupture portée par les lunettes Pupil Labs Neon. "
-        "Grâce au réseau neuronal convolutif profond NeonNet, le système élimine totalement la procédure contraignante de calibration utilisateur manuelle, "
-        "captant le regard à 200 Hz avec une insensibilité éprouvée aux glissements physiques. Par ailleurs, Neon intègre une mesure absolue et continue du diamètre pupillaire "
-        "en millimètres, corrigée géométriquement des mouvements du globe oculaire. Cette métrique pupillométrique fournit une fenêtre objective non invasive sur les micro-variations "
-        "de charge mentale et de réactivité émotionnelle lors des phases critiques de proposition tarifaire ou de gestion de plainte."
     )
 
     # 4. VOLET 3 : TECHNOPÉDAGOGIE DU REGARD, MODÉLISATION (EMME) ET PROTOCOLES VERBAUX
@@ -790,33 +667,19 @@ def build_docx(docx_path):
         "qui automatise la détection des visages et des objets sur les vidéos d'eye tracking mobile, offrant une piste d'automatisation directe pour nos scripts Python d'analyse des données Pupil Labs Neon."
     )
 
-    # 7. VOLET 6 : APPROFONDISSEMENT SUR L'UPSELLING HÔTELIER ET LA GESTION DE PLAINTE (RESSOURCES 25 À 32)
-    h_up = doc.add_heading("7. Volet 6 : Approfondissement sur l'Upselling Hôtelier, l'Ambidextrie Service-Vente & la Gestion de Plainte (Service Recovery)", level=1)
+    # 7. VOLET 6 : RECHERCHE DE RÉFÉRENCE SUR L'UPSELLING HÔTELIER AU COMPTOIR (RESSOURCE 25)
+    h_up = doc.add_heading("7. Volet 6 : Recherche Fondamentale sur l'Upselling Hôtelier (Offline vs Online — Ressource 25)", level=1)
     h_up.style.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
 
     doc.add_paragraph(
-        "Les huit études de référence numérotées de 25 à 32 approfondissent spécifiquement les deux scénarios opérationnels du projet Lab-DRA : "
-        "l'upselling au comptoir de réception et la gestion des réclamations (service recovery) :"
+        "L'étude séminale de Bilgihan Denizci Guillet (2020 - Ressource 25), parue dans l'International Journal of Hospitality Management, "
+        "constitue la recherche pivot analysant l'upselling en réception hôtelière. L'auteure établit que le comptoir physique conserve un avantage décisif sur les algorithmes de réservation en ligne : "
+        "la lecture en direct des signaux non verbaux du voyageur au moment précis du check-in. Cette publication ancre empiriquement la pertinence de l'analyse oculométrique : "
+        "c'est par son regard que le réceptionniste expert valide l'état d'esprit du client et choisit le timing exact pour introduire une opportunité de surclassement personnalisée."
     )
 
-    doc.add_heading("7.1. Upselling en face-à-face, ambidextrie service-vente et adaptabilité (Denizci Guillet, 2020 ; Jasmand et al., 2012 ; Gwinner et al., 2005 ; Sundaram & Webster, 2000)", level=2)
-    doc.add_paragraph(
-        "Denizci Guillet (2020 - Ressource 25) démontre que l'upselling physique au comptoir surpasse l'upselling automatisé en ligne grâce à la lecture en temps réel de l'état émotionnel et des besoins du voyageur. "
-        "Pour réussir cette transition entre enregistrement administratif et proposition commerciale, le réceptionniste doit déployer ce que Jasmand, Blazevic et de Ruyter (2012 - Ressource 26) "
-        "nomment l'« ambidextrie service-vente » (service-sales ambidexterity), soutenue par le comportement adaptatif théorisé par Gwinner et al. (2005 - Ressource 27) et la communication non verbale persuasive "
-        "modélisée par Sundaram et Webster (2000 - Ressource 28)."
-    )
-
-    doc.add_heading("7.2. Gestion de plainte (Service Recovery), justice interactionnelle et régulation émotionnelle (Tax et al., 1998 ; Sparks & McColl-Kennedy, 2001 ; Grandey et al., 2004 ; Karatepe, 2006)", level=2)
-    doc.add_paragraph(
-        "Face à une réclamation client, Tax, Brown et Chandrashekaran (1998 - Ressource 29) ainsi que Sparks et McColl-Kennedy (2001 - Ressource 30) démontrent que la justice interactionnelle "
-        "(écoute visuelle active, sollicitude authentique) est la condition sine qua non de la réparation relationnelle : une compensation financière octroyée les yeux rivés sur l'ordinateur échoue à restaurer la confiance. "
-        "En outre, Grandey, Dickter et Sin (2004 - Ressource 31) éclairent les mécanismes de régulation émotionnelle face à l'agressivité verbale (réévaluation cognitive de l'expert vs évitement visuel du novice), "
-        "tandis que Karatepe (2006 - Ressource 32) établit le rôle déterminant de l'auto-efficacité perçue et de la formation pratique dans la performance de gestion de plainte au front office."
-    )
-
-    # 8. FICHES DE LECTURE ANALYTIQUES DÉTAILLÉES (RESSOURCES 01 À 32)
-    h6 = doc.add_heading("8. Fiches de Lecture Analytiques Complètes (Ressources 01 à 32)", level=1)
+    # 8. FICHES DE LECTURE ANALYTIQUES DÉTAILLÉES (RESSOURCES 01 À 25)
+    h6 = doc.add_heading("8. Fiches de Lecture Analytiques Complètes (Ressources 01 à 25)", level=1)
     h6.style.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
 
     current_cat = None
@@ -834,7 +697,7 @@ def build_docx(docx_path):
         
         tcPr = cell._tc.get_or_add_tcPr()
         base_num = int(res["num"].split(".")[0])
-        border_left_color = "0056B3" if base_num >= 25 else ("2B6CB0" if base_num >= 18 else "1A365D")
+        border_left_color = "0056B3" if base_num == 25 else ("2B6CB0" if base_num >= 18 else "1A365D")
         borders = parse_xml(f'<w:tcBorders {nsdecls("w")}><w:top w:val="single" w:sz="6" w:space="0" w:color="CBD5E0"/><w:left w:val="single" w:sz="24" w:space="0" w:color="{border_left_color}"/><w:bottom w:val="single" w:sz="6" w:space="0" w:color="CBD5E0"/><w:right w:val="single" w:sz="6" w:space="0" w:color="CBD5E0"/></w:tcBorders>')
         tcPr.append(borders)
         
@@ -886,12 +749,12 @@ def build_docx(docx_path):
         
         doc.add_paragraph().paragraph_format.space_after = Pt(4)
 
-    # 9. BIBLIOGRAPHIE EXHAUSTIVE VÉRIFIÉE (01 À 32)
-    h7 = doc.add_heading("9. Bibliographie Complète Vérifiée (Normes APA 7 — Ressources 01 à 32)", level=1)
+    # 9. BIBLIOGRAPHIE EXHAUSTIVE VÉRIFIÉE (01 À 25)
+    h7 = doc.add_heading("9. Bibliographie Complète Vérifiée (Normes APA 7 — Ressources 01 à 25)", level=1)
     h7.style.font.color.rgb = RGBColor(0x1A, 0x36, 0x5D)
 
     p_bib_note = doc.add_paragraph()
-    r_bn = p_bib_note.add_run("Note méthodologique : Cette bibliographie réunit les 17 documents du dossier Ressources (01 à 17), les études oculométriques connexes à haute transférabilité (18 à 24.b), ainsi que les 8 études de référence sur l'upselling hôtelier et la gestion de plainte (25 à 32). Tous les hyperliens DOI et URLs ont été vérifiés et validés.")
+    r_bn = p_bib_note.add_run("Note méthodologique : Cette bibliographie réunit les références fondamentales (01 à 17), les études oculométriques connexes à haute transférabilité (18 à 24.b), ainsi que la recherche pivot sur l'upselling hôtelier (25). Les textes 09 (rapports techniques) et 26 à 32 ont été retirés. Tous les hyperliens DOI et URLs ont été vérifiés et validés.")
     r_bn.font.size = Pt(9.5)
     r_bn.font.italic = True
     r_bn.font.color.rgb = RGBColor(0x71, 0x80, 0x96)
@@ -916,35 +779,35 @@ def build_markdown(md_path):
         "# État de l'Art Académique Approfondi : Oculométrie Mobile (Pupil Labs), Révélation des Savoirs Tacites et Dynamiques Attentionnelles en Situation Professionnelle",
         "",
         "**Auteur :** Jérôme Foguenne (Projet de recherche Lab-DRA — Haute École Charlemagne [HECh] / Haute École de la Ville de Liège [HEL])  ",
-        "**Date :** Octobre 2026 (Version Intégrale Enrichie — Références 01 à 32 avec Liens DOI Vérifiés)  ",
+        "**Date :** Octobre 2026 (Version Corpus Rationalisé — Références 01 à 25 avec Liens DOI Vérifiés)  ",
         "**Dépôt GitHub :** https://github.com/jeromefoguenne-eng/Eye-Tracking  ",
         "",
         "---",
         "",
         "> [!IMPORTANT]",
-        "> **Architecture & Traçabilité du Corpus Scientifique (Références 01 à 32) :**  ",
-        "> Cet état de l'art articule trois volets complémentaires : (1) les **17 documents scientifiques fondamentaux** archivés dans le dossier des ressources de recherche (`01` à `17`), (2) les **études oculométriques connexes à haute transférabilité** (`18` à `24.b`) issues de la médecine clinique, des sciences de l'éducation, de la psychologie de la performance (*Quiet Eye*), du retail et de la vision par ordinateur, et (3) **8 études de référence sur l'upselling hôtelier, l'ambidextrie service-vente et la gestion de plainte (*service recovery*)** (`25` à `32`). L'intégralité des liens DOI et URLs a été vérifiée via les API Crossref et Handle.net.",
+        "> **Architecture du Corpus Scientifique Sélectionné (Références 01 à 25) :**  ",
+        "> Cet état de l'art s'appuie sur : (1) les documents scientifiques fondamentaux du dossier Ressources (`01` à `17`), (2) les études oculométriques connexes à haute transférabilité (`18` à `24.b`) issues de la médecine clinique, de l'éducation, de la psychologie et de la vision par ordinateur, et (3) la recherche pivot sur l'upselling hôtelier au comptoir (`25` - Denizci Guillet, 2020). Les textes techniques 09 et les études 26 à 32 ont été retirés. L'intégralité des liens DOI et URLs est vérifiée via Crossref et Handle.net.",
         "",
         "---",
         "",
         "## Table des Matières",
         "1. [Introduction & Problématique de Recherche](#1-introduction--problématique-de-recherche)",
         "2. [Volet 1 : Fondements Cognitifs, Expertise & Savoirs Tacites](#2-volet-1--fondements-cognitifs-expertise--savoirs-tacites)",
-        "3. [Volet 2 : Méthodologie Oculométrique Mobile & Analyse Spatio-Temporelle](#3-volet-2--méthodologie-oculométrique-mobile--analyse-spatio-temporelle)",
+        "3. [Volet 2 : Méthodologie Oculométrique & Découpage Spatial des Zones d'Intérêt (AOI)](#3-volet-2--méthodologie-oculométrique--découpage-spatial-des-zones-dintérêt-aoi)",
         "4. [Volet 3 : Technopédagogie du Regard, Modélisation (EMME) & Protocoles Verbaux](#4-volet-3--technopédagogie-du-regard-modélisation-emme--protocoles-verbaux)",
         "5. [Volet 4 : Dynamiques Sociales du Regard, Dual Eye Tracking & Interactions de Service / Upselling](#5-volet-4--dynamiques-sociales-du-regard-dual-eye-tracking--interactions-de-service--upselling)",
         "6. [Volet 5 : Études Connexes à Haute Transférabilité (Références 18 à 24.b)](#6-volet-5--études-connexes-à-haute-transférabilité-références-18-à-24b)",
-        "7. [Volet 6 : Approfondissement sur l'Upselling Hôtelier, l'Ambidextrie Service-Vente & la Gestion de Plainte (Références 25 à 32)](#7-volet-6--approfondissement-sur-lupselling-hôtelier-lambidextrie-service-vente--la-gestion-de-plainte-références-25-à-32)",
-        "8. [Fiches de Lecture Analytiques Complètes (Références 01 à 32)](#8-fiches-de-lecture-analytiques-complètes-références-01-à-32)",
-        "9. [Bibliographie Complète Vérifiée (Normes APA 7 — Références 01 à 32)](#9-bibliographie-complète-vérifiée-normes-apa-7--références-01-à-32)",
+        "7. [Volet 6 : Recherche Fondamentale sur l'Upselling Hôtelier (Référence 25)](#7-volet-6--recherche-fondamentale-sur-lupselling-hôtelier-référence-25)",
+        "8. [Fiches de Lecture Analytiques Complètes (Références 01 à 25)](#8-fiches-de-lecture-analytiques-complètes-références-01-à-25)",
+        "9. [Bibliographie Complète Vérifiée (Normes APA 7 — Références 01 à 25)](#9-bibliographie-complète-vérifiée-normes-apa-7--références-01-à-25)",
         "",
         "---",
         "",
         "## 1. Introduction & Problématique de Recherche",
         "",
-        "Dans les métiers de service, d'accueil et d'interaction commerciale — et tout particulièrement au comptoir de réception d'un établissement hôtelier —, l'excellence professionnelle repose sur un paradoxe bien connu en psychologie ergonomique : les compétences les plus déterminantes sont aussi les plus implicites, automatisées et difficiles à verbaliser pour les praticiens eux-mêmes (Crandall, Klein & Hoffman, 2006 ; Goodwin, 1994). Face à un client, un réceptionniste expert orchestre simultanément la relation interpersonnelle (écoute active, décodage des émotions, détection d'opportunités de surclassement, désamorçage des plaintes) et le traitement d'informations administratives sur son logiciel de gestion (*Property Management System* - PMS).",
+        "Dans les métiers de service, d'accueil et d'interaction commerciale — et tout particulièrement au comptoir de réception d'un établissement hôtelier —, l'excellence professionnelle repose sur un paradoxe bien connu en psychologie ergonomique : les compétences les plus déterminantes sont aussi les plus implicites, automatisées et difficiles à verbaliser pour les praticiens eux-mêmes (Crandall, Klein & Hoffman, 2006 ; Goodwin, 1994). Face à un client, un réceptionniste expert orchestre simultanément la relation interpersonnelle (écoute active, décodage des émotions, détection d'opportunités de surclassement) et le traitement d'informations administratives sur son logiciel de gestion (*Property Management System* - PMS).",
         "",
-        "L'intégration de l'**oculométrie mobile portable (*wearable mobile eye tracking*)**, incarnée par les lunettes **Pupil Labs Neon** (Pfeffer & Dierkes, 2024 ; Nolte et al., 2026), apporte une rupture méthodologique décisive en échantillonnant le regard à 200 Hz dans un cadre écologique non contraignant.",
+        "L'intégration de l'**oculométrie mobile portable (*wearable mobile eye tracking*)**, incarnée par les lunettes **Pupil Labs Neon**, apporte une rupture méthodologique décisive en échantillonnant le regard à 200 Hz dans un cadre écologique non contraignant.",
         "",
         "---",
         "",
@@ -957,10 +820,8 @@ def build_markdown(md_path):
         "",
         "---",
         "",
-        "## 3. Volet 2 : Méthodologie Oculométrique Mobile & Analyse Spatio-Temporelle",
+        "## 3. Volet 2 : Méthodologie Oculométrique & Découpage Spatial des Zones d'Intérêt (AOI)",
         "- **3.1 Rigueur d'analyse des Zones d'Intérêt - AOI (Hooge et al., 2026 - Ressource 08)** : Délimitation méthodologique des AOI dynamiques (Visage client, Écran PMS, Brochure d'upselling, Terminal/Clés).",
-        "- **3.2 Meilleures pratiques en oculométrie mobile écologique (Nolte et al., 2026 - Ressource 09.b)** : Contrôle de la parallaxe, stabilité mécanique de la monture et maîtrise de l'éclairage ambiant.",
-        "- **3.3 Évaluation technique de Pupil Labs Neon et pupillométrie (Pfeffer & Dierkes, 2024 - Ressource 09.a)** : Réseau neuronal *NeonNet* sans calibration à 200 Hz et mesure absolue du diamètre pupillaire en millimètres.",
         "",
         "---",
         "",
@@ -990,13 +851,12 @@ def build_markdown(md_path):
         "",
         "---",
         "",
-        "## 7. Volet 6 : Approfondissement sur l'Upselling Hôtelier, l'Ambidextrie Service-Vente & la Gestion de Plainte (Références 25 à 32)",
-        "- **7.1 Upselling en face-à-face, ambidextrie service-vente et adaptabilité (Denizci Guillet, 2020 - Ressource 25 ; Jasmand et al., 2012 - Ressource 26 ; Gwinner et al., 2005 - Ressource 27 ; Sundaram & Webster, 2000 - Ressource 28)** : Supériorité du comptoir physique pour détecter les signaux non verbaux d'achat, entrelacement fluide des tâches administratives et commerciales (*ambidexterity*), catégorisation adaptative du profil client et persuasion par le maintien du contact visuel.",
-        "- **7.2 Gestion de plainte (*Service Recovery*), justice interactionnelle et régulation émotionnelle (Tax et al., 1998 - Ressource 29 ; Sparks & McColl-Kennedy, 2001 - Ressource 30 ; Grandey et al., 2004 - Ressource 31 ; Karatepe, 2006 - Ressource 32)** : Primauté de la justice interactionnelle et de la sollicitude visuelle authentique lors de l'écoute du grief, réévaluation cognitive face à l'agressivité verbale (mesurable par pupillométrie Neon) et renforcement de l'auto-efficacité (*self-efficacy*) des étudiants par les exemples modélisants du regard (EMME).",
+        "## 7. Volet 6 : Recherche Fondamentale sur l'Upselling Hôtelier (Référence 25)",
+        "- **7.1 Upselling au comptoir de réception vs upselling en ligne (Denizci Guillet, 2020 - Ressource 25)** : Analyse des atouts spécifiques du face-à-face au front desk pour capter les indices émotionnels et comportementaux du client afin d'adapter l'offre de surclassement.",
         "",
         "---",
         "",
-        "## 8. Fiches de Lecture Analytiques Complètes (Références 01 à 32)",
+        "## 8. Fiches de Lecture Analytiques Complètes (Références 01 à 25)",
         ""
     ]
 
@@ -1016,7 +876,7 @@ def build_markdown(md_path):
 
     lines.append("---")
     lines.append("")
-    lines.append("## 9. Bibliographie Complète Vérifiée (Normes APA 7 — Références 01 à 32)")
+    lines.append("## 9. Bibliographie Complète Vérifiée (Normes APA 7 — Références 01 à 25)")
     lines.append("")
     for cit, url in BIBLIO_ALL:
         lines.append(f"* **{cit.split(' : ')[0]} :** {cit.split(' : ', 1)[1]} [{url}]({url})")
@@ -1032,10 +892,13 @@ if __name__ == "__main__":
     build_docx(local_docx)
     build_markdown(local_md)
     
-    # Copie automatique vers Google Drive
+    # Copie vers Google Drive
     gdrive_path = r"C:\Google Drive\Prépas light\HECh\Projet recherche\Etat de l art - Eye Tracking.docx"
+    gdrive_v2 = r"C:\Google Drive\Prépas light\HECh\Projet recherche\Etat de l art - Eye Tracking (Mis a jour).docx"
     try:
         shutil.copy2(local_docx, gdrive_path)
         print(f"✅ Fichier synchronisé avec succès sur Google Drive : {gdrive_path}")
     except Exception as e:
-        print(f"⚠️ Erreur lors de la copie vers Google Drive : {e}")
+        print(f"⚠️ {gdrive_path} est actuellement ouvert dans Word. Copie dans {gdrive_v2}")
+        shutil.copy2(local_docx, gdrive_v2)
+        print(f"✅ Fichier sauvegardé dans : {gdrive_v2}")
