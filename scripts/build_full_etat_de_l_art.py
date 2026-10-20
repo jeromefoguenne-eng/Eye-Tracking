@@ -27,6 +27,39 @@ LOCAL_DOCX_PATH = r"C:\Users\TrendingPC\.gemini\antigravity\scratch\Eye-Tracking
 LOCAL_MD_PATH = r"C:\Users\TrendingPC\.gemini\antigravity\scratch\Eye-Tracking\docs\etat_de_l_art.md"
 DRIVE_TARGET_PATH = r"C:\Google Drive\Prépas light\HECh\Projet recherche\Etat de l art - Eye Tracking.docx"
 
+# Dictionnaire de correspondance exacte entre le numéro du texte et son ID Google Drive direct
+DRIVE_FILE_IDS = {
+    "01": "1gGCFhaYKHcRynSGDbXXcH-DKjziICbjW",
+    "02": "1j836bEPcVegSD7IyKJLiD-FhxUyqtdZw",
+    "03": "1kK31uhfZb2T8aO0m6AAMSQxrI4OYCHya",
+    "04": "1cLbFQyrU48W3CM7UfMAyC5zdHWwVxrh9",
+    "05": "1iCkUb_RwUWRerLHRqMD2EVouQr7x8uZZ",
+    "06": "1n9GUyo3c2jF852WkVG1IHy3MVJLoFSQe",
+    "07": "1LYc0ZbAkw0uWyeKAcpPg3_VPQswfPjnt",
+    "08": "1WpfjSQVzfGjFSqzz0cSgoYOZTaHypcOR",
+    "10": "1fUgjayUFALIzFcR34mlKUuRn_u0tixUd",
+    "11": "1kfUGCbCXf6um-boKUf-7T6CzCMX1fqfk",
+    "12": "1_WR8sBdnDiIjWbhhjz8VqO-q9jbfSJi1",
+    "13": "1YlBGQzA2bQdUXpOKyDcb9IGcno0po6L5",
+    "14": "1atZQALH2d0Q2I4tsjSN_W8JDjVVcuJwa",
+    "15": "17a1zsoIaG8eTBzpxxJQhmgZSaywos8HI",
+    "16": "1aSUbm9eQcRUhBVED61-bSYpJuKoltW9j",
+    "17": "1C1_dEE94YxwJYz705AoaCQFFiN_1ivhR",
+    "19": "1U7nodFJtHP_saGMdamudFeQQ95F0U-6m",
+    "20": "1u5T2eXzK2mxlpIX5WhmAao77TYYgCtl7",
+    "22": "1hXznPjAdPPGs1m6MZ2ZUlHcvAVX5BkEz",
+    "23": "1xvbUDQ5LrW7sgZBMpcHYK4gTeiTudtuW",
+    "24.b": "1jFRsCwfS72bISrs43v7ewuBGIaxLkKll",
+    "25": "1sGG9c3pihIHaHiT3Vnrrh5fOSXMjnmwv",
+    "26": "1LElcRhMKuY6xxUvmVhhX4RWvmLjg62iY",
+}
+
+def get_direct_drive_url(text_id):
+    file_id = DRIVE_FILE_IDS.get(text_id)
+    if file_id:
+        return f"https://drive.google.com/file/d/{file_id}/view?usp=sharing"
+    return DRIVE_SHARED_URL
+
 # Palette Graphique Professionnelle
 COLOR_NAVY = RGBColor(27, 54, 93)      # #1B365D - Titre 1 & Éléments majeurs
 COLOR_TEAL = RGBColor(14, 134, 212)    # #0E86D4 - Titre 2 & Accents
@@ -824,8 +857,8 @@ def build_word_document():
         for c in row.cells:
             style_cell(c, bg_color=bg, top_pad=60, bot_pad=60, left_pad=80, right_pad=80)
             
-        row.cells[0].paragraphs[0].add_run(item["label"]).font.bold = True
-        row.cells[0].paragraphs[0].runs[0].font.size = Pt(8.5)
+        direct_url = get_direct_drive_url(item["id"])
+        add_hyperlink(row.cells[0].paragraphs[0], direct_url, item["label"], color=HEX_NAVY, underline=True, bold=True)
         
         p1 = row.cells[1].paragraphs[0]
         p1.add_run(f"{item['auteurs']} ({item['annee']})").font.size = Pt(8.5)
@@ -892,8 +925,9 @@ def build_word_document():
         p_links.runs[0].font.size = Pt(9.5)
         p_links.runs[0].font.color.rgb = COLOR_CHARCOAL
 
-        # Lien Google Drive
-        add_hyperlink(p_links, DRIVE_SHARED_URL, f"Fichier Google Drive ({item['drive_file'][:35]}...)")
+        # Lien Google Drive direct vers le fichier
+        direct_url = get_direct_drive_url(item["id"])
+        add_hyperlink(p_links, direct_url, f"Fichier Google Drive ({item['drive_file'][:35]}...)")
         p_links.add_run("  |  ").font.size = Pt(9.5)
         # Lien DOI
         add_hyperlink(p_links, item["doi"], f"Lien Éditeur (DOI : {item['doi'].replace('https://doi.org/', '')})")
@@ -997,8 +1031,9 @@ def build_markdown_document():
     ]
 
     for item in ARTICLES_DATA:
+        direct_url = get_direct_drive_url(item["id"])
         lines.append(
-            f"| **{item['label']}** | {item['auteurs']} ({item['annee']}) | *{item['titre'][:50]}...* ({item['revue'][:25]}...) | {item['contribution'][:100]}... | [Drive]({DRIVE_SHARED_URL}) / [DOI]({item['doi']}) |"
+            f"| **[{item['label']}]({direct_url})** | {item['auteurs']} ({item['annee']}) | *{item['titre'][:50]}...* ({item['revue'][:25]}...) | {item['contribution'][:100]}... | [Drive]({direct_url}) / [DOI]({item['doi']}) |"
         )
 
     lines.extend([
@@ -1011,6 +1046,7 @@ def build_markdown_document():
 
     current_pilier = None
     for item in ARTICLES_DATA:
+        direct_url = get_direct_drive_url(item["id"])
         if item["pilier"] != current_pilier:
             current_pilier = item["pilier"]
             lines.extend([
@@ -1021,7 +1057,7 @@ def build_markdown_document():
         lines.extend([
             f"#### {item['label']} — {item['titre']}",
             f"- **Référence complète** : {item['auteurs']} ({item['annee']}). {item['titre']}. *{item['revue']}*.",
-            f"- **🔗 Liens vers la ressource** : [Fichier Google Drive ({item['drive_file'][:40]}...)]({DRIVE_SHARED_URL}) | [Lien Éditeur Officiel (DOI)]({item['doi']})",
+            f"- **🔗 Liens vers la ressource** : [Fichier Google Drive ({item['drive_file'][:40]}...)]({direct_url}) | [Lien Éditeur Officiel (DOI)]({item['doi']})",
             "",
             f"> **📖 Résumé de l'article (~100 mots)**  ",
             f"> {item['resume']}",
