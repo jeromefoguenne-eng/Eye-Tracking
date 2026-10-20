@@ -605,6 +605,33 @@ ARTICLES_DATA = [
             "comment l'étudiant articule-t-il la consultation des données du système informatique avec une argumentation orale fluide, sans que "
             "l'écran ne devienne un obstacle à l'écoute et à l'hospitalité bienveillante."
         )
+    },
+    {
+        "id": "26",
+        "label": "Texte 26",
+        "pilier": "Pilier 7 : Pratique Réflexive & Analyse de l'Activité en Formation",
+        "auteurs": "Perrenoud, Ph.",
+        "annee": "2001",
+        "titre": "Mettre la pratique réflexive au centre du projet de formation",
+        "revue": "Cahiers Pédagogiques, (390), 42–45",
+        "doi": "https://www.unige.ch/fapse/SSE/teachers/perrenoud/php_main/php_2001/2001_01.html",
+        "drive_file": "26 - Perrenoud.docx",
+        "resume": (
+            "S'appuyant sur les travaux fondateurs de Donald Schön (1983), Philippe Perrenoud clarifie le concept de pratique réflexive "
+            "en formation professionnelle en distinguant la réflexion dans l'action (régulation cognitive et jugement en cours d'activité) "
+            "de la réflexion sur l'action (analyse rétrospective dans l'après-coup). L'auteur défend la construction d'une posture de "
+            "praticien réflexif, critique et constructive, capable d'examiner ses propres schèmes d'action au-delà des situations d'urgence. "
+            "Perrenoud démontre que cette réflexivité ne s'improvise pas par des interventions isolées, mais exige une ingénierie de formation "
+            "articulant intimement apports théoriques, observation instrumentée des situations réelles et espaces d'analyse bienveillants."
+        ),
+        "contribution": (
+            "Pour SIMACCUEIL, Perrenoud offre le fondement théorique et didactique légitimant l'usage de l'eye tracking comme levier "
+            "de développement professionnel plutôt que comme simple outil de mesure de la performance. Les traces oculométriques des lunettes "
+            "Neon ne révèlent pas directement les processus mentaux : une fixation sur le PMS ne prouve pas une surcharge, pas plus qu'un "
+            "regard vers le client ne garantit une écoute. Perrenoud justifie un débriefing réflexif post-simulation en quatre temps "
+            "(simulation, repérage des séquences critiques, remise en situation vidéo et formalisation des apprentissages), distinguant "
+            "rigoureusement les traces observables, les verbalisations rétrospectives de l'étudiant et les interprétations du chercheur."
+        )
     }
 ]
 
@@ -699,9 +726,9 @@ def build_word_document():
     meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
     meta_data = [
         ("Chercheur Principal", "Jérôme Foguenne (HECh / HEL)"),
-        ("Corpus de Référence", "22 études académiques issues de 'Constats Etats de l\\'art.docx'"),
+        ("Corpus de Référence", "23 études académiques issues de 'Constats Etats de l\\'art.docx'"),
         ("Dispositif Expérimental", "Lunettes d'Eye Tracking Mobile Pupil Labs Neon & Simulateur PMS"),
-        ("Dépôt Cloud Ressources", "Google Drive partagé (Dossier Ressources — 22 fichiers vérifiés)")
+        ("Dépôt Cloud Ressources", "Google Drive partagé (Dossier Ressources — 23 fichiers vérifiés)")
     ]
     for r_idx, (k, v) in enumerate(meta_data):
         c0, c1 = meta_table.rows[r_idx].cells
@@ -747,9 +774,9 @@ def build_word_document():
         "et économique : la négociation commerciale d'un surclassement (upselling) et le traitement bienveillant d'une réclamation client.\n\n"
         "Le présent état de l'art est constitué exclusivement à partir du corpus rigoureusement sélectionné et documenté dans le travail "
         "préparatoire de référence (« Constats Etats de l'art.docx »). Conformément aux décisions du chercheur principal, les références hors-cadre "
-        "(notamment le rapport technique Texte 9 écarté de l'analyse) ont été exclues, consolidant un corpus d'élite de 22 articles scientifiques. "
+        "(notamment le rapport technique Texte 9 écarté de l'analyse) ont été exclues, consolidant un corpus d'élite de 23 articles scientifiques. "
         "Chaque référence est structurée selon un format académique standardisé comprenant son résumé analytique de 100 mots, son accès direct "
-        "au document source sur Google Drive, son DOI vérifié et un paragraphe d'application méthodologique de 100 mots précisant sa contribution "
+        "au document source sur Google Drive, son DOI vérifié (ou URL académique pérenne) et un paragraphe d'application méthodologique de 100 mots précisant sa contribution "
         "directe aux protocoles expérimentaux de SIMACCUEIL."
     )
 
@@ -765,7 +792,7 @@ def build_word_document():
     h2 = doc.add_paragraph()
     h2.paragraph_format.space_before = Pt(14)
     h2.paragraph_format.space_after = Pt(6)
-    r_h2 = h2.add_run("2. Tableau Synthétique des 22 Références Retenues")
+    r_h2 = h2.add_run("2. Tableau Synthétique des 23 Références Retenues")
     r_h2.font.name = "Calibri"
     r_h2.font.size = Pt(14)
     r_h2.font.bold = True
@@ -812,12 +839,12 @@ def build_word_document():
     doc.add_page_break()
 
     # ----------------------------------------------------
-    # SECTION 3 : FICHES DÉTAILLÉES DES 22 ARTICLES
+    # SECTION 3 : FICHES DÉTAILLÉES DES 23 ARTICLES
     # ----------------------------------------------------
     h3 = doc.add_paragraph()
     h3.paragraph_format.space_before = Pt(12)
     h3.paragraph_format.space_after = Pt(10)
-    r_h3 = h3.add_run("3. Fiches Analytiques Détaillées (22 Références)")
+    r_h3 = h3.add_run("3. Fiches Analytiques Détaillées (23 Références)")
     r_h3.font.name = "Calibri"
     r_h3.font.size = Pt(16)
     r_h3.font.bold = True
@@ -950,7 +977,7 @@ def build_markdown_document():
         "# État de l'Art Consolidé : Oculométrie Mobile & Accueil Hôtelier (SIMACCUEIL)",
         "**Projet de Recherche Appliquée Lab-DRA (HECh / HEL)**  ",
         "**Chercheur Principal** : Jérôme Foguenne  ",
-        "**Corpus** : 22 références académiques extraites de `Constats Etats de l'art.docx`  ",
+        "**Corpus** : 23 références académiques extraites de `Constats Etats de l'art.docx`  ",
         f"**Dossier Cloud Ressources** : [Dossier Partagé Google Drive]({DRIVE_SHARED_URL})  ",
         "",
         "---",
@@ -959,11 +986,11 @@ def build_markdown_document():
         "",
         "Le projet **SIMACCUEIL** investigue la dynamique cognitive et visuelle des réceptionnistes d'hôtel à l'aide de lunettes d'eye tracking mobile (Pupil Labs Neon) lors de situations simulées d'**upselling** (négociation commerciale de surclassement) et de **gestion de plaintes clients**.",
         "",
-        "Le présent état de l'art retient **strictement les 22 articles** analysés dans le document source de Jérôme Foguenne (*Constats Etats de l'art.docx*). Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.",
+        "Le présent état de l'art retient **strictement les 23 articles** analysés dans le document source de Jérôme Foguenne (*Constats Etats de l'art.docx*). Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.",
         "",
         "---",
         "",
-        "## 2. Tableau Synthétique des 22 Références Retenues",
+        "## 2. Tableau Synthétique des 23 Références Retenues",
         "",
         "| N° | Auteurs (Année) | Titre & Revue | Apport Majeur pour SIMACCUEIL | Ressources |",
         "| :--- | :--- | :--- | :--- | :--- |"

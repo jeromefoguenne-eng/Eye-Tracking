@@ -45,13 +45,14 @@ Afin de concilier la plus stricte rigueur académique et une accessibilité péd
 
 ```mermaid
 flowchart TD
-    subgraph SOTA ["Socle de Référence : 22 Articles de l'État de l'Art Consolidé"]
+    subgraph SOTA ["Socle de Référence : 23 Articles de l'État de l'Art Consolidé"]
         P1["Pilier 1 : Cognition & Expertise<br/>Beckmann (2010), Gegenfurtner (2011), Goodwin (1994), Crandall (2006), Theureau (2016)"]
         P2["Pilier 2 : Métrologie & Vision par Ordinateur<br/>Hooge et al. (2024), De Beugher et al. (2014)"]
         P3["Pilier 3 : Didactique & Modélisation du Regard<br/>Van Gog (2009), Elling (2012), Jarodzka (2012), Seppänen (2012)"]
         P4["Pilier 4 : Dynamiques & Synchronie Dyadique<br/>Rogers (2018), Wohltjen (2021), Tickle-Degnen (1990), Hennig-Thurau (2006)"]
         P5["Pilier 5 : Tourisme & Évaluation Écologique<br/>Scott (2019), Wolff (2016), Cortina (2015), Vickers (2016), Otterbring (2014)"]
         P6["Pilier 6 : Pratiques Métier en Réception<br/>Ruki (2023), Denizci Guillet (2020)"]
+        P7["Pilier 7 : Pratique Réflexive & Analyse de l'Activité<br/>Perrenoud (2001)"]
     end
 
     SOTA --> M1["PROPOSITION 1<br/>Approche Comparativo-Développementale<br/>(Novices B1 vs Intermédiaires B3 vs Experts 5*)"]
@@ -328,6 +329,8 @@ Cette troisième proposition représente l'**état de l'art mondial en matière 
    Hennig-Thurau et al. démontrent que les clients détectent instantanément les sourires de façade imposés par les règlements d'entreprise (*surface acting*) et que seule l'authenticité émotionnelle déclenche une contagion affective positive. Le dispositif dyadique mesure la synchronie entre le sourire du réceptionniste et la décrispation des traits du client.
 7. **L'influence de la signalétique et de la matérialité commerciale (Otterbring et al., 2014)** :  
    Otterbring et al. prouvent in situ que les supports promotionnels statiques sont totalement ignorés par un client absorbé par son but d'achat. Cela justifie la scénographie de la tablette tactile activement orientée par le réceptionniste.
+8. **La pratique réflexive et la posture de praticien réflexif (Perrenoud, 2001)** :  
+   Philippe Perrenoud démontre que la formation professionnelle gagne son efficacité durable en développant une capacité permanente d'auto-analyse critique de sa propre action en situation. L'entretien d'autoconfrontation sous eye tracking concrétise cette posture en fournissant à l'apprenant un miroir objectif de son comportement oculaire pour décortiquer ses dilemmes, ses hésitations et ses arbitrages sans jugement culpabilisant.
 
 ---
 
@@ -420,7 +423,7 @@ L'expérimentation repose sur **20 binômes complets** (20 étudiants de 3e ann�
 | **Dynamique Écoute** | **Gaze Latency upon Speech (ms)** | Délai entre le début d'une réplique du client et le retour du regard du réceptionniste | Analyse combinée spectrogramme audio et tracker | Vitesse de réancrage du regard lors de l'expression d'un grief client. | **Tickle-Degnen & Rosenthal (1990)** (Coordination) |
 | **Contagion Émotionnelle** | **Sourire Duchenne Synchronisé** | Délai de réponse entre le sourire de l'employé et la réaction d'apaisement du client | Encodage FACS vidéo scène frontale | Mesure l'efficacité de la contagion émotionnelle face à un mécontentement. | **Hennig-Thurau et al. (2006)** (Contagion émotionnelle) |
 | **Cours d'Action (Énaction)** | **Unités d'Action-Signe (UAS)** | Décomposition sémiotique de l'activité : Engagement, Représentation, Action | Verbatim d'autoconfrontation encodé selon Theureau | Reconstitution du sens et des préoccupations vécues par l'étudiant. | **Theureau / Durand (2016)** (Cours d'action) |
-| **Savoirs Tacites** | **Fréquence des Dilemmes Exprimés** | Nombre de conflits intérieurs verbalisés durant l'autoconfrontation (n) | Entretien CDM d'explicitation | Identifie les freins psychologiques et émotionnels qui bloquent l'action. | **Crandall, Klein & Hoffman (2006)** (Méthode CDM) |
+| **Savoirs Tacites & Réflexivité** | **Fréquence des Dilemmes Exprimés** | Nombre de conflits intérieurs verbalisés durant l'autoconfrontation (n) | Entretien CDM d'explicitation réflexive | Identifie les freins psychologiques et émotionnels qui bloquent l'action et ancre la posture réflexive. | **Perrenoud (2001)** & **Crandall et al. (2006)** |
 | **Médiation Matérielle** | **Statut Perçu de l'Écran PMS** | Qualification par l'acteur du logiciel (allié rassurant vs obstacle dérangeant) | Analyse thématique de contenu du verbatim | Rôle de l'artefact technique dans la construction de la compétence située. | **Goodwin (1994)** & **Beckmann (2010)** |
 
 ---

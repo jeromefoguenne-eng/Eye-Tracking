@@ -1,7 +1,7 @@
 # État de l'Art Consolidé : Oculométrie Mobile & Accueil Hôtelier (SIMACCUEIL)
 **Projet de Recherche Appliquée Lab-DRA (HECh / HEL)**  
 **Chercheur Principal** : Jérôme Foguenne  
-**Corpus** : 22 références académiques extraites de `Constats Etats de l'art.docx`  
+**Corpus** : 23 références académiques extraites de `Constats Etats de l'art.docx`  
 **Dossier Cloud Ressources** : [Dossier Partagé Google Drive](https://drive.google.com/drive/folders/1fkIBcrCzPRb5vu38I-Tx5bAdVap7IFEn?usp=sharing)  
 
 ---
@@ -10,11 +10,11 @@
 
 Le projet **SIMACCUEIL** investigue la dynamique cognitive et visuelle des réceptionnistes d'hôtel à l'aide de lunettes d'eye tracking mobile (Pupil Labs Neon) lors de situations simulées d'**upselling** (négociation commerciale de surclassement) et de **gestion de plaintes clients**.
 
-Le présent état de l'art retient **strictement les 22 articles** analysés dans le document source de Jérôme Foguenne (*Constats Etats de l'art.docx*). Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.
+Le présent état de l'art retient **strictement les 23 articles** analysés dans le document source de Jérôme Foguenne (*Constats Etats de l'art.docx*). Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.
 
 ---
 
-## 2. Tableau Synthétique des 22 Références Retenues
+## 2. Tableau Synthétique des 23 Références Retenues
 
 | N° | Auteurs (Année) | Titre & Revue | Apport Majeur pour SIMACCUEIL | Ressources |
 | :--- | :--- | :--- | :--- | :--- |
@@ -40,6 +40,7 @@ Le présent état de l'art retient **strictement les 22 articles** analysés dan
 | **Texte 23** | Otterbring, T., Wästlund, E., Gustafsson, A., & Shams, P. (2014) | *Vision (im)possible? The effects of in-store signa...* (Journal of Retailing and ...) | Pour SIMACCUEIL, cette étude de terrain apporte un éclairage crucial sur l'environnement matériel du... | [Drive](https://drive.google.com/drive/folders/1fkIBcrCzPRb5vu38I-Tx5bAdVap7IFEn?usp=sharing) / [DOI](https://doi.org/10.1016/j.jretconser.2014.05.002) |
 | **Texte 24.b** | De Beugher, S., Brône, G., & Goedemé, T. (2014) | *Automatic Analysis of In-the-Wild Mobile Eye-Track...* (VISAPP 2014 - Proceedings...) | Ce texte apporte la solution technique au principal verrou méthodologique de SIMACCUEIL. L'annotatio... | [Drive](https://drive.google.com/drive/folders/1fkIBcrCzPRb5vu38I-Tx5bAdVap7IFEn?usp=sharing) / [DOI](https://doi.org/10.5220/0004738507250732) |
 | **Texte 25** | Denizci Guillet, B. (2020) | *Online upselling: Moving beyond offline upselling ...* (International Journal of ...) | Cet article structure la scénarisation professionnelle de la simulation SIMACCUEIL. Il justifie la m... | [Drive](https://drive.google.com/drive/folders/1fkIBcrCzPRb5vu38I-Tx5bAdVap7IFEn?usp=sharing) / [DOI](https://doi.org/10.1016/j.ijhm.2020.102522) |
+| **Texte 26** | Perrenoud, Ph. (2001) | *Mettre la pratique réflexive au centre du projet d...* (Cahiers Pédagogiques, (39...) | Pour SIMACCUEIL, Perrenoud offre le fondement théorique et didactique légitimant l'usage de l'eye tr... | [Drive](https://drive.google.com/drive/folders/1fkIBcrCzPRb5vu38I-Tx5bAdVap7IFEn?usp=sharing) / [DOI](https://www.unige.ch/fapse/SSE/teachers/perrenoud/php_main/php_2001/2001_01.html) |
 
 ---
 
@@ -333,6 +334,20 @@ Le présent état de l'art retient **strictement les 22 articles** analysés dan
 
 ---
 
+### Pilier 7 : Pratique Réflexive & Analyse de l'Activité en Formation
+
+#### Texte 26 — Mettre la pratique réflexive au centre du projet de formation
+- **Référence complète** : Perrenoud, Ph. (2001). Mettre la pratique réflexive au centre du projet de formation. *Cahiers Pédagogiques, (390), 42–45*.
+- **🔗 Liens vers la ressource** : [Fichier Google Drive (26 - Perrenoud.docx...)](https://drive.google.com/drive/folders/1fkIBcrCzPRb5vu38I-Tx5bAdVap7IFEn?usp=sharing) | [Lien Éditeur Officiel (DOI)](https://www.unige.ch/fapse/SSE/teachers/perrenoud/php_main/php_2001/2001_01.html)
+
+> **📖 Résumé de l'article (~100 mots)**  
+> S'appuyant sur les travaux fondateurs de Donald Schön (1983), Philippe Perrenoud clarifie le concept de pratique réflexive en formation professionnelle en distinguant la réflexion dans l'action (régulation cognitive et jugement en cours d'activité) de la réflexion sur l'action (analyse rétrospective dans l'après-coup). L'auteur défend la construction d'une posture de praticien réflexif, critique et constructive, capable d'examiner ses propres schèmes d'action au-delà des situations d'urgence. Perrenoud démontre que cette réflexivité ne s'improvise pas par des interventions isolées, mais exige une ingénierie de formation articulant intimement apports théoriques, observation instrumentée des situations réelles et espaces d'analyse bienveillants.
+
+> **🎯 Contribution au projet de recherche SIMACCUEIL (~100 mots)**  
+> Pour SIMACCUEIL, Perrenoud offre le fondement théorique et didactique légitimant l'usage de l'eye tracking comme levier de développement professionnel plutôt que comme simple outil de mesure de la performance. Les traces oculométriques des lunettes Neon ne révèlent pas directement les processus mentaux : une fixation sur le PMS ne prouve pas une surcharge, pas plus qu'un regard vers le client ne garantit une écoute. Perrenoud justifie un débriefing réflexif post-simulation en quatre temps (simulation, repérage des séquences critiques, remise en situation vidéo et formalisation des apprentissages), distinguant rigoureusement les traces observables, les verbalisations rétrospectives de l'étudiant et les interprétations du chercheur.
+
+---
+
 ## 4. Bibliographie Complète (Norme APA 7e)
 
 - Beckmann, J. F. (2010). Taming a beast of burden – On some issues with the conceptualisation and operationalisation of cognitive load. *Learning and Instruction, 20(3), 250–264*. [https://doi.org/10.1016/j.learninstruc.2010.02.006](https://doi.org/10.1016/j.learninstruc.2010.02.006)
@@ -347,6 +362,7 @@ Le présent état de l'art retient **strictement les 22 articles** analysés dan
 - Hooge, I. T. C., Nyström, M., Niehorster, D. C., Andersson, R., et al. (2024). The fundamentals of eye tracking part 6: Working with areas of interest. *Behavior Research Methods, 56(6), 5780–5800*. [https://doi.org/10.3758/s13428-023-02264-5](https://doi.org/10.3758/s13428-023-02264-5)
 - Jarodzka, H., Balslev, T., Holmqvist, K., Nyström, M., Scheiter, K., Gerjets, P., & Eika, B. (2012). Conveying clinical reasoning based on visual observation via eye-movement modelling examples. *Instructional Science, 40(5), 813–827*. [https://doi.org/10.1007/s11251-012-9218-1](https://doi.org/10.1007/s11251-012-9218-1)
 - Otterbring, T., Wästlund, E., Gustafsson, A., & Shams, P. (2014). Vision (im)possible? The effects of in-store signage on customers' visual attention. *Journal of Retailing and Consumer Services, 21(5), 676–684*. [https://doi.org/10.1016/j.jretconser.2014.05.002](https://doi.org/10.1016/j.jretconser.2014.05.002)
+- Perrenoud, Ph. (2001). Mettre la pratique réflexive au centre du projet de formation. *Cahiers Pédagogiques, (390), 42–45*. [https://www.unige.ch/fapse/SSE/teachers/perrenoud/php_main/php_2001/2001_01.html](https://www.unige.ch/fapse/SSE/teachers/perrenoud/php_main/php_2001/2001_01.html)
 - Rogers, S. L., Speelman, C. P., Guidetti, O., & Longmuir, M. (2018). Using dual eye tracking to uncover personal gaze patterns during social interaction. *Scientific Reports, 8, Article 4271*. [https://doi.org/10.1038/s41598-018-22726-7](https://doi.org/10.1038/s41598-018-22726-7)
 - Ruki, M. (2023). Front Desk Personnel Qualities and Skills in Applying Upselling Hotel Products: Case Study of The Ritz-Carlton Bali. *Journal of Applied Sciences in Travel and Hospitality, 6(1), 32–41*. [https://doi.org/10.31940/jasth.v6i1.32-41](https://doi.org/10.31940/jasth.v6i1.32-41)
 - Scott, N., Zhang, R., Le, D., & Gao, J. (2019). A Review of Eye-Tracking Research in Tourism. *Annals of Tourism Research, 77, 102–114*. [https://doi.org/10.1016/j.annals.2019.05.007](https://doi.org/10.1016/j.annals.2019.05.007)

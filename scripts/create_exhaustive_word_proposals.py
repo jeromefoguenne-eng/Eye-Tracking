@@ -206,7 +206,7 @@ def build_exhaustive_word():
         ("Objectif vulgarisé", "Comprendre ce qui sépare l'œil d'un débutant de celui d'un expert.", "Tester si apprendre avec des vidéos 'Spotlight' rend plus efficace.", "Comprendre ce qui se passe dans les yeux des deux interlocuteurs."),
         ("Design expérimental", "Quasi-expérimental transversal (Novices vs Intermédiaires vs Experts).", "Essai contrôlé randomisé (RCT) pré-test / post-test.", "Mixte séquentiel (Dual Eye Tracking + Autoconfrontation)."),
         ("Équipement requis", "1 paire de lunettes Neon (réceptionniste).", "1 paire de lunettes Neon (étudiant pré/post-tests).", "2 paires de lunettes Neon synchronisées en Wi-Fi NTP (< 5 ms)."),
-        ("Références mobilisées", "Beckmann (2010), Gegenfurtner (2011), Wolff (2016), Goodwin (1994), Cortina (2015), Vickers (2016).", "Jarodzka (2012), Seppänen (2012), Van Gog (2009), Elling (2012), Hooge (2024).", "Rogers (2018), Wohltjen (2021), Theureau (2016), Tickle-Degnen (1990), Crandall (2006)."),
+        ("Références mobilisées", "Beckmann (2010), Gegenfurtner (2011), Wolff (2016), Goodwin (1994), Cortina (2015), Vickers (2016).", "Jarodzka (2012), Seppänen (2012), Van Gog (2009), Elling (2012), Hooge (2024).", "Rogers (2018), Wohltjen (2021), Theureau (2016), Perrenoud (2001), Tickle-Degnen (1990), Crandall (2006)."),
         ("Livrable concret HECh", "Grille d'évaluation des compétences visuelles pour les examens.", "4 modules d'auto-formation vidéo 'Spotlight' sur Moodle.", "Guide méthodologique de débriefing réflexif pour formateurs.")
     ]
     for r_idx, r_data in enumerate(rows_data):
@@ -436,7 +436,8 @@ def build_exhaustive_word():
         "L'entretien d'autoconfrontation immédiat permet à l'étudiant de commenter sa propre vidéo oculaire pour expliciter ses doutes et ses intentions.\n"
         "5. L'explicitation des savoirs tacites : Crandall, Klein et Hoffman (2006) fournissent les techniques de relance de la Cognitive Task Analysis (CTA) pour faire émerger les arbitrages inconscients.\n"
         "6. L'authenticité affective : Hennig-Thurau et al. (2006) démontrent que seul le sourire authentique déclenche une contagion positive chez le client mécontent.\n"
-        "7. L'orientation active de la tablette : Otterbring et al. (2014) prouvent que la signalétique passive est ignorée, justifiant la manipulation active du support commercial."
+        "7. L'orientation active de la tablette : Otterbring et al. (2014) prouvent que la signalétique passive est ignorée, justifiant la manipulation active du support commercial.\n"
+        "8. Pratique réflexive et posture de praticien réflexif : Perrenoud (2001) démontre que la formation professionnelle gagne son efficacité en développant une capacité permanente d'auto-analyse critique de sa propre action. L'entretien d'autoconfrontation sous eye tracking concrétise cette posture en fournissant à l'apprenant un miroir objectif de son comportement oculaire pour décortiquer ses dilemmes et ses arbitrages sans jugement culpabilisant."
     )
 
     # 4.2 Protocole dyadique
@@ -481,7 +482,7 @@ def build_exhaustive_word():
         ("Gaze Latency upon Speech", "Délai (ms) de retour du regard du réceptionniste dès que le client parle", "Audio multi-canaux + oculométrie", "Tickle-Degnen & Rosenthal (1990) : Coordination interactionnelle."),
         ("Sourire Duchenne Synchronisé", "Délai entre le sourire de l'employé et l'apaisement facial du client", "Encodage FACS vidéo scène frontale", "Hennig-Thurau et al. (2006) : Contagion affective authentique."),
         ("Unités d'Action-Signe (UAS)", "Découpage sémiotique du verbatim en unités d'expérience vécue", "Verbatim autoconfrontation", "Theureau / Durand (2016) : Reconstitution du sens pour l'acteur."),
-        ("Dilemmes Décisionnels Exprimés", "Nombre de conflits intérieurs verbalisés durant l'autoconfrontation", "Questions CDM (Crandall)", "Crandall, Klein & Hoffman (2006) : Explicitation des savoirs tacites.")
+        ("Dilemmes Décisionnels Exprimés", "Nombre de conflits intérieurs verbalisés durant l'autoconfrontation", "Questions CDM (Crandall)", "Perrenoud (2001) & Crandall et al. (2006) : Posture réflexive et explicitation des savoirs tacites.")
     ]
     for r_idx, r_data in enumerate(g3_data):
         row = t_g3.rows[r_idx + 1]
