@@ -45,7 +45,7 @@ Afin de concilier la plus stricte rigueur académique et une accessibilité péd
 
 ```mermaid
 flowchart TD
-    subgraph SOTA ["Socle de Référence : 23 Articles de l'État de l'Art Consolidé"]
+    subgraph SOTA ["Socle de Référence : 24 Articles de l'État de l'Art Consolidé"]
         P1["Pilier 1 : Cognition & Expertise<br/>Beckmann (2010), Gegenfurtner (2011), Goodwin (1994), Crandall (2006), Theureau (2016)"]
         P2["Pilier 2 : Métrologie & Vision par Ordinateur<br/>Hooge et al. (2024), De Beugher et al. (2014)"]
         P3["Pilier 3 : Didactique & Modélisation du Regard<br/>Van Gog (2009), Elling (2012), Jarodzka (2012), Seppänen (2012)"]
@@ -53,6 +53,7 @@ flowchart TD
         P5["Pilier 5 : Tourisme & Évaluation Écologique<br/>Scott (2019), Wolff (2016), Cortina (2015), Vickers (2016), Otterbring (2014)"]
         P6["Pilier 6 : Pratiques Métier en Réception<br/>Ruki (2023), Denizci Guillet (2020)"]
         P7["Pilier 7 : Pratique Réflexive & Analyse de l'Activité<br/>Perrenoud (2001)"]
+        P8["Pilier 8 : Ergonomie & Digitalisation Hôtelière<br/>Flandrin et al. (2021)"]
     end
 
     SOTA --> M1["PROPOSITION 1<br/>Approche Comparativo-Développementale<br/>(Novices B1 vs Intermédiaires B3 vs Experts 5*)"]
@@ -331,6 +332,8 @@ Cette troisième proposition représente l'**état de l'art mondial en matière 
    Otterbring et al. prouvent in situ que les supports promotionnels statiques sont totalement ignorés par un client absorbé par son but d'achat. Cela justifie la scénographie de la tablette tactile activement orientée par le réceptionniste.
 8. **La pratique réflexive et la posture de praticien réflexif (Perrenoud, 2001)** :  
    Philippe Perrenoud démontre que la formation professionnelle gagne son efficacité durable en développant une capacité permanente d'auto-analyse critique de sa propre action en situation. L'entretien d'autoconfrontation sous eye tracking concrétise cette posture en fournissant à l'apprenant un miroir objectif de son comportement oculaire pour décortiquer ses dilemmes, ses hésitations et ses arbitrages sans jugement culpabilisant.
+9. **Le partage attentionnel face aux outils mobiles en réception (Flandrin, van de Leemput & Hellemans, 2021)** :  
+   Pierre Flandrin et ses collègues démontrent que l'introduction d'écrans mobiles en réception crée une tension majeure entre contraintes gestionnaires et travail émotionnel, qu'ils mesuraient jusqu'alors par l'observation vidéo des mouvements de tête. Le protocole dyadique SIMACCUEIL sous lunettes Neon apporte la métrologie haute fréquence nécessaire pour mesurer ce partage attentionnel en temps réel.
 
 ---
 

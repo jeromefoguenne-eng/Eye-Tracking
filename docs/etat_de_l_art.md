@@ -1,7 +1,7 @@
 # État de l'Art Consolidé : Oculométrie Mobile & Accueil Hôtelier (SIMACCUEIL)
 **Projet de Recherche Appliquée Lab-DRA (HECh / HEL)**  
 **Chercheur Principal** : Jérôme Foguenne  
-**Corpus** : 23 références académiques extraites de `Constats Etats de l'art.docx`  
+**Corpus** : 24 références académiques de référence (Réf. 01 à 27)  
 **Dossier Cloud Ressources** : [Dossier Partagé Google Drive](https://drive.google.com/drive/folders/1fkIBcrCzPRb5vu38I-Tx5bAdVap7IFEn?usp=sharing)  
 
 ---
@@ -10,11 +10,11 @@
 
 Le projet **SIMACCUEIL** investigue la dynamique cognitive et visuelle des réceptionnistes d'hôtel à l'aide de lunettes d'eye tracking mobile (Pupil Labs Neon) lors de situations simulées d'**upselling** (négociation commerciale de surclassement) et de **gestion de plaintes clients**.
 
-Le présent état de l'art retient **strictement les 23 articles** analysés dans le document source de Jérôme Foguenne (*Constats Etats de l'art.docx*). Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.
+Le présent état de l'art consolide un corpus de **24 articles scientifiques** analysés selon un protocole rigoureux. Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.
 
 ---
 
-## 2. Tableau Synthétique des 23 Références Retenues
+## 2. Tableau Synthétique des 24 Références Retenues
 
 | N° | Auteurs (Année) | Titre & Revue | Apport Majeur pour SIMACCUEIL | Ressources |
 | :--- | :--- | :--- | :--- | :--- |
@@ -41,6 +41,7 @@ Le présent état de l'art retient **strictement les 23 articles** analysés dan
 | **[Texte 24.b](https://drive.google.com/file/d/1jFRsCwfS72bISrs43v7ewuBGIaxLkKll/view?usp=sharing)** | De Beugher, S., Brône, G., & Goedemé, T. (2014) | *Automatic Analysis of In-the-Wild Mobile Eye-Track...* (VISAPP 2014 - Proceedings...) | Ce texte apporte la solution technique au principal verrou méthodologique de SIMACCUEIL. L'annotatio... | [Drive](https://drive.google.com/file/d/1jFRsCwfS72bISrs43v7ewuBGIaxLkKll/view?usp=sharing) / [DOI](https://doi.org/10.5220/0004738507250732) |
 | **[Texte 25](https://drive.google.com/file/d/1sGG9c3pihIHaHiT3Vnrrh5fOSXMjnmwv/view?usp=sharing)** | Denizci Guillet, B. (2020) | *Online upselling: Moving beyond offline upselling ...* (International Journal of ...) | Cet article structure la scénarisation professionnelle de la simulation SIMACCUEIL. Il justifie la m... | [Drive](https://drive.google.com/file/d/1sGG9c3pihIHaHiT3Vnrrh5fOSXMjnmwv/view?usp=sharing) / [DOI](https://doi.org/10.1016/j.ijhm.2020.102522) |
 | **[Texte 26](https://drive.google.com/file/d/1LElcRhMKuY6xxUvmVhhX4RWvmLjg62iY/view?usp=sharing)** | Perrenoud, Ph. (2001) | *Mettre la pratique réflexive au centre du projet d...* (Cahiers Pédagogiques, (39...) | Pour SIMACCUEIL, Perrenoud offre le fondement théorique et didactique légitimant l'usage de l'eye tr... | [Drive](https://drive.google.com/file/d/1LElcRhMKuY6xxUvmVhhX4RWvmLjg62iY/view?usp=sharing) / [DOI](https://www.unige.ch/fapse/SSE/teachers/perrenoud/php_main/php_2001/2001_01.html) |
+| **[Texte 27](https://drive.google.com/file/d/1AJYJD8BBRfFuvyTXuiUwOMMK4l2g-sXp/view?usp=sharing)** | Flandrin, P., van de Leemput, C., & Hellemans, C. (2021) | *Activité du manager de réception à l’épreuve de la...* (Activités, 18(2), 1–28...) | Cet article apporte à SIMACCUEIL un ancrage empirique direct en réception hôtelière francophone. Fla... | [Drive](https://drive.google.com/file/d/1AJYJD8BBRfFuvyTXuiUwOMMK4l2g-sXp/view?usp=sharing) / [DOI](https://doi.org/10.4000/activites.6760) |
 
 ---
 
@@ -348,6 +349,20 @@ Le présent état de l'art retient **strictement les 23 articles** analysés dan
 
 ---
 
+### Pilier 8 : Ergonomie de l'Activité & Digitalisation de l'Accueil Hôtelier
+
+#### Texte 27 — Activité du manager de réception à l’épreuve de la digitalisation : cas d’un projet d’accueil en mobilité dans une chaîne hôtelière internationale
+- **Référence complète** : Flandrin, P., van de Leemput, C., & Hellemans, C. (2021). Activité du manager de réception à l’épreuve de la digitalisation : cas d’un projet d’accueil en mobilité dans une chaîne hôtelière internationale. *Activités, 18(2), 1–28*.
+- **🔗 Liens vers la ressource** : [Fichier Google Drive (27 - Flandrin.pdf...)](https://drive.google.com/file/d/1AJYJD8BBRfFuvyTXuiUwOMMK4l2g-sXp/view?usp=sharing) | [Lien Éditeur Officiel (DOI)](https://doi.org/10.4000/activites.6760)
+
+> **📖 Résumé de l'article (~100 mots)**  
+> Dans cet article d'ergonomie et de psychologie du travail, Pierre Flandrin et ses collègues analysent l'activité réelle du manager de réception et des équipes d'accueil au sein de trois établissements d'une chaîne hôtelière internationale confrontés à la digitalisation. Les auteurs étudient deux dimensions : la gestion quotidienne instrumentée (PMS, yield management, suivi des flux) et l'expérimentation d'un accueil « en mobilité » via smartphone. L'analyse révèle un effet controversé : la technologie renforce les contraintes gestionnaires et le contrôle procédural, tout en réduisant les marges de manœuvre des salariés. Face à cette rigidité, les managers multiplient les régulations et les simulations pour tenter de préserver l'autonomie et le travail émotionnel des réceptionnistes.
+
+> **🎯 Contribution au projet de recherche SIMACCUEIL (~100 mots)**  
+> Cet article apporte à SIMACCUEIL un ancrage empirique direct en réception hôtelière francophone. Flandrin et al. documentent la tension structurelle entre l'encadrement logiciel (écrans, procédures) et la relation humaine en face-à-face, qu'ils mesuraient jusqu'alors par l'observation vidéo des mouvements de tête. SIMACCUEIL franchit un cap méthodologique décisif en substituant à ces approximations la précision biométrique des lunettes Pupil Labs Neon, quantifiant au millième de seconde les bascules attentionnelles entre l'outil numérique (tablette, PMS) et le visage du voyageur. En outre, leurs préconisations sur la coconception amont et la simulation dynamique confortent pleinement la modélisation de nos scénarios de négociation commerciale et de réclamation client.
+
+---
+
 ## 4. Bibliographie Complète (Norme APA 7e)
 
 - Beckmann, J. F. (2010). Taming a beast of burden – On some issues with the conceptualisation and operationalisation of cognitive load. *Learning and Instruction, 20(3), 250–264*. [https://doi.org/10.1016/j.learninstruc.2010.02.006](https://doi.org/10.1016/j.learninstruc.2010.02.006)
@@ -356,6 +371,7 @@ Le présent état de l'art retient **strictement les 23 articles** analysés dan
 - De Beugher, S., Brône, G., & Goedemé, T. (2014). Automatic Analysis of In-the-Wild Mobile Eye-Tracking Experiments using Object, Face and Person Detection. *VISAPP 2014 - Proceedings of the 9th International Conference on Computer Vision Theory and Applications, 725–732*. [https://doi.org/10.5220/0004738507250732](https://doi.org/10.5220/0004738507250732)
 - Denizci Guillet, B. (2020). Online upselling: Moving beyond offline upselling in the hotel industry. *International Journal of Hospitality Management, 88, 102522*. [https://doi.org/10.1016/j.ijhm.2020.102522](https://doi.org/10.1016/j.ijhm.2020.102522)
 - Elling, S., Lentz, L., & de Jong, M. (2012). Combining Concurrent Think-Aloud Protocols and Eye-Tracking Observations: An Analysis of Verbalizations and Silences. *IEEE Transactions on Professional Communication, 55(3), 206–220*. [https://doi.org/10.1109/TPC.2012.2206190](https://doi.org/10.1109/TPC.2012.2206190)
+- Flandrin, P., van de Leemput, C., & Hellemans, C. (2021). Activité du manager de réception à l’épreuve de la digitalisation : cas d’un projet d’accueil en mobilité dans une chaîne hôtelière internationale. *Activités, 18(2), 1–28*. [https://doi.org/10.4000/activites.6760](https://doi.org/10.4000/activites.6760)
 - Gegenfurtner, A., Lehtinen, E., & Säljö, R. (2011). Expertise Differences in the Comprehension of Visualizations: A Meta-Analysis of Eye-Tracking Research. *Educational Psychology Review, 23(4), 523–552*. [https://doi.org/10.1007/s10648-011-9174-7](https://doi.org/10.1007/s10648-011-9174-7)
 - Goodwin, C. (1994). Professional Vision. *American Anthropologist, 96(3), 606–633*. [https://doi.org/10.1525/aa.1994.96.3.02a00100](https://doi.org/10.1525/aa.1994.96.3.02a00100)
 - Hennig-Thurau, T., Groth, M., Paul, M., & Gremler, D. D. (2006). Are All Smiles Created Equal? How Emotional Contagion and Emotional Labor Affect Service Relationships. *Journal of Marketing, 70(3), 58–73*. [https://doi.org/10.1509/jmkg.70.3.058](https://doi.org/10.1509/jmkg.70.3.058)

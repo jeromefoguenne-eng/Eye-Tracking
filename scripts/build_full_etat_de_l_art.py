@@ -52,6 +52,7 @@ DRIVE_FILE_IDS = {
     "24.b": "1jFRsCwfS72bISrs43v7ewuBGIaxLkKll",
     "25": "1sGG9c3pihIHaHiT3Vnrrh5fOSXMjnmwv",
     "26": "1LElcRhMKuY6xxUvmVhhX4RWvmLjg62iY",
+    "27": "1AJYJD8BBRfFuvyTXuiUwOMMK4l2g-sXp",
 }
 
 def get_direct_drive_url(text_id):
@@ -665,6 +666,33 @@ ARTICLES_DATA = [
             "(simulation, repérage des séquences critiques, remise en situation vidéo et formalisation des apprentissages), distinguant "
             "rigoureusement les traces observables, les verbalisations rétrospectives de l'étudiant et les interprétations du chercheur."
         )
+    },
+    {
+        "id": "27",
+        "label": "Texte 27",
+        "pilier": "Pilier 8 : Ergonomie de l'Activité & Digitalisation de l'Accueil Hôtelier",
+        "auteurs": "Flandrin, P., van de Leemput, C., & Hellemans, C.",
+        "annee": "2021",
+        "titre": "Activité du manager de réception à l’épreuve de la digitalisation : cas d’un projet d’accueil en mobilité dans une chaîne hôtelière internationale",
+        "revue": "Activités, 18(2), 1–28",
+        "doi": "https://doi.org/10.4000/activites.6760",
+        "drive_file": "27 - Flandrin.pdf",
+        "resume": (
+            "Dans cet article d'ergonomie et de psychologie du travail, Pierre Flandrin et ses collègues analysent l'activité réelle "
+            "du manager de réception et des équipes d'accueil au sein de trois établissements d'une chaîne hôtelière internationale "
+            "confrontés à la digitalisation. Les auteurs étudient deux dimensions : la gestion quotidienne instrumentée (PMS, yield management, "
+            "suivi des flux) et l'expérimentation d'un accueil « en mobilité » via smartphone. L'analyse révèle un effet controversé : la technologie "
+            "renforce les contraintes gestionnaires et le contrôle procédural, tout en réduisant les marges de manœuvre des salariés. "
+            "Face à cette rigidité, les managers multiplient les régulations et les simulations pour tenter de préserver l'autonomie et le travail émotionnel des réceptionnistes."
+        ),
+        "contribution": (
+            "Cet article apporte à SIMACCUEIL un ancrage empirique direct en réception hôtelière francophone. Flandrin et al. documentent "
+            "la tension structurelle entre l'encadrement logiciel (écrans, procédures) et la relation humaine en face-à-face, qu'ils mesuraient "
+            "jusqu'alors par l'observation vidéo des mouvements de tête. SIMACCUEIL franchit un cap méthodologique décisif en substituant "
+            "à ces approximations la précision biométrique des lunettes Pupil Labs Neon, quantifiant au millième de seconde les bascules attentionnelles "
+            "entre l'outil numérique (tablette, PMS) et le visage du voyageur. En outre, leurs préconisations sur la coconception amont et la simulation "
+            "dynamique confortent pleinement la modélisation de nos scénarios de négociation commerciale et de réclamation client."
+        )
     }
 ]
 
@@ -759,9 +787,9 @@ def build_word_document():
     meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
     meta_data = [
         ("Chercheur Principal", "Jérôme Foguenne (HECh / HEL)"),
-        ("Corpus de Référence", "23 études académiques issues de 'Constats Etats de l\\'art.docx'"),
+        ("Corpus de Référence", "24 études académiques (Réf. 01 à 27)"),
         ("Dispositif Expérimental", "Lunettes d'Eye Tracking Mobile Pupil Labs Neon & Simulateur PMS"),
-        ("Dépôt Cloud Ressources", "Google Drive partagé (Dossier Ressources — 23 fichiers vérifiés)")
+        ("Dépôt Cloud Ressources", "Google Drive partagé (Dossier Ressources — 24 fichiers vérifiés)")
     ]
     for r_idx, (k, v) in enumerate(meta_data):
         c0, c1 = meta_table.rows[r_idx].cells
@@ -805,9 +833,8 @@ def build_word_document():
         "d'accueil hôtelier à travers le prisme de l'oculométrie mobile de dernière génération (Pupil Labs Neon). L'objectif est d'analyser "
         "l'organisation visuelle et cognitive des réceptionnistes confrontés à deux situations professionnelles critiques à fort enjeu relationnel "
         "et économique : la négociation commerciale d'un surclassement (upselling) et le traitement bienveillant d'une réclamation client.\n\n"
-        "Le présent état de l'art est constitué exclusivement à partir du corpus rigoureusement sélectionné et documenté dans le travail "
-        "préparatoire de référence (« Constats Etats de l'art.docx »). Conformément aux décisions du chercheur principal, les références hors-cadre "
-        "(notamment le rapport technique Texte 9 écarté de l'analyse) ont été exclues, consolidant un corpus d'élite de 23 articles scientifiques. "
+        "Le présent état de l'art est constitué à partir du corpus sélectionné et documenté dans le travail "
+        "préparatoire de référence, consolidant un corpus d'élite de 24 articles scientifiques. "
         "Chaque référence est structurée selon un format académique standardisé comprenant son résumé analytique de 100 mots, son accès direct "
         "au document source sur Google Drive, son DOI vérifié (ou URL académique pérenne) et un paragraphe d'application méthodologique de 100 mots précisant sa contribution "
         "directe aux protocoles expérimentaux de SIMACCUEIL."
@@ -825,7 +852,7 @@ def build_word_document():
     h2 = doc.add_paragraph()
     h2.paragraph_format.space_before = Pt(14)
     h2.paragraph_format.space_after = Pt(6)
-    r_h2 = h2.add_run("2. Tableau Synthétique des 23 Références Retenues")
+    r_h2 = h2.add_run("2. Tableau Synthétique des 24 Références Retenues")
     r_h2.font.name = "Calibri"
     r_h2.font.size = Pt(14)
     r_h2.font.bold = True
@@ -872,12 +899,12 @@ def build_word_document():
     doc.add_page_break()
 
     # ----------------------------------------------------
-    # SECTION 3 : FICHES DÉTAILLÉES DES 23 ARTICLES
+    # SECTION 3 : FICHES DÉTAILLÉES DES 24 ARTICLES
     # ----------------------------------------------------
     h3 = doc.add_paragraph()
     h3.paragraph_format.space_before = Pt(12)
     h3.paragraph_format.space_after = Pt(10)
-    r_h3 = h3.add_run("3. Fiches Analytiques Détaillées (23 Références)")
+    r_h3 = h3.add_run("3. Fiches Analytiques Détaillées (24 Références)")
     r_h3.font.name = "Calibri"
     r_h3.font.size = Pt(16)
     r_h3.font.bold = True
@@ -1011,7 +1038,7 @@ def build_markdown_document():
         "# État de l'Art Consolidé : Oculométrie Mobile & Accueil Hôtelier (SIMACCUEIL)",
         "**Projet de Recherche Appliquée Lab-DRA (HECh / HEL)**  ",
         "**Chercheur Principal** : Jérôme Foguenne  ",
-        "**Corpus** : 23 références académiques extraites de `Constats Etats de l'art.docx`  ",
+        "**Corpus** : 24 références académiques de référence (Réf. 01 à 27)  ",
         f"**Dossier Cloud Ressources** : [Dossier Partagé Google Drive]({DRIVE_SHARED_URL})  ",
         "",
         "---",
@@ -1020,11 +1047,11 @@ def build_markdown_document():
         "",
         "Le projet **SIMACCUEIL** investigue la dynamique cognitive et visuelle des réceptionnistes d'hôtel à l'aide de lunettes d'eye tracking mobile (Pupil Labs Neon) lors de situations simulées d'**upselling** (négociation commerciale de surclassement) et de **gestion de plaintes clients**.",
         "",
-        "Le présent état de l'art retient **strictement les 23 articles** analysés dans le document source de Jérôme Foguenne (*Constats Etats de l'art.docx*). Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.",
+        "Le présent état de l'art consolide un corpus de **24 articles scientifiques** analysés selon un protocole rigoureux. Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.",
         "",
         "---",
         "",
-        "## 2. Tableau Synthétique des 23 Références Retenues",
+        "## 2. Tableau Synthétique des 24 Références Retenues",
         "",
         "| N° | Auteurs (Année) | Titre & Revue | Apport Majeur pour SIMACCUEIL | Ressources |",
         "| :--- | :--- | :--- | :--- | :--- |"

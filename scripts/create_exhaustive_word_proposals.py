@@ -206,7 +206,7 @@ def build_exhaustive_word():
         ("Objectif vulgarisé", "Comprendre ce qui sépare l'œil d'un débutant de celui d'un expert.", "Tester si apprendre avec des vidéos 'Spotlight' rend plus efficace.", "Comprendre ce qui se passe dans les yeux des deux interlocuteurs."),
         ("Design expérimental", "Quasi-expérimental transversal (Novices vs Intermédiaires vs Experts).", "Essai contrôlé randomisé (RCT) pré-test / post-test.", "Mixte séquentiel (Dual Eye Tracking + Autoconfrontation)."),
         ("Équipement requis", "1 paire de lunettes Neon (réceptionniste).", "1 paire de lunettes Neon (étudiant pré/post-tests).", "2 paires de lunettes Neon synchronisées en Wi-Fi NTP (< 5 ms)."),
-        ("Références mobilisées", "Beckmann (2010), Gegenfurtner (2011), Wolff (2016), Goodwin (1994), Cortina (2015), Vickers (2016).", "Jarodzka (2012), Seppänen (2012), Van Gog (2009), Elling (2012), Hooge (2024).", "Rogers (2018), Wohltjen (2021), Theureau (2016), Perrenoud (2001), Tickle-Degnen (1990), Crandall (2006)."),
+        ("Références mobilisées", "Beckmann (2010), Gegenfurtner (2011), Wolff (2016), Goodwin (1994), Cortina (2015), Vickers (2016).", "Jarodzka (2012), Seppänen (2012), Van Gog (2009), Elling (2012), Hooge (2024).", "Rogers (2018), Wohltjen (2021), Theureau (2016), Perrenoud (2001), Flandrin (2021), Tickle-Degnen (1990), Crandall (2006)."),
         ("Livrable concret HECh", "Grille d'évaluation des compétences visuelles pour les examens.", "4 modules d'auto-formation vidéo 'Spotlight' sur Moodle.", "Guide méthodologique de débriefing réflexif pour formateurs.")
     ]
     for r_idx, r_data in enumerate(rows_data):
@@ -437,7 +437,8 @@ def build_exhaustive_word():
         "5. L'explicitation des savoirs tacites : Crandall, Klein et Hoffman (2006) fournissent les techniques de relance de la Cognitive Task Analysis (CTA) pour faire émerger les arbitrages inconscients.\n"
         "6. L'authenticité affective : Hennig-Thurau et al. (2006) démontrent que seul le sourire authentique déclenche une contagion positive chez le client mécontent.\n"
         "7. L'orientation active de la tablette : Otterbring et al. (2014) prouvent que la signalétique passive est ignorée, justifiant la manipulation active du support commercial.\n"
-        "8. Pratique réflexive et posture de praticien réflexif : Perrenoud (2001) démontre que la formation professionnelle gagne son efficacité en développant une capacité permanente d'auto-analyse critique de sa propre action. L'entretien d'autoconfrontation sous eye tracking concrétise cette posture en fournissant à l'apprenant un miroir objectif de son comportement oculaire pour décortiquer ses dilemmes et ses arbitrages sans jugement culpabilisant."
+        "8. Pratique réflexive et posture de praticien réflexif : Perrenoud (2001) démontre que la formation professionnelle gagne son efficacité en développant une capacité permanente d'auto-analyse critique de sa propre action. L'entretien d'autoconfrontation sous eye tracking concrétise cette posture en fournissant à l'apprenant un miroir objectif de son comportement oculaire pour décortiquer ses dilemmes et ses arbitrages sans jugement culpabilisant.\n"
+        "9. Le partage attentionnel face aux outils mobiles en réception : Flandrin, van de Leemput et Hellemans (2021) démontrent que l'introduction d'écrans mobiles en réception crée une tension entre contraintes gestionnaires et travail émotionnel, qu'ils mesuraient jusqu'alors par l'observation vidéo des mouvements de tête. Le protocole dyadique SIMACCUEIL sous lunettes Neon apporte la métrologie haute fréquence nécessaire pour mesurer ce partage attentionnel en temps réel."
     )
 
     # 4.2 Protocole dyadique
