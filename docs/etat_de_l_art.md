@@ -1,7 +1,7 @@
 # État de l'Art Consolidé : Oculométrie Mobile & Accueil Hôtelier (SIMACCUEIL)
 **Projet de Recherche Appliquée Lab-DRA (HECh / HEL)**  
 **Chercheur Principal** : Jérôme Foguenne  
-**Corpus** : 24 références académiques de référence (Réf. 01 à 27)  
+**Corpus** : 25 références académiques de référence (Réf. 01 à 28)  
 **Dossier Cloud Ressources** : [Dossier Partagé Google Drive](https://drive.google.com/drive/folders/1fkIBcrCzPRb5vu38I-Tx5bAdVap7IFEn?usp=sharing)  
 
 ---
@@ -10,11 +10,11 @@
 
 Le projet **SIMACCUEIL** investigue la dynamique cognitive et visuelle des réceptionnistes d'hôtel à l'aide de lunettes d'eye tracking mobile (Pupil Labs Neon) lors de situations simulées d'**upselling** (négociation commerciale de surclassement) et de **gestion de plaintes clients**.
 
-Le présent état de l'art consolide un corpus de **24 articles scientifiques** analysés selon un protocole rigoureux. Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.
+Le présent état de l'art consolide un corpus de **25 articles scientifiques** analysés selon un protocole rigoureux. Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.
 
 ---
 
-## 2. Tableau Synthétique des 24 Références Retenues
+## 2. Tableau Synthétique des 25 Références Retenues
 
 | N° | Auteurs (Année) | Titre & Revue | Apport Majeur pour SIMACCUEIL | Ressources |
 | :--- | :--- | :--- | :--- | :--- |
@@ -42,6 +42,7 @@ Le présent état de l'art consolide un corpus de **24 articles scientifiques** 
 | **[Texte 25](https://drive.google.com/file/d/1sGG9c3pihIHaHiT3Vnrrh5fOSXMjnmwv/view?usp=sharing)** | Denizci Guillet, B. (2020) | *Online upselling: Moving beyond offline upselling ...* (International Journal of ...) | Cet article structure la scénarisation professionnelle de la simulation SIMACCUEIL. Il justifie la m... | [Drive](https://drive.google.com/file/d/1sGG9c3pihIHaHiT3Vnrrh5fOSXMjnmwv/view?usp=sharing) / [DOI](https://doi.org/10.1016/j.ijhm.2020.102522) |
 | **[Texte 26](https://drive.google.com/file/d/1LElcRhMKuY6xxUvmVhhX4RWvmLjg62iY/view?usp=sharing)** | Perrenoud, Ph. (2001) | *Mettre la pratique réflexive au centre du projet d...* (Cahiers Pédagogiques, (39...) | Pour SIMACCUEIL, Perrenoud offre le fondement théorique et didactique légitimant l'usage de l'eye tr... | [Drive](https://drive.google.com/file/d/1LElcRhMKuY6xxUvmVhhX4RWvmLjg62iY/view?usp=sharing) / [DOI](https://www.unige.ch/fapse/SSE/teachers/perrenoud/php_main/php_2001/2001_01.html) |
 | **[Texte 27](https://drive.google.com/file/d/1AJYJD8BBRfFuvyTXuiUwOMMK4l2g-sXp/view?usp=sharing)** | Flandrin, P., van de Leemput, C., & Hellemans, C. (2021) | *Activité du manager de réception à l’épreuve de la...* (Activités, 18(2), 1–28...) | Cet article apporte à SIMACCUEIL un ancrage empirique direct en réception hôtelière francophone. Fla... | [Drive](https://drive.google.com/file/d/1AJYJD8BBRfFuvyTXuiUwOMMK4l2g-sXp/view?usp=sharing) / [DOI](https://doi.org/10.4000/activites.6760) |
+| **[Texte 28](https://drive.google.com/file/d/1_IsYCXnvIa78QmbN_q98V-3bEwk-i5D_/view?usp=sharing)** | Giacomel, A. (2019) | *Les enjeux du travail émotionnel individuel et col...* (Mondes du Tourisme, 16...) | Cet article fournit à SIMACCUEIL le cadre théorique pour interpréter les marqueurs oculométriques du... | [Drive](https://drive.google.com/file/d/1_IsYCXnvIa78QmbN_q98V-3bEwk-i5D_/view?usp=sharing) / [DOI](https://doi.org/10.4000/tourisme.2471) |
 
 ---
 
@@ -363,6 +364,20 @@ Le présent état de l'art consolide un corpus de **24 articles scientifiques** 
 
 ---
 
+### Pilier 2 : Cognition Située, Travail Émotionnel & Dynamiques de l'Interaction Client-Réceptionniste
+
+#### Texte 28 — Les enjeux du travail émotionnel individuel et collectif dans les groupes hôteliers multinationaux : La complexité de l’équilibre émotionnel au service de l’homéostasie organisationnelle
+- **Référence complète** : Giacomel, A. (2019). Les enjeux du travail émotionnel individuel et collectif dans les groupes hôteliers multinationaux : La complexité de l’équilibre émotionnel au service de l’homéostasie organisationnelle. *Mondes du Tourisme, 16*.
+- **🔗 Liens vers la ressource** : [Fichier Google Drive (28 - Giacomel.pdf...)](https://drive.google.com/file/d/1_IsYCXnvIa78QmbN_q98V-3bEwk-i5D_/view?usp=sharing) | [Lien Éditeur Officiel (DOI)](https://doi.org/10.4000/tourisme.2471)
+
+> **📖 Résumé de l'article (~100 mots)**  
+> Issue d'une recherche doctorale menée dans cinq établissements Novotel parisiens (60 entretiens et observations directes), cette étude d'Aurore Giacomel explore le travail émotionnel (TE) individuel et collectif des équipes de réception et de restauration. L'auteure dépasse la dichotomie classique entre jeu en surface et jeu en profondeur d'Hochschild, montrant que les réceptionnistes mobilisent deux processus clés : le blocage immédiat des émotions négatives du client par routine protectrice et l'absorption émotionnelle avec régulation différée. L'article modélise un équilibre dynamique où l'homéostasie organisationnelle concilie le bien-être psychologique des professionnels et l'exigence de flexibilité et d'hyper-personnalisation du service hôtelier.
+
+> **🎯 Contribution au projet de recherche SIMACCUEIL (~100 mots)**  
+> Cet article fournit à SIMACCUEIL le cadre théorique pour interpréter les marqueurs oculométriques du travail émotionnel lors des simulations d'accueil hôtelier. Dans la micro-situation de gestion de réclamation client, le protocole dyadique permet d'objectiver les moments où le réceptionniste régule ses émotions face aux tensions verbales : évitement visuel défensif, fixation refuge sur l'écran du PMS ou maintien d'un regard engageant (eye contact). Le croisement des données d'eye-tracking (durées de fixation visage, dilatation pupillaire liée à la charge affective) avec les verbalisations en autoscopie permet d'analyser comment l'interaction instrumentée soutient ou fragilise l'équilibre émotionnel du professionnel face aux imprévus du service.
+
+---
+
 ## 4. Bibliographie Complète (Norme APA 7e)
 
 - Beckmann, J. F. (2010). Taming a beast of burden – On some issues with the conceptualisation and operationalisation of cognitive load. *Learning and Instruction, 20(3), 250–264*. [https://doi.org/10.1016/j.learninstruc.2010.02.006](https://doi.org/10.1016/j.learninstruc.2010.02.006)
@@ -373,6 +388,7 @@ Le présent état de l'art consolide un corpus de **24 articles scientifiques** 
 - Elling, S., Lentz, L., & de Jong, M. (2012). Combining Concurrent Think-Aloud Protocols and Eye-Tracking Observations: An Analysis of Verbalizations and Silences. *IEEE Transactions on Professional Communication, 55(3), 206–220*. [https://doi.org/10.1109/TPC.2012.2206190](https://doi.org/10.1109/TPC.2012.2206190)
 - Flandrin, P., van de Leemput, C., & Hellemans, C. (2021). Activité du manager de réception à l’épreuve de la digitalisation : cas d’un projet d’accueil en mobilité dans une chaîne hôtelière internationale. *Activités, 18(2), 1–28*. [https://doi.org/10.4000/activites.6760](https://doi.org/10.4000/activites.6760)
 - Gegenfurtner, A., Lehtinen, E., & Säljö, R. (2011). Expertise Differences in the Comprehension of Visualizations: A Meta-Analysis of Eye-Tracking Research. *Educational Psychology Review, 23(4), 523–552*. [https://doi.org/10.1007/s10648-011-9174-7](https://doi.org/10.1007/s10648-011-9174-7)
+- Giacomel, A. (2019). Les enjeux du travail émotionnel individuel et collectif dans les groupes hôteliers multinationaux : La complexité de l’équilibre émotionnel au service de l’homéostasie organisationnelle. *Mondes du Tourisme, 16*. [https://doi.org/10.4000/tourisme.2471](https://doi.org/10.4000/tourisme.2471)
 - Goodwin, C. (1994). Professional Vision. *American Anthropologist, 96(3), 606–633*. [https://doi.org/10.1525/aa.1994.96.3.02a00100](https://doi.org/10.1525/aa.1994.96.3.02a00100)
 - Hennig-Thurau, T., Groth, M., Paul, M., & Gremler, D. D. (2006). Are All Smiles Created Equal? How Emotional Contagion and Emotional Labor Affect Service Relationships. *Journal of Marketing, 70(3), 58–73*. [https://doi.org/10.1509/jmkg.70.3.058](https://doi.org/10.1509/jmkg.70.3.058)
 - Hooge, I. T. C., Nyström, M., Niehorster, D. C., Andersson, R., et al. (2024). The fundamentals of eye tracking part 6: Working with areas of interest. *Behavior Research Methods, 56(6), 5780–5800*. [https://doi.org/10.3758/s13428-023-02264-5](https://doi.org/10.3758/s13428-023-02264-5)

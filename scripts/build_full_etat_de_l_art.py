@@ -53,6 +53,7 @@ DRIVE_FILE_IDS = {
     "25": "1sGG9c3pihIHaHiT3Vnrrh5fOSXMjnmwv",
     "26": "1LElcRhMKuY6xxUvmVhhX4RWvmLjg62iY",
     "27": "1AJYJD8BBRfFuvyTXuiUwOMMK4l2g-sXp",
+    "28": "1_IsYCXnvIa78QmbN_q98V-3bEwk-i5D_",
 }
 
 def get_direct_drive_url(text_id):
@@ -693,6 +694,33 @@ ARTICLES_DATA = [
             "entre l'outil numérique (tablette, PMS) et le visage du voyageur. En outre, leurs préconisations sur la coconception amont et la simulation "
             "dynamique confortent pleinement la modélisation de nos scénarios de négociation commerciale et de réclamation client."
         )
+    },
+    {
+        "id": "28",
+        "label": "Texte 28",
+        "pilier": "Pilier 2 : Cognition Située, Travail Émotionnel & Dynamiques de l'Interaction Client-Réceptionniste",
+        "auteurs": "Giacomel, A.",
+        "annee": "2019",
+        "titre": "Les enjeux du travail émotionnel individuel et collectif dans les groupes hôteliers multinationaux : La complexité de l’équilibre émotionnel au service de l’homéostasie organisationnelle",
+        "revue": "Mondes du Tourisme, 16",
+        "doi": "https://doi.org/10.4000/tourisme.2471",
+        "drive_file": "28 - Giacomel.pdf",
+        "resume": (
+            "Issue d'une recherche doctorale menée dans cinq établissements Novotel parisiens (60 entretiens et observations directes), "
+            "cette étude d'Aurore Giacomel explore le travail émotionnel (TE) individuel et collectif des équipes de réception et de restauration. "
+            "L'auteure dépasse la dichotomie classique entre jeu en surface et jeu en profondeur d'Hochschild, montrant que les réceptionnistes "
+            "mobilisent deux processus clés : le blocage immédiat des émotions négatives du client par routine protectrice et l'absorption émotionnelle "
+            "avec régulation différée. L'article modélise un équilibre dynamique où l'homéostasie organisationnelle concilie le bien-être "
+            "psychologique des professionnels et l'exigence de flexibilité et d'hyper-personnalisation du service hôtelier."
+        ),
+        "contribution": (
+            "Cet article fournit à SIMACCUEIL le cadre théorique pour interpréter les marqueurs oculométriques du travail émotionnel "
+            "lors des simulations d'accueil hôtelier. Dans la micro-situation de gestion de réclamation client, le protocole dyadique permet "
+            "d'objectiver les moments où le réceptionniste régule ses émotions face aux tensions verbales : évitement visuel défensif, "
+            "fixation refuge sur l'écran du PMS ou maintien d'un regard engageant (eye contact). Le croisement des données d'eye-tracking "
+            "(durées de fixation visage, dilatation pupillaire liée à la charge affective) avec les verbalisations en autoscopie permet "
+            "d'analyser comment l'interaction instrumentée soutient ou fragilise l'équilibre émotionnel du professionnel face aux imprévus du service."
+        )
     }
 ]
 
@@ -787,9 +815,9 @@ def build_word_document():
     meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
     meta_data = [
         ("Chercheur Principal", "Jérôme Foguenne (HECh / HEL)"),
-        ("Corpus de Référence", "24 études académiques (Réf. 01 à 27)"),
+        ("Corpus de Référence", "25 études académiques (Réf. 01 à 28)"),
         ("Dispositif Expérimental", "Lunettes d'Eye Tracking Mobile Pupil Labs Neon & Simulateur PMS"),
-        ("Dépôt Cloud Ressources", "Google Drive partagé (Dossier Ressources — 24 fichiers vérifiés)")
+        ("Dépôt Cloud Ressources", "Google Drive partagé (Dossier Ressources — 25 fichiers vérifiés)")
     ]
     for r_idx, (k, v) in enumerate(meta_data):
         c0, c1 = meta_table.rows[r_idx].cells
@@ -834,7 +862,7 @@ def build_word_document():
         "l'organisation visuelle et cognitive des réceptionnistes confrontés à deux situations professionnelles critiques à fort enjeu relationnel "
         "et économique : la négociation commerciale d'un surclassement (upselling) et le traitement bienveillant d'une réclamation client.\n\n"
         "Le présent état de l'art est constitué à partir du corpus sélectionné et documenté dans le travail "
-        "préparatoire de référence, consolidant un corpus d'élite de 24 articles scientifiques. "
+        "préparatoire de référence, consolidant un corpus d'élite de 25 articles scientifiques. "
         "Chaque référence est structurée selon un format académique standardisé comprenant son résumé analytique de 100 mots, son accès direct "
         "au document source sur Google Drive, son DOI vérifié (ou URL académique pérenne) et un paragraphe d'application méthodologique de 100 mots précisant sa contribution "
         "directe aux protocoles expérimentaux de SIMACCUEIL."
@@ -852,7 +880,7 @@ def build_word_document():
     h2 = doc.add_paragraph()
     h2.paragraph_format.space_before = Pt(14)
     h2.paragraph_format.space_after = Pt(6)
-    r_h2 = h2.add_run("2. Tableau Synthétique des 24 Références Retenues")
+    r_h2 = h2.add_run("2. Tableau Synthétique des 25 Références Retenues")
     r_h2.font.name = "Calibri"
     r_h2.font.size = Pt(14)
     r_h2.font.bold = True
@@ -899,12 +927,12 @@ def build_word_document():
     doc.add_page_break()
 
     # ----------------------------------------------------
-    # SECTION 3 : FICHES DÉTAILLÉES DES 24 ARTICLES
+    # SECTION 3 : FICHES DÉTAILLÉES DES 25 ARTICLES
     # ----------------------------------------------------
     h3 = doc.add_paragraph()
     h3.paragraph_format.space_before = Pt(12)
     h3.paragraph_format.space_after = Pt(10)
-    r_h3 = h3.add_run("3. Fiches Analytiques Détaillées (24 Références)")
+    r_h3 = h3.add_run("3. Fiches Analytiques Détaillées (25 Références)")
     r_h3.font.name = "Calibri"
     r_h3.font.size = Pt(16)
     r_h3.font.bold = True
@@ -1038,7 +1066,7 @@ def build_markdown_document():
         "# État de l'Art Consolidé : Oculométrie Mobile & Accueil Hôtelier (SIMACCUEIL)",
         "**Projet de Recherche Appliquée Lab-DRA (HECh / HEL)**  ",
         "**Chercheur Principal** : Jérôme Foguenne  ",
-        "**Corpus** : 24 références académiques de référence (Réf. 01 à 27)  ",
+        "**Corpus** : 25 références académiques de référence (Réf. 01 à 28)  ",
         f"**Dossier Cloud Ressources** : [Dossier Partagé Google Drive]({DRIVE_SHARED_URL})  ",
         "",
         "---",
@@ -1047,11 +1075,11 @@ def build_markdown_document():
         "",
         "Le projet **SIMACCUEIL** investigue la dynamique cognitive et visuelle des réceptionnistes d'hôtel à l'aide de lunettes d'eye tracking mobile (Pupil Labs Neon) lors de situations simulées d'**upselling** (négociation commerciale de surclassement) et de **gestion de plaintes clients**.",
         "",
-        "Le présent état de l'art consolide un corpus de **24 articles scientifiques** analysés selon un protocole rigoureux. Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.",
+        "Le présent état de l'art consolide un corpus de **25 articles scientifiques** analysés selon un protocole rigoureux. Chaque fiche intègre un résumé calibré de 100 mots, les liens directs vers les ressources et un paragraphe de 100 mots formalisant l'apport direct pour la recherche.",
         "",
         "---",
         "",
-        "## 2. Tableau Synthétique des 24 Références Retenues",
+        "## 2. Tableau Synthétique des 25 Références Retenues",
         "",
         "| N° | Auteurs (Année) | Titre & Revue | Apport Majeur pour SIMACCUEIL | Ressources |",
         "| :--- | :--- | :--- | :--- | :--- |"
